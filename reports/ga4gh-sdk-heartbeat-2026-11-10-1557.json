@@ -1,0 +1,502 @@
+{
+  "format": "ga4gh-sdk-review-monitor/v1",
+  "cycle_started_at_utc": "2026-11-10T15:57:41.955Z",
+  "observed_at_utc": "2026-11-10T16:51:28.747443+00:00",
+  "main": "4115af9bb785b7f8441e058d65101dcc106835d0",
+  "main_ci": {
+    "run_id": 42857143888,
+    "conclusion": "success",
+    "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42857143888"
+  },
+  "validated_source_commit": "a9ce1b0a6453c44433c3e91b0e960df263eaf522",
+  "validated_source_tree": "182507439fb3c3fe8e9988f940952e9bdc38ff70",
+  "review_updates": [
+    {
+      "pr": 141,
+      "id": "PRR_kwDOL41Rhs8AAAABXGHOvA",
+      "state": "COMMENTED",
+      "submitted_at": "2026-11-10T15:53:58Z",
+      "reviewed_commit": "c72c7787f210a2b902961a8667d2c8baaf3f5fea",
+      "author": "pavelnikonorov",
+      "classification": "nonblocking interoperability follow-up #172; original approval retained"
+    },
+    {
+      "pr": 142,
+      "id": "PRR_kwDOL41Rhs8AAAABXGT2EA",
+      "state": "APPROVED",
+      "submitted_at": "2026-11-10T16:05:33Z",
+      "reviewed_commit": "fddeeac0bc6367071e87b8e1c1082f6923464a81",
+      "author": "pavelnikonorov",
+      "classification": "approval after maintainer fix"
+    },
+    {
+      "pr": 142,
+      "id": "PRR_kwDOL41Rhs8AAAABXGoGHg",
+      "state": "APPROVED",
+      "submitted_at": "2026-11-10T16:24:24Z",
+      "reviewed_commit": "103d7737f9ac665bf76b3b73c4f43150f306e376",
+      "author": "pavelnikonorov",
+      "classification": "approval after maintainer fix"
+    }
+  ],
+  "completed_work": [
+    {
+      "pr": 141,
+      "merge_commit": "8b8030f0c9e2576b68f46bb46db10a6dae6c444a",
+      "merged_by": "pavelnikonorov",
+      "merged_at": "2026-11-10T15:54:49Z",
+      "closed_issues": [
+        134,
+        135
+      ]
+    },
+    {
+      "pr": 142,
+      "merge_commit": "4115af9bb785b7f8441e058d65101dcc106835d0",
+      "merged_by": "pavelnikonorov",
+      "closed_issues": [
+        136
+      ]
+    }
+  ],
+  "confirmed_integration_fix": {
+    "commit": "fe23e644136d3fcc312225fdb38056974b326033",
+    "description": "Squash-merging #141 made automatic merges of #149/#153/#155/#156/#157/#158 add futures-util twice to lib/Cargo.toml. TOML parsing reproduced the error. Reconciled the merge without changing the previously passing source tree.",
+    "affected_prs": [
+      149,
+      153,
+      155,
+      156,
+      157,
+      158
+    ],
+    "source_unchanged_before_following_142": true
+  },
+  "preserved_maintainer_fix": {
+    "pr": 142,
+    "commits": [
+      "fddeeac0bc6367071e87b8e1c1082f6923464a81",
+      "b00cdcf35e8fe5ee986778af61b4f467f652a526",
+      "2f1397f07232fc127a335c55a354193c68925301",
+      "103d7737f9ac665bf76b3b73c4f43150f306e376"
+    ],
+    "description": "Anonymous descriptor allowlist requires bare HTTP(S) origins; rejects path/query/fragment/credential entries instead of silently widening them. Subsequent fixes remove signed URLs from connection/body-read errors and close local/external run dependencies in imported CWL steps or step collections. The YAML dependency is moved to the maintained yaml_serde fork under the existing serde_yaml import name. Regressions and docs retained.",
+    "maintainer_branch_preserved": true,
+    "propagated_to": [
+      149,
+      150,
+      151,
+      153,
+      155,
+      156,
+      157,
+      158
+    ]
+  },
+  "author_lockfile_fix": {
+    "commit": "a9ce1b0a6453c44433c3e91b0e960df263eaf522",
+    "previous_versions_preserved": true,
+    "sdk_dependency_entries_preserved": true,
+    "standalone_tests": 5,
+    "actual_pr150_tests": 5,
+    "pr150_commit": "ef1420edc8c47c5810b3066bedd719e6a549435d"
+  },
+  "post142_squash_reconciliation": {
+    "affected_prs": [
+      149,
+      153,
+      155,
+      156,
+      157,
+      158
+    ],
+    "files": [
+      "README.md",
+      "lib/Cargo.toml",
+      "tests/README.md"
+    ],
+    "source_trees_unchanged": true,
+    "clean_150_151_not_republished": true
+  },
+  "published_branches": [
+    {
+      "pr": 149,
+      "branch": "fix/monitor-drs-main-149",
+      "remote_branch": "feat/phase2-workflow-contracts",
+      "previous_head": "edb18aab2db6ac50e284dac1587ec0a0ca7bcc00",
+      "head": "9e8420a57d184034eebbb243ef00ee77594b684c",
+      "tree": "7aa6680b5246c801061d8c3515bae7893135d62a",
+      "source_unchanged": true,
+      "changed_paths": [],
+      "reconciled_after_142_merge": true
+    },
+    {
+      "pr": 150,
+      "branch": "fix/monitor-drs-main-150",
+      "remote_branch": "feat/protes-downstream-companion",
+      "previous_head": "9d497924f8fc25bbaff17b5c14c30fd2b182cf3c",
+      "head": "ef1420edc8c47c5810b3066bedd719e6a549435d",
+      "tree": "fa8444642d91ef824ffaf498239519c070150acf",
+      "changed_paths": [
+        "Cargo.lock",
+        "examples/protes-companion/Cargo.lock",
+        "lib/Cargo.toml"
+      ],
+      "reconciled_after_142_merge": false
+    },
+    {
+      "pr": 151,
+      "branch": "fix/monitor-drs-main-151",
+      "remote_branch": "docs/phase2-provider-contracts",
+      "previous_head": "6aef21043145a8b4087f1b92c9d0ab6a643f82a9",
+      "head": "f897cefc886755896a940229edf12c6720b7031b",
+      "tree": "6ad20e101393936234f8238a5695322f516bb889",
+      "changed_paths": [
+        "Cargo.lock",
+        "lib/Cargo.toml"
+      ],
+      "reconciled_after_142_merge": false
+    },
+    {
+      "pr": 153,
+      "branch": "fix/monitor-drs-main-153",
+      "remote_branch": "feat/horizon3-scenario-api",
+      "previous_head": "e5e438057718baf307e9f395eaff2cf89e60f01f",
+      "head": "3a38114c7091199816476bbb08827fabe817a4e6",
+      "tree": "873cb86aaddcf3af1a9bdb28045d9bec8040dd9b",
+      "source_unchanged": true,
+      "changed_paths": [],
+      "reconciled_after_142_merge": true
+    },
+    {
+      "pr": 155,
+      "branch": "fix/monitor-drs-main-155",
+      "remote_branch": "feat/horizon3-portable-execution",
+      "previous_head": "4b8c23814f544d47f6c3fb4cfdbeb9f7fd59eb6d",
+      "head": "523d3232e9c3525fc0c9958ee0b83c639cd494c1",
+      "tree": "fa3351a8470bc6618de8ba7d800af1af7d615a64",
+      "source_unchanged": true,
+      "changed_paths": [],
+      "reconciled_after_142_merge": true
+    },
+    {
+      "pr": 156,
+      "branch": "fix/monitor-drs-main-156",
+      "remote_branch": "feat/horizon3-result-reuse",
+      "previous_head": "c0086a7dc277c530d8393e8f77f5327b980cd584",
+      "head": "d900db7f297ee9222e5cba5fd4896131132b8f2b",
+      "tree": "142e6adebf05b18ca621edee097330a557e93bf8",
+      "source_unchanged": true,
+      "changed_paths": [],
+      "reconciled_after_142_merge": true
+    },
+    {
+      "pr": 157,
+      "branch": "fix/monitor-drs-main-157",
+      "remote_branch": "feat/horizon3-adaptive-campaign",
+      "previous_head": "14c8495cb55b907cd3d4581ddce9105167810d42",
+      "head": "35aff589c17bb1288586e242f418bab702557474",
+      "tree": "f7029ca57137cc0d1dcc9736c6d5598809945e24",
+      "source_unchanged": true,
+      "changed_paths": [],
+      "reconciled_after_142_merge": true
+    },
+    {
+      "pr": 158,
+      "branch": "fix/monitor-drs-main-158",
+      "remote_branch": "feat/horizon3-provider-profiles",
+      "previous_head": "7498ef0f4da2ca69c2d4f7c904ed896f56fc0c21",
+      "head": "06aedbbfab36cf628bcb3c855b000543a751cb16",
+      "tree": "f4a91173f77cbb4ab885ececcf7d634b5c90b004",
+      "source_unchanged": true,
+      "changed_paths": [],
+      "reconciled_after_142_merge": true
+    }
+  ],
+  "checks": {
+    "rust": {
+      "fmt": "passed",
+      "clippy": "passed",
+      "build": "passed",
+      "workspace_tests": {
+        "passed": 262,
+        "failed": 0,
+        "ignored": 9
+      },
+      "logs": {
+        "fmt": {
+          "path": "/tmp/ga4gh-closeout/monitor-1557-yaml-fmt.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0
+        },
+        "clippy": {
+          "path": "/tmp/ga4gh-closeout/monitor-1557-yaml-clippy.log",
+          "sha256": "3c125a9f66f68733b64dedd6033ccbdb4a2b83346f215b9349dc7e73e0c3072a",
+          "exit_code": 0
+        },
+        "build": {
+          "path": "/tmp/ga4gh-closeout/monitor-1557-yaml-build.log",
+          "sha256": "0d406026b9dcb9dd8e43fa28c40760eb1e1acb47f0f2c5d33b50737c10a73adc",
+          "exit_code": 0
+        },
+        "test": {
+          "path": "/tmp/ga4gh-closeout/monitor-1557-yaml-test.log",
+          "sha256": "fbcba259ec1fe83df16a785f3eac257432beb19fc5cc8545020a0cc2b4be7c9f",
+          "exit_code": 0
+        }
+      }
+    },
+    "standalone_companion": {
+      "actual_pr150_tests": 5,
+      "composed_sdk_tests": 5,
+      "locked_offline": true,
+      "previous_package_versions_preserved": true
+    },
+    "containerized_qc": {
+      "executions": 2,
+      "wes": "local Toil 9.3.0",
+      "result": "COMPLETE; golden bytes and typed metrics verified; comparison equivalent_under_policy; IPython consumed both reports",
+      "cloud": false
+    },
+    "manifest_metadata": "cargo metadata --no-deps --format-version 1 --locked --offline passed",
+    "generated_models": "unchanged from main",
+    "python_implementation": "unchanged from main"
+  },
+  "validation_reuse": {
+    "source": "previous report 2026-11-10-1517",
+    "python": 127,
+    "campaign_contracts": 8,
+    "temporal": {
+      "accepted_jobs": 6,
+      "valid_unique_results": 5,
+      "retained_unknown": 1,
+      "peak_reservations": 2,
+      "replayed_histories": 3
+    },
+    "downstream_pyo3_tests": 1,
+    "reason": "No Python, campaign/provider or extension code changed. The companion code is unchanged, but its updated lockfile was independently rechecked on its actual PR and composed SDK. Current Rust SDK changes are confined to the anonymous bundle-fetch origin validator, URL error redaction, static CWL dependency closure, the private YAML parser dependency and regressions; those other paths do not invoke it. Final full Rust checks rerun."
+  },
+  "pull_requests": [
+    {
+      "number": 141,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/141",
+      "head": "c72c7787f210a2b902961a8667d2c8baaf3f5fea",
+      "state": "MERGED",
+      "mergeable": null,
+      "review_decision": null,
+      "ci": {
+        "run_id": 42844285924,
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42844285924",
+        "conclusion": "success",
+        "status": "completed"
+      }
+    },
+    {
+      "number": 142,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/142",
+      "head": "103d7737f9ac665bf76b3b73c4f43150f306e376",
+      "state": "MERGED",
+      "mergeable": null,
+      "review_decision": null,
+      "ci": {
+        "run_id": 42853765605,
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42853765605",
+        "conclusion": "success",
+        "status": "completed"
+      }
+    },
+    {
+      "number": 149,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/149",
+      "head": "9e8420a57d184034eebbb243ef00ee77594b684c",
+      "state": "OPEN",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "run_id": 42857733386,
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42857733386",
+        "conclusion": "success",
+        "status": "completed"
+      }
+    },
+    {
+      "number": 150,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/150",
+      "head": "ef1420edc8c47c5810b3066bedd719e6a549435d",
+      "state": "OPEN",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "run_id": 42856275310,
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42856275310",
+        "conclusion": "success",
+        "status": "completed"
+      }
+    },
+    {
+      "number": 151,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/151",
+      "head": "f897cefc886755896a940229edf12c6720b7031b",
+      "state": "OPEN",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "run_id": 42856704911,
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42856704911",
+        "conclusion": "success",
+        "status": "completed"
+      }
+    },
+    {
+      "number": 153,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/153",
+      "head": "3a38114c7091199816476bbb08827fabe817a4e6",
+      "state": "OPEN",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "run_id": 42857733619,
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42857733619",
+        "conclusion": "success",
+        "status": "completed"
+      }
+    },
+    {
+      "number": 155,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/155",
+      "head": "523d3232e9c3525fc0c9958ee0b83c639cd494c1",
+      "state": "OPEN",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "run_id": 42857734999,
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42857734999",
+        "conclusion": "success",
+        "status": "completed"
+      }
+    },
+    {
+      "number": 156,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/156",
+      "head": "d900db7f297ee9222e5cba5fd4896131132b8f2b",
+      "state": "OPEN",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "run_id": 42857737088,
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42857737088",
+        "conclusion": "success",
+        "status": "completed"
+      }
+    },
+    {
+      "number": 157,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/157",
+      "head": "35aff589c17bb1288586e242f418bab702557474",
+      "state": "OPEN",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "run_id": 42857734352,
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42857734352",
+        "conclusion": "success",
+        "status": "completed"
+      }
+    },
+    {
+      "number": 158,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/158",
+      "head": "06aedbbfab36cf628bcb3c855b000543a751cb16",
+      "state": "OPEN",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "run_id": 42857731542,
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42857731542",
+        "conclusion": "success",
+        "status": "completed"
+      }
+    }
+  ],
+  "separate_tes_documentation": {
+    "url": "https://github.com/ga4gh/task-execution-schemas/pull/256",
+    "state": "OPEN",
+    "head": "7b6171d2c8cf89d91237ea7da850d0d6391dcfcd",
+    "new_reviews_or_comments": false,
+    "ci": "lint success; OpenAPI diff skipped (README-only)"
+  },
+  "related_external_issues": [
+    {
+      "url": "https://github.com/elixir-cloud-aai/generic-issues/issues/100",
+      "state": "OPEN",
+      "new_actionable_comments": false
+    },
+    {
+      "url": "https://github.com/elixir-cloud-aai/generic-issues/issues/101",
+      "state": "OPEN",
+      "new_actionable_comments": false
+    },
+    {
+      "url": "https://github.com/elixir-cloud-aai/generic-issues/issues/102",
+      "state": "OPEN",
+      "new_actionable_comments": false
+    },
+    {
+      "url": "https://github.com/elixir-cloud-aai/generic-issues/issues/103",
+      "state": "OPEN",
+      "new_actionable_comments": false
+    },
+    {
+      "url": "https://github.com/elixir-cloud-aai/generic-issues/issues/104",
+      "state": "OPEN",
+      "new_actionable_comments": false
+    },
+    {
+      "url": "https://github.com/elixir-cloud-aai/generic-issues/issues/98",
+      "state": "OPEN",
+      "new_actionable_comments": false
+    },
+    {
+      "url": "https://github.com/elixir-cloud-aai/generic-issues/issues/99",
+      "state": "OPEN",
+      "new_actionable_comments": false
+    },
+    {
+      "url": "https://github.com/ga4gh/ga4gh-reference-cloud/issues/34",
+      "state": "OPEN",
+      "new_actionable_comments": false
+    },
+    {
+      "url": "https://github.com/ga4gh/workflow-execution-service-schemas/issues/203",
+      "state": "OPEN",
+      "new_actionable_comments": false
+    }
+  ],
+  "related_backlog": {
+    "issue": 172,
+    "url": "https://github.com/ga4gh/ga4gh-sdk/issues/172",
+    "state": "OPEN",
+    "classification": "Separate nonblocking Gen3/experimental Starter Kit interoperability follow-up, explicitly outside the #141 protocol scope; no new implementation started."
+  },
+  "related_timeout_followup": {
+    "issue": 173,
+    "url": "https://github.com/ga4gh/ga4gh-sdk/issues/173",
+    "state": "OPEN",
+    "classification": "New unassigned, untriaged cross-client timeout policy issue. Compared with #128/#129/#131: existing bounded operations, caller-supplied low-level deadlines, replay safety and waiters remain implemented. The issue expands consistent high-level constructor/convenience API configuration; it is not a change-request review on the current PRs. Tracked separately; no new API design or implementation started from the cross-reference alone."
+  },
+  "observed_upstream_dependency_pr": {
+    "number": 171,
+    "url": "https://github.com/ga4gh/ga4gh-sdk/pull/171",
+    "state": "OPEN",
+    "head": "07550f87284d46c987c8bc80390daf18e57a3387",
+    "scope": "optional asyncio TES API, closes #163; not merged or adopted by this campaign"
+  },
+  "remaining_acceptance": [
+    "Human review and upstream merge.",
+    "Production operator integration for sessions/OpenBao.",
+    "Accepted live Seqera execution remains unverified; no additional cloud POST authorized or made.",
+    "Previously observed bounded Nextflow physical-container cleanup failure remains recorded."
+  ],
+  "no_additional_cloud_submissions": true,
+  "summary": "Maintainer merged #141 and #142; all first-phase PRs #137–#142 are in main. Reconciled the duplicate-dependency integration defect and propagated the maintainer origin-policy fix. Eight remaining open SDK PRs have successful current-head CI and clean merges. Human review/merge and unchanged external gates remain."
+}
