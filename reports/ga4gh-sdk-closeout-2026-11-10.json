@@ -1,0 +1,589 @@
+{
+  "format": "ga4gh-sdk-three-phase-closeout",
+  "recorded_at_utc": "2026-11-10T13:05:12.665219+00:00",
+  "upstream_main": "30f788ddb2279c6f85f64ce3e7f6c20c04fb67d3",
+  "validated_combined_source": "fea687a",
+  "combined_branch": "https://github.com/superbsky/ga4gh-sdk/tree/test/phase-closeout-validation",
+  "implementation_scope": "Reconcile remaining PRs after upstream prerequisite merges, preserve maintainer fixes, repair integration validation, and validate composed source. Human review and external provider/operator acceptance remain separate.",
+  "merged_sdk_prs": [
+    137,
+    138,
+    139,
+    140
+  ],
+  "open_sdk_prs": [
+    {
+      "number": 141,
+      "phase": 1,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/141",
+      "head": "301e3658566105f9784fa08c5ed66b8ec82d04b2",
+      "mergeable": "MERGEABLE",
+      "draft": false,
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42820990062",
+        "run_id": 42820990062,
+        "status": "completed",
+        "conclusion": "success",
+        "checks": [
+          {
+            "name": "Lint",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Test",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Build",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Integration (funnel)",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Integration (wes-starter-kit)",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "CI passed",
+            "conclusion": "SUCCESS"
+          }
+        ]
+      },
+      "merge_state": "BLOCKED"
+    },
+    {
+      "number": 142,
+      "phase": 1,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/142",
+      "head": "7ad59e61ab3ee1add17eb17f146c1dbf1141f5f7",
+      "mergeable": "MERGEABLE",
+      "draft": false,
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42820992168",
+        "run_id": 42820992168,
+        "status": "completed",
+        "conclusion": "success",
+        "checks": [
+          {
+            "name": "Lint",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Test",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Build",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Integration (funnel)",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Integration (wes-starter-kit)",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "CI passed",
+            "conclusion": "SUCCESS"
+          }
+        ]
+      },
+      "merge_state": "BLOCKED"
+    },
+    {
+      "number": 149,
+      "phase": 2,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/149",
+      "head": "8ef2c1b8807e6ae55a3d15575155ad17b468f7ff",
+      "mergeable": "MERGEABLE",
+      "draft": false,
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42820993712",
+        "run_id": 42820993712,
+        "status": "completed",
+        "conclusion": "success",
+        "checks": [
+          {
+            "name": "Lint",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Test",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Build",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Integration (funnel)",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Integration (wes-starter-kit)",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "CI passed",
+            "conclusion": "SUCCESS"
+          }
+        ]
+      },
+      "merge_state": "BLOCKED"
+    },
+    {
+      "number": 150,
+      "phase": 2,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/150",
+      "head": "1beabea92c6c8064de24006c00dcf9994ed1c128",
+      "mergeable": "MERGEABLE",
+      "draft": false,
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42820994548",
+        "run_id": 42820994548,
+        "status": "completed",
+        "conclusion": "success",
+        "checks": [
+          {
+            "name": "Lint",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Test",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Build",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Integration (funnel)",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Integration (wes-starter-kit)",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "CI passed",
+            "conclusion": "SUCCESS"
+          }
+        ]
+      },
+      "merge_state": "BLOCKED"
+    },
+    {
+      "number": 151,
+      "phase": 2,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/151",
+      "head": "259c0f77cfdd223acd0859aec41119cac3f0315a",
+      "mergeable": "MERGEABLE",
+      "draft": false,
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42820994656",
+        "run_id": 42820994656,
+        "status": "completed",
+        "conclusion": "success",
+        "checks": [
+          {
+            "name": "Lint",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Test",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Build",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Integration (funnel)",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Integration (wes-starter-kit)",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "CI passed",
+            "conclusion": "SUCCESS"
+          }
+        ]
+      },
+      "merge_state": "BLOCKED"
+    },
+    {
+      "number": 153,
+      "phase": 3,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/153",
+      "head": "a99f59e6516e0e9a3551faf00ac03efe886dc4ea",
+      "mergeable": "MERGEABLE",
+      "draft": false,
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42820994041",
+        "run_id": 42820994041,
+        "status": "completed",
+        "conclusion": "success",
+        "checks": [
+          {
+            "name": "Lint",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Test",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Build",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Integration (funnel)",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Integration (wes-starter-kit)",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "CI passed",
+            "conclusion": "SUCCESS"
+          }
+        ]
+      },
+      "merge_state": "BLOCKED"
+    },
+    {
+      "number": 155,
+      "phase": 3,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/155",
+      "head": "81dfbd053a21ebb61e1f3af0ca9e1b54eb7a2bdc",
+      "mergeable": "MERGEABLE",
+      "draft": false,
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42820992612",
+        "run_id": 42820992612,
+        "status": "completed",
+        "conclusion": "success",
+        "checks": [
+          {
+            "name": "Lint",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Test",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Build",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Integration (funnel)",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Integration (wes-starter-kit)",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "CI passed",
+            "conclusion": "SUCCESS"
+          }
+        ]
+      },
+      "merge_state": "BLOCKED"
+    },
+    {
+      "number": 156,
+      "phase": 3,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/156",
+      "head": "faa8eb1dc4ca5a5f4e8cb5c43ceb149277f98e04",
+      "mergeable": "MERGEABLE",
+      "draft": false,
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42820993411",
+        "run_id": 42820993411,
+        "status": "completed",
+        "conclusion": "success",
+        "checks": [
+          {
+            "name": "Lint",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Test",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Build",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Integration (funnel)",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Integration (wes-starter-kit)",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "CI passed",
+            "conclusion": "SUCCESS"
+          }
+        ]
+      },
+      "merge_state": "BLOCKED"
+    },
+    {
+      "number": 157,
+      "phase": 3,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/157",
+      "head": "17976b755553b28dd256bc2aaa0577f0f62d7126",
+      "mergeable": "MERGEABLE",
+      "draft": false,
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42820994514",
+        "run_id": 42820994514,
+        "status": "completed",
+        "conclusion": "success",
+        "checks": [
+          {
+            "name": "Lint",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Test",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Build",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Integration (funnel)",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Integration (wes-starter-kit)",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "CI passed",
+            "conclusion": "SUCCESS"
+          }
+        ]
+      },
+      "merge_state": "BLOCKED"
+    },
+    {
+      "number": 158,
+      "phase": 3,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/158",
+      "head": "3a2ac4ce308e39d810c6fc319c83fc1353da9526",
+      "mergeable": "MERGEABLE",
+      "draft": false,
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42820994263",
+        "run_id": 42820994263,
+        "status": "completed",
+        "conclusion": "success",
+        "checks": [
+          {
+            "name": "Lint",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Test",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Build",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Integration (funnel)",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "Integration (wes-starter-kit)",
+            "conclusion": "SUCCESS"
+          },
+          {
+            "name": "CI passed",
+            "conclusion": "SUCCESS"
+          }
+        ]
+      },
+      "merge_state": "BLOCKED"
+    }
+  ],
+  "repairs": [
+    "Reconciled eight conflicting PRs and refreshed all ten remaining PRs with accepted main.",
+    "Retained DRS CLI/raw responses and API-root identity, Python Rust-owned GIL inputs, and all workflow CLI routes.",
+    "Bounded read-only QC status retries after an observed transient status-connection disconnect; never replayed submissions.",
+    "Refreshed standalone proTES lockfile without changing existing package versions; aligned a separate composed-tree lockfile."
+  ],
+  "rust_validation": {
+    "141": {
+      "rust_commands": [
+        "cargo fmt --all --check",
+        "cargo clippy --workspace --all-targets --locked --offline",
+        "cargo build --workspace --locked --offline",
+        "cargo test --workspace --locked --offline"
+      ],
+      "passed": 192,
+      "failed": 0,
+      "ignored": 2
+    },
+    "142": {
+      "rust_commands": [
+        "cargo fmt --all --check",
+        "cargo clippy --workspace --all-targets --locked --offline",
+        "cargo build --workspace --locked --offline",
+        "cargo test --workspace --locked --offline"
+      ],
+      "passed": 187,
+      "failed": 0,
+      "ignored": 3
+    },
+    "149": {
+      "rust_commands": [
+        "cargo fmt --all --check",
+        "cargo clippy --workspace --all-targets --locked --offline",
+        "cargo build --workspace --locked --offline",
+        "cargo test --workspace --locked --offline"
+      ],
+      "passed": 220,
+      "failed": 0,
+      "ignored": 4
+    },
+    "153": {
+      "rust_commands": [
+        "cargo fmt --all --check",
+        "cargo clippy --workspace --all-targets --locked --offline",
+        "cargo build --workspace --locked --offline",
+        "cargo test --workspace --locked --offline"
+      ],
+      "passed": 220,
+      "failed": 0,
+      "ignored": 5
+    },
+    "155": {
+      "rust_commands": [
+        "cargo fmt --all --check",
+        "cargo clippy --workspace --all-targets --locked --offline",
+        "cargo build --workspace --locked --offline",
+        "cargo test --workspace --locked --offline"
+      ],
+      "passed": 220,
+      "failed": 0,
+      "ignored": 4
+    },
+    "156": {
+      "rust_commands": [
+        "cargo fmt --all --check",
+        "cargo clippy --workspace --all-targets --locked --offline",
+        "cargo build --workspace --locked --offline",
+        "cargo test --workspace --locked --offline"
+      ],
+      "passed": 228,
+      "failed": 0,
+      "ignored": 5
+    },
+    "158": {
+      "rust_commands": [
+        "cargo fmt --all --check",
+        "cargo clippy --workspace --all-targets --locked --offline",
+        "cargo build --workspace --locked --offline",
+        "cargo test --workspace --locked --offline"
+      ],
+      "passed": 220,
+      "failed": 0,
+      "ignored": 6
+    },
+    "combined": {
+      "rust_commands": [
+        "cargo fmt --all --check",
+        "cargo clippy --workspace --all-targets --locked --offline",
+        "cargo build --workspace --locked --offline",
+        "cargo test --workspace --locked --offline"
+      ],
+      "passed": 228,
+      "failed": 0,
+      "ignored": 7
+    }
+  },
+  "reused_validation": {
+    "157": "Rust sources/manifests match checked PR155; seven Temporal campaign/adapter contracts also passed.",
+    "150_151": "Root Rust sources/manifests match accepted upstream main; standalone companion checks passed and RFC/prototype sources are unchanged.",
+    "latest_main_refresh": "After the combined checks, main gained only upstream CI action pin updates (#118/#119). Verified no source/test input changed; retained passing local evidence."
+  },
+  "workflow_evidence": {
+    "python": {
+      "passed": 14,
+      "subtests_passed": 3
+    },
+    "toil_verified_bundle": "Repeated real Toil 9.3.0 COMPLETE execution and exact output bytes.",
+    "two_node_qc": "Two real containerized Toil COMPLETE runs; metrics, golden report bytes, comparison and IPython HTML consumption passed.",
+    "scenario_api": "Nine HTTP tests plus matching seven WES histories through actual SDK and maintained RestWesProvider.",
+    "portable_execution": "15 provider tests and actual CPU restore at step20/100, matching outputs, 200/409 continuation race and denied transfer403.",
+    "exact_reuse": "Eight focused contracts and one real A container; zero B submissions;114 bytes revalidated/transferred.",
+    "native_wes_local": "Six profile classification tests, three private-diagnostic regressions and offline multipart10 passed/1 unsupported. No cloud POST.",
+    "standalone_companion": "fmt,Clippy,build,5 locked tests and actual explain/prepare CLI commands passed against current main;5 locked tests passed again against composed manifest."
+  },
+  "remaining_acceptance_gates": [
+    {
+      "scope": "all open SDK PRs",
+      "status": "All ten current heads have passing upstream CI and no merge conflicts; human review/merge remains."
+    },
+    {
+      "scope": "S2-05/S2-06",
+      "status": "Production sessions/OpenBao require operator/backend integration; RFC/prototypes do not close ecosystem issues99/100."
+    },
+    {
+      "scope": "H3-06",
+      "status": "Accepted live Seqera execution remains unverified after the single previously authorized HTTP400 response; no further cloud attempts made."
+    },
+    {
+      "scope": "H3-06",
+      "status": "Previously observed bounded Nextflow physical-container cleanup failed and remains recorded."
+    }
+  ],
+  "separate_tes_documentation_pr": {
+    "url": "https://github.com/ga4gh/task-execution-schemas/pull/256",
+    "state": "OPEN",
+    "mergeable": true,
+    "openapi_lint": "passed",
+    "scope": "Pinned interoperability observations; no schema changes."
+  },
+  "review_notes": [
+    "No new upstream change-request reviews were present; the returned author work was merge conflicts.",
+    "Generated model files match current main in every updated branch.",
+    "Whitespace in the exact vendored upstream schema pack is retained to preserve its pinned byte hashes; authored-change whitespace checks pass.",
+    "No upstream merge or repeated maintainer ping was performed."
+  ],
+  "summary": {
+    "sdk_prs_merged": 4,
+    "sdk_prs_ready_for_review": 10,
+    "sdk_prs_with_merge_conflicts": 0,
+    "sdk_prs_with_passing_current_ci": 10,
+    "author_reconciliation": "complete",
+    "external_acceptance": "partial as explicitly recorded"
+  }
+}
