@@ -1,0 +1,308 @@
+{
+  "format": "ga4gh-sdk-review-monitor-cycle",
+  "cycle_started_at_utc": "2026-11-10T15:17:11.914Z",
+  "observed_at_utc": "2026-11-10T15:42:04.725770+00:00",
+  "main": "f498b0ff4c59cb922c75ac2cb4a9534da8d48c0e",
+  "validated_source_commit": "8140f20a3aecd47113feca7c6fbdbada82af544a",
+  "validated_source_tree": "5dfefa6e77ec35c120b45a769e8b3b7f1a815328",
+  "review_updates": [
+    {
+      "pull_request": 141,
+      "reviewer": "pavelnikonorov",
+      "state": "APPROVED",
+      "reviewed_head": "c72c7787f210a2b902961a8667d2c8baaf3f5fea",
+      "maintainer_fix": "1014d14",
+      "finding": "Bulk Debug output exposed access credentials. The maintainer added redacted summary formatting and a regression test.",
+      "handling": "Preserved the exact reviewed head and carried its fix into dependent branches #149/#153/#155/#156/#157/#158. No push to PR141."
+    }
+  ],
+  "author_fixes": [
+    {
+      "pull_request": 158,
+      "commit": "758c0f0ba47efa1e90241498c0ca866d508ca2f3",
+      "finding": "Provider smoke test passed a string to get_raw after #169 changed the argument to TesView; all-target compilation failed.",
+      "change": "Use TesView::Full; current all-target checks compile the opt-in test."
+    },
+    {
+      "pull_request": 157,
+      "commit": "1c3d94f8620f9e40c59509930e7594b1ac6544dd",
+      "finding": "Current TES.create treats strings as file paths; serialized JSON produced UNKNOWN/ValueError before submission.",
+      "change": "Pass the task mapping; added a native-binding regression that verifies one owned task and cancellation. Updated binding setup guidance."
+    }
+  ],
+  "integration_updates": [
+    "Inherited main #154/#166/#169/#170 and #152.",
+    "Kept DRS, TES, workflow and Registry dispatch in the CLI.",
+    "Nine author branches refreshed; PR141 maintainer-approved head retained.",
+    "Generated models and Python code match current main."
+  ],
+  "checks": {
+    "rust": {
+      "commands": [
+        "cargo fmt --all --check",
+        "cargo clippy --workspace --all-targets --locked --offline",
+        "cargo build --workspace --locked --offline",
+        "cargo test --workspace --locked --offline"
+      ],
+      "passed": 257,
+      "failed": 0,
+      "ignored": 9
+    },
+    "python": {
+      "passed": 127,
+      "command": "python -m pytest from python/"
+    },
+    "campaign": {
+      "contracts_passed": 8,
+      "accepted_tasks": 6,
+      "valid_results": 5,
+      "retained_unknown": 1,
+      "peak_reservations": 2,
+      "histories_replayed": 3,
+      "provider_receipt_adoption": "passed",
+      "deadline_cancellation": "passed"
+    },
+    "companion": {
+      "tests_passed": 5,
+      "locked": true
+    },
+    "downstream_pyo3": {
+      "tests_passed": 1,
+      "binding_default_features": false,
+      "verified": "PyTES subclass compiles and retains Send+Sync"
+    }
+  },
+  "validation_reuse": "The later Registry addition changed no Python implementation/tests or TES client source; verified that source diff before reusing Python/native campaign/downstream results. The final composed Rust tree was checked again with Registry and DRS redaction.",
+  "observed_nonblocking_limits": [
+    "An initial Temporal demonstration under concurrent workspace compilation reached its deadline and canceled its final known trial, recording four valid results. Its failure log/history were retained. An unchanged repeat completed the expected five results and all three recovery/deadline scenarios."
+  ],
+  "previously_acknowledged_notifications": [
+    {
+      "issue": 160,
+      "comment_id": 6770152825,
+      "state": "CLOSED",
+      "meaning": "Credits #137 acknowledgement fix; typed view completed by #169. No author change requested."
+    }
+  ],
+  "remaining_acceptance": [
+    "Human review and upstream merge.",
+    "Production operator integration for sessions/OpenBao.",
+    "Accepted live Seqera execution remains unverified; no additional cloud POST authorized or made.",
+    "Previously observed bounded Nextflow physical-container cleanup failure remains recorded."
+  ],
+  "pull_requests": [
+    {
+      "number": 141,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/141",
+      "head": "c72c7787f210a2b902961a8667d2c8baaf3f5fea",
+      "state": "OPEN",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "run_id": 42844285924,
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42844285924",
+        "conclusion": "success",
+        "status": "completed"
+      }
+    },
+    {
+      "number": 142,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/142",
+      "head": "6c1f7cf513cade9f10e7fcd0609be004b7b1fcb7",
+      "state": "OPEN",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "run_id": 42846473028,
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42846473028",
+        "conclusion": "success",
+        "status": "completed"
+      }
+    },
+    {
+      "number": 149,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/149",
+      "head": "fd9a4652889f0089f87cb981ed771324a436d57c",
+      "state": "OPEN",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "run_id": 42846476105,
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42846476105",
+        "conclusion": "success",
+        "status": "completed"
+      }
+    },
+    {
+      "number": 150,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/150",
+      "head": "2a1f8f0dc9ab3958e53acb8889416812b0aeb987",
+      "state": "OPEN",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "run_id": 42846471304,
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42846471304",
+        "conclusion": "success",
+        "status": "completed"
+      }
+    },
+    {
+      "number": 151,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/151",
+      "head": "0e2d1e07802718c5a31e0b6e2c82f39ca1b388ee",
+      "state": "OPEN",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "run_id": 42846474144,
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42846474144",
+        "conclusion": "success",
+        "status": "completed"
+      }
+    },
+    {
+      "number": 153,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/153",
+      "head": "b049ff847a0c2248525cd30e61b14ddde4d93824",
+      "state": "OPEN",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "run_id": 42846468816,
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42846468816",
+        "conclusion": "success",
+        "status": "completed"
+      }
+    },
+    {
+      "number": 155,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/155",
+      "head": "08e1a490d0aa6fa4e6501b3f92cf1a15b79cc6ed",
+      "state": "OPEN",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "run_id": 42846473131,
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42846473131",
+        "conclusion": "success",
+        "status": "completed"
+      }
+    },
+    {
+      "number": 156,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/156",
+      "head": "8168e41817b9d4a97dca05f896d8553b89c534f8",
+      "state": "OPEN",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "run_id": 42846472863,
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42846472863",
+        "conclusion": "success",
+        "status": "completed"
+      }
+    },
+    {
+      "number": 157,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/157",
+      "head": "0bbef7fab1ca4981e11c5f11f2c4f5009f3a5b86",
+      "state": "OPEN",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "run_id": 42846471395,
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42846471395",
+        "conclusion": "success",
+        "status": "completed"
+      }
+    },
+    {
+      "number": 158,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/158",
+      "head": "8c7788751f981cd5b72adbf49c40fc38409a66d7",
+      "state": "OPEN",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "run_id": 42846472110,
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42846472110",
+        "conclusion": "success",
+        "status": "completed"
+      }
+    }
+  ],
+  "completed_at_utc": "2026-11-10T15:52:24.152342+00:00",
+  "separate_tes_documentation": {
+    "url": "https://github.com/ga4gh/task-execution-schemas/pull/256",
+    "state": "OPEN",
+    "headRefOid": "7b6171d2c8cf89d91237ea7da850d0d6391dcfcd",
+    "mergeable": "MERGEABLE",
+    "isDraft": false,
+    "checks": [
+      {
+        "name": "Lint and validate OpenAPI definition",
+        "conclusion": "SUCCESS"
+      },
+      {
+        "name": "Show OpenAPI differences relative to target branch",
+        "conclusion": "SKIPPED"
+      }
+    ]
+  },
+  "related_external_issues": [
+    {
+      "url": "https://github.com/elixir-cloud-aai/generic-issues/issues/104",
+      "state": "OPEN",
+      "new_actionable_comments": false
+    },
+    {
+      "url": "https://github.com/elixir-cloud-aai/generic-issues/issues/103",
+      "state": "OPEN",
+      "new_actionable_comments": false
+    },
+    {
+      "url": "https://github.com/elixir-cloud-aai/generic-issues/issues/102",
+      "state": "OPEN",
+      "new_actionable_comments": false
+    },
+    {
+      "url": "https://github.com/elixir-cloud-aai/generic-issues/issues/101",
+      "state": "OPEN",
+      "new_actionable_comments": false
+    },
+    {
+      "url": "https://github.com/elixir-cloud-aai/generic-issues/issues/100",
+      "state": "OPEN",
+      "new_actionable_comments": false
+    },
+    {
+      "url": "https://github.com/elixir-cloud-aai/generic-issues/issues/99",
+      "state": "OPEN",
+      "new_actionable_comments": false
+    },
+    {
+      "url": "https://github.com/elixir-cloud-aai/generic-issues/issues/98",
+      "state": "OPEN",
+      "new_actionable_comments": false
+    },
+    {
+      "url": "https://github.com/ga4gh/workflow-execution-service-schemas/issues/203",
+      "state": "OPEN",
+      "new_actionable_comments": false
+    },
+    {
+      "url": "https://github.com/ga4gh/ga4gh-reference-cloud/issues/34",
+      "state": "OPEN",
+      "new_actionable_comments": false
+    }
+  ],
+  "summary": {
+    "updated_author_prs": 9,
+    "preserved_maintainer_head": 141,
+    "current_sdk_heads_with_passing_ci": 10,
+    "merge_conflicts": 0,
+    "author_compatibility_fixes": 2,
+    "new_change_request_reviews": 0
+  }
+}
