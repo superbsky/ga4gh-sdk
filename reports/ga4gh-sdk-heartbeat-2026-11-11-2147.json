@@ -1,0 +1,493 @@
+{
+  "cycle_started_at": "2026-11-11T21:47:18.683Z",
+  "checked_at": "2026-11-11T21:51:42.981060+00:00",
+  "main": "04fd19c7cf858bc69110c89bce23b519e6e817ef",
+  "validation": {
+    "source_commit": "32b952365d7bbb297ad29f62c6a64ad41cae19c8",
+    "source_tree": "21e809b8c1c59e7e71980a0d3f76122a02456360",
+    "main": "04fd19c7cf858bc69110c89bce23b519e6e817ef",
+    "pr153_head": "0ab74713984411785080bec9ecb4121230ca9fa4",
+    "files_changed": [
+      "tests/README.md",
+      "tests/h3-scenario-api/test_server.py"
+    ],
+    "runtime_and_image_inputs_identical_to": "4950b88749d8a83932d3170e274cda7f27c9ddfb",
+    "unchanged_paths": [
+      "lib",
+      "cli",
+      "python",
+      "testbed",
+      "Cargo.toml",
+      "Cargo.lock",
+      "examples",
+      "utils"
+    ],
+    "fresh_test_suite": {
+      "passed": 11,
+      "failed": 0,
+      "pinned_inventory_and_quoted_refs": true
+    },
+    "reuse": "Prior clean Python395+3, Rust370 plus CLI85, downstream4, campaign8, companion9, SDK/WES/container tests and publishedOCIreadback retained for unchanged code/inputs; no image rebuild or source-PR push."
+  },
+  "pr153": {
+    "head": "0ab74713984411785080bec9ecb4121230ca9fa4",
+    "review_decision": "CHANGES_REQUESTED",
+    "mergeable": "MERGEABLE",
+    "ci": {
+      "id": 43102100119,
+      "head_sha": "0ab74713984411785080bec9ecb4121230ca9fa4",
+      "status": "completed",
+      "conclusion": "success",
+      "run_attempt": 1,
+      "html_url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43102100119"
+    },
+    "checks_passed": 16,
+    "monitor_source_pr_push": false,
+    "published_oci_source": "bc1f2c98e9d8f030e75a28d9d124415be04ff182",
+    "image_inputs_unchanged": true,
+    "prior_artifact": "https://github.com/superbsky/ga4gh-sdk/releases/tag/horizon3-scenario-api-v0.1.1",
+    "artifact_rebuild": false
+  },
+  "new_closures": [
+    {
+      "issue": 144,
+      "event_id": 35845499563,
+      "created_at": "2026-11-11T21:35:30Z",
+      "actor": "pavelnikonorov"
+    },
+    {
+      "issue": 143,
+      "event_id": 35845496878,
+      "created_at": "2026-11-11T21:35:28Z",
+      "actor": "pavelnikonorov"
+    },
+    {
+      "issue": 103,
+      "event_id": 35845468955,
+      "created_at": "2026-11-11T21:35:08Z",
+      "actor": "pavelnikonorov"
+    },
+    {
+      "issue": 92,
+      "event_id": 35845459762,
+      "created_at": "2026-11-11T21:35:02Z",
+      "actor": "pavelnikonorov"
+    },
+    {
+      "issue": 54,
+      "event_id": 35845439628,
+      "created_at": "2026-11-11T21:34:48Z",
+      "actor": "pavelnikonorov"
+    },
+    {
+      "issue": 48,
+      "event_id": 35845431178,
+      "created_at": "2026-11-11T21:34:41Z",
+      "actor": "pavelnikonorov"
+    },
+    {
+      "issue": 14,
+      "event_id": 35845428660,
+      "created_at": "2026-11-11T21:34:40Z",
+      "actor": "pavelnikonorov"
+    }
+  ],
+  "updated_issue_checklists": [
+    {
+      "number": 164,
+      "title": "feat: TES support for Python apps",
+      "state": "open",
+      "unchecked": [
+        "- [ ] #162 publish wheels to PyPI"
+      ],
+      "notes": []
+    },
+    {
+      "number": 162,
+      "title": "ci(python): publish wheels to PyPI",
+      "state": "open",
+      "unchecked": [
+        "- [ ] It publishes them to PyPI with trusted publishing (no API token), from a protected environment",
+        "- [ ] The package name on PyPI is decided and reserved by the maintainers"
+      ],
+      "notes": []
+    },
+    {
+      "number": 97,
+      "title": "feat: make client methods generic over models",
+      "state": "open",
+      "unchecked": [
+        "- [ ] Generic variants, e.g., `create_as<T: Serialize>` and `get_as<T: DeserializeOwned>`, on the TES, WES and DRS clients; the existing methods call them",
+        "- [ ] A way to accept another artifact name in the service check"
+      ],
+      "notes": []
+    },
+    {
+      "number": 78,
+      "title": "feat: let downstream SDKs build on this SDK without forking",
+      "state": "open",
+      "unchecked": [
+        "- [ ] #94",
+        "- [ ] #97",
+        "- [ ] #98",
+        "- [ ] #100"
+      ],
+      "notes": []
+    },
+    {
+      "number": 63,
+      "title": "feat(trs): add Python bindings",
+      "state": "open",
+      "unchecked": [
+        "- [ ] Python can configure a TRS API root, list tools and versions, and retrieve a tool descriptor and its files through the existing Rust TRS client.",
+        "- [ ] Python results retain the information needed for downstream clients, including unknown response fields and descriptor content; failures expose useful errors without silently changing identifiers.",
+        "- [ ] The public classes, method signatures and return values are documented in `python/README.md` and `python/ga4gh_sdk.pyi`, with a runnable example.",
+        "- [ ] Python tests exercise the public binding against a local mock TRS service, including a descriptor, pagination and errors. State separately whether an opt-in public-registry smoke test was run."
+      ],
+      "notes": []
+    },
+    {
+      "number": 103,
+      "title": "feat: implement the TRS client and CLI",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 92,
+      "title": "docs: write install and usage guides",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 182,
+      "title": "refactor: align query encoding across transport, pagination, and Python",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 181,
+      "title": "fix(transport): distinguish pre-send cancellation from ambiguous submission",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 180,
+      "title": "fix(cli): render server-provided values safely in terminal output",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 172,
+      "title": "feat(drs): support Gen3 bulk responses and assess Starter Kit dialect",
+      "state": "closed",
+      "unchecked": [],
+      "notes": [
+        "Related: #141, #135. This is follow-up interoperability work, not a prerequisite for the spec-focused #141 PR."
+      ]
+    },
+    {
+      "number": 163,
+      "title": "feat(python): add an asyncio API for TES",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 161,
+      "title": "build(python): support Python 3.11 and later",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 159,
+      "title": "feat(python): complete the TES bindings",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 144,
+      "title": "feat: resolve and verify typed workflow results for interactive delivery",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 143,
+      "title": "feat: prepare validated WES invocations from a pinned GA4GH I/O contract",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 135,
+      "title": "feat(drs): add bounded bulk resolution with per-object partial outcomes",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 134,
+      "title": "feat(drs): resolve host-based DRS URIs into explicit access plans",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 133,
+      "title": "feat(wes): stream workflow attachments with bounded memory and cancellation",
+      "state": "closed",
+      "unchecked": [
+        "- [ ] JSON and multipart paths apply identical auth/header policies once #31 lands."
+      ],
+      "notes": []
+    },
+    {
+      "number": 132,
+      "title": "feat(sdk): add lazy resumable pagination with bounded JSONL export",
+      "state": "closed",
+      "unchecked": [],
+      "notes": [
+        "- Add a TES CLI consumer such as `--all --format jsonl`, with records only on stdout and diagnostics on stderr. Follow-up WES/TRS adapters should reuse the same contract; TRS requires its actual response-header pagination, not invented numeric offsets."
+      ]
+    },
+    {
+      "number": 131,
+      "title": "feat(sdk): add cancelable TES/WES waiters with resumable remote handles",
+      "state": "closed",
+      "unchecked": [
+        "- [ ] No nested runtime is created; the helper works with #100's thread-safe clients."
+      ],
+      "notes": []
+    },
+    {
+      "number": 130,
+      "title": "feat(sdk): expose service capabilities and advisory submission preflight",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 129,
+      "title": "feat(transport): add operation deadlines and replay-safe retry policies",
+      "state": "closed",
+      "unchecked": [],
+      "notes": [
+        "- Add opt-in capped exponential backoff with jitter for explicitly replay-safe operations, honoring `Retry-After` within the remaining budget."
+      ]
+    },
+    {
+      "number": 128,
+      "title": "fix(drs): preserve deferred resolution and honor 202 Retry-After",
+      "state": "closed",
+      "unchecked": [],
+      "notes": [
+        "This is a narrow protocol follow-up to [#56](https://github.com/ga4gh/ga4gh-sdk/issues/56), whose scope is the basic DRS methods. [#100](https://github.com/ga4gh/ga4gh-sdk/issues/100) concerns error types and does not implement deferred DRS resolution. Build on the response metadata task in this batch."
+      ]
+    },
+    {
+      "number": 127,
+      "title": "feat(transport): expose response metadata and lossless bounded body access",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 126,
+      "title": "fix(python): release the GIL during I/O and retain a reusable Tokio runtime",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 125,
+      "title": "fix(sdk): validate execution acknowledgements and preserve opaque IDs",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 114,
+      "title": "feat(trs): add the TRS library client",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 99,
+      "title": "feat(python): make the bindings extensible",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 98,
+      "title": "feat(cli): let other binaries reuse and extend the CLI",
+      "state": "open",
+      "unchecked": [
+        "- [ ] A small builder or context struct for the binary name, version, config path and token variable, used by all service modules",
+        "- [ ] Helpers for output and exit codes are public"
+      ],
+      "notes": []
+    },
+    {
+      "number": 96,
+      "title": "feat(config): support custom services in the configuration",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 89,
+      "title": "feat(cli): add Service Registry commands",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 85,
+      "title": "fix(wes): align models with WES 1.1",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 62,
+      "title": "feat(trs): add CLI support",
+      "state": "closed",
+      "unchecked": [
+        "- [ ] Update [CLI documentation](https://github.com/elixir-cloud-aai/ga4gh-sdk/tree/main/cli) with examples for each TRS method."
+      ],
+      "notes": []
+    },
+    {
+      "number": 61,
+      "title": "feat(trs): add SDK support",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 60,
+      "title": "feat(trs): add models",
+      "state": "closed",
+      "unchecked": [
+        "- [ ] Manually curate the generated models, ensuring that they are complete and correct; also check the TRS specification for any constraints described in plain text (e.g., in the `description` properties of the OpenAPI models), as these will generally not be considered during code generation"
+      ],
+      "notes": []
+    },
+    {
+      "number": 57,
+      "title": "feat(drs): add CLI support",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 56,
+      "title": "feat(drs): add SDK support",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 55,
+      "title": "feat(drs): add models",
+      "state": "closed",
+      "unchecked": [
+        "- [ ] Manually curate the generated models, ensuring that they are complete and correct; also check the DRS specification for any constraints described in plain text (e.g., in the `description` properties of the OpenAPI models), as these will generally not be considered during code generation"
+      ],
+      "notes": []
+    },
+    {
+      "number": 54,
+      "title": "feat(drs): add support for the GA4GH DRS API",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 52,
+      "title": "feat(wes): add Python bindings",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 51,
+      "title": "feat(wes): add CLI support",
+      "state": "closed",
+      "unchecked": [],
+      "notes": [
+        "**Implementation note (2026-11-11):** The accepted CLI uses `wes run` for submission and `wes get` for the WES run-log JSON instead of the proposed `wes create`, `wes metadata`, `wes log` and `wes outputs` command names. `wes get` includes the server-provided request, logs and output values/references; it does not download artifact bytes. See PR #175. Byte downloads would need a separate scope; #188 concerns TES outputs."
+      ]
+    },
+    {
+      "number": 50,
+      "title": "feat(wes): add SDK support",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 48,
+      "title": "feat(wes): add support for the GA4GH WES API",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    },
+    {
+      "number": 14,
+      "title": "Add list tasks params in openapi specs",
+      "state": "closed",
+      "unchecked": [],
+      "notes": []
+    }
+  ],
+  "issue_classification": {
+    "new_implementation_request": false,
+    "sdk_63": "Existing TRS Python task clarified; remains OPEN. Rust/CLI parent closure does not deliver Python bindings. No monitor implementation action.",
+    "sdk_99": "Already closed on 2026-11-10T14:01:21Z; current body/checklist update is confirmation of completed Python extensibility, not a new closure.",
+    "sdk_100": "Typed SDK error remains OPEN, separate from ecosystem secrets issue100.",
+    "sdk_131": "Remains historically closed; thread-safe-client criterion tied to SDK100 is still unchecked.",
+    "sdk_133": "Remains historically closed; identical auth/header criterion tied to SDK31 is still unchecked.",
+    "other_open_scope": "SDK78,97,98,162,164 and63 remain open with listed criteria. Assignment/labels/checklists do not authorize expansion."
+  },
+  "unchanged_ci": {
+    "pr157": {
+      "id": 43098069123,
+      "head_sha": "d3d7a26505b0fa43620e8d0e967b261f8383f1f9",
+      "status": "completed",
+      "conclusion": "failure",
+      "run_attempt": 1,
+      "updated_at": "2026-11-11T21:02:35Z"
+    },
+    "pr157_diagnosis": "Previously recorded aggregate gate failure with abandoned dependencies; ordinary rerun requires upstream maintainer rights. No new rerun or dummy push.",
+    "main": {
+      "id": 43097299281,
+      "head_sha": "04fd19c7cf858bc69110c89bce23b519e6e817ef",
+      "status": "queued",
+      "conclusion": null,
+      "run_attempt": 1
+    },
+    "other_open_heads": "150,155,158 unchanged/mergeable with existing exact-head green CI."
+  },
+  "retained_report": "https://github.com/superbsky/ga4gh-sdk/blob/5101f0d4eebc09bce6683231cb7274ef7ebb93a9/reports/ga4gh-sdk-heartbeat-2026-11-11-2027.json",
+  "retained_report_commit": "5101f0d4eebc09bce6683231cb7274ef7ebb93a9",
+  "retained_source": "4950b88749d8a83932d3170e274cda7f27c9ddfb",
+  "new_comments_reviews_inline": 0,
+  "source_pr_pushes": [],
+  "external_gates": [
+    "Final human review and upstream merge.",
+    "Accepted live Seqera execution remains unverified; no additional cloud submission authorized or made.",
+    "Bounded physical Nextflow task-container cleanup remains unverified.",
+    "Production leased sessions: elixir-cloud-aai/generic-issues#99 remains OPEN.",
+    "Production workload secrets/OpenBao: elixir-cloud-aai/generic-issues#100 remains OPEN."
+  ]
+}
