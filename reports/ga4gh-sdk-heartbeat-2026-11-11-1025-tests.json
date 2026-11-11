@@ -1,0 +1,320 @@
+{
+  "checked_cycle": "2026-11-11T10:25:46.079Z",
+  "upstream_main": "db1fa719b015ae807792e24f706108af52fc1dba",
+  "source_commit": "9a65ed3c48ac9fc84287b309967ad58a707d32c6",
+  "source_tree": "24c063aa7be0382032bab50f2655fc0a08d33068",
+  "previous_validation_report": "https://github.com/superbsky/ga4gh-sdk/blob/test/monitor-wes-main-validation/reports/ga4gh-sdk-heartbeat-2026-11-11-0955.json",
+  "changed_source_files": [
+    "README.md",
+    "docs/usage.md",
+    "lib/src/clients/drs/bulk.rs",
+    "lib/src/clients/drs/mod.rs",
+    "lib/src/clients/drs/resolution.rs",
+    "lib/tests/drs_bulk.rs",
+    "lib/tests/drs_gen3_public.rs",
+    "python/GA4GH.pyi",
+    "python/README.md",
+    "python/examples/drs_read.py",
+    "python/src/clients/drs.rs",
+    "python/src/clients/mod.rs",
+    "python/src/lib.rs",
+    "python/tests/mock_server.py",
+    "python/tests/test_all.py",
+    "python/tests/test_drs.py",
+    "python/tests/test_io_runtime.py",
+    "reports/ga4gh-sdk-heartbeat-2026-11-11-1025.json",
+    "tests/README.md",
+    "tests/fixtures/drs/gen3-caninedc-bulk-objects.json"
+  ],
+  "fixed_pull_requests": [
+    {
+      "pr": 150,
+      "prior_head": "ef1420edc8c47c5810b3066bedd719e6a549435d",
+      "head": "4d245510d389f109798d9bf25cf063084ff1edd7",
+      "branch": "feat/protes-downstream-companion",
+      "review_decision": "REVIEW_REQUIRED"
+    },
+    {
+      "pr": 158,
+      "prior_head": "ab4a79c6df79fcaa8d4b9e2c20f8a84cea71c6c3",
+      "head": "dc483b24ee99401f94c2167eddfcec57777728d4",
+      "branch": "feat/horizon3-provider-profiles",
+      "review_decision": "REVIEW_REQUIRED"
+    }
+  ],
+  "merge_resolution": "Both commits preserve the existing phase guide and add the upstream Gen3 fixture documentation; hand-resolved tests/README.md only. Other source changes come from reviewed main. No generated model changes.",
+  "checks": {
+    "fmt": "passed",
+    "clippy_workspace_all_targets_workflow_contracts": "passed; pre-existing warnings remain",
+    "rust_affected_contracts": {
+      "passed": 50,
+      "failed": 0,
+      "ignored": 1,
+      "suites": {
+        "drs_bulk": 13,
+        "drs_resolution": 7,
+        "drs_uri": 4,
+        "result_reuse": 8,
+        "workflow_contracts": 18
+      }
+    },
+    "drs_client_unit_tests": {
+      "passed": 9,
+      "failed": 0
+    },
+    "rebuilt_python": {
+      "python_version": "3.13.3",
+      "passed": 362,
+      "subtests_passed": 3,
+      "failed": 0
+    },
+    "downstream_pyo3_extension": {
+      "passed": 4,
+      "failed": 0,
+      "extends": [
+        "TES",
+        "WES",
+        "AsyncTES",
+        "DRS"
+      ],
+      "registration_checks": [
+        "WES",
+        "DRS"
+      ],
+      "default_features": false
+    }
+  },
+  "contract_review": {
+    "DRS_service": "Send+Sync error storage retained; 404 discovery hint preserves original HttpStatusError as source.",
+    "bulk_raw": "Shared Gen3 object/raw path retained; new raw access API preserves identity checks.",
+    "Python": "DRS raw single/bulk dictionaries and dialects are explicitly bound; tested DRS read example retained.",
+    "unchanged_provider_evidence": "Earlier CPU/container/Temporal/Toil and physical cleanup observations remain historical; no fresh provider/cloud acceptance.",
+    "pr_heads": "All eight current PRs clean merge-tree with this main; no additional PR push needed."
+  },
+  "all_open_phase_prs": [
+    {
+      "number": 149,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/149",
+      "head": "76cb2dc0b2050ed305a28d71bf9a8c591e98be03",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci_run_ids": [
+        43000750567
+      ],
+      "ci_conclusion": "success"
+    },
+    {
+      "number": 150,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/150",
+      "head": "4d245510d389f109798d9bf25cf063084ff1edd7",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci_run_ids": [
+        43004481742
+      ],
+      "ci_conclusion": "success"
+    },
+    {
+      "number": 151,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/151",
+      "head": "f897cefc886755896a940229edf12c6720b7031b",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci_run_ids": [
+        42856704911
+      ],
+      "ci_conclusion": "success"
+    },
+    {
+      "number": 153,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/153",
+      "head": "82ae852374cc6a215f03514c439e0bd092d2d7ea",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci_run_ids": [
+        43000755267
+      ],
+      "ci_conclusion": "success"
+    },
+    {
+      "number": 155,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/155",
+      "head": "087f05150eb4cb720be2bfe8a9cb7ea13323ae47",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci_run_ids": [
+        43000756919
+      ],
+      "ci_conclusion": "success"
+    },
+    {
+      "number": 156,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/156",
+      "head": "ca20ad4fb231285c3664aa3298589eaa583cf0d4",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci_run_ids": [
+        43000760942
+      ],
+      "ci_conclusion": "success"
+    },
+    {
+      "number": 157,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/157",
+      "head": "8e4cfd9209e57437defdbde2bfd66693c6be1362",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci_run_ids": [
+        43000764815
+      ],
+      "ci_conclusion": "success"
+    },
+    {
+      "number": 158,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/158",
+      "head": "dc483b24ee99401f94c2167eddfcec57777728d4",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci_run_ids": [
+        43004583506
+      ],
+      "ci_conclusion": "success"
+    }
+  ],
+  "upstream_context": {
+    "190": "Merged and approved by maintainer on a46e970, main 066dc38; closes DRS interoperability follow-up #172. The maintainer reports bounded anonymous live CanineDC checks; this cycle verified combined source and local mock tests only.",
+    "194": "Closed without merging; no PyO3 major upgrade adopted.",
+    "191": "Approved on 5b9b899 and merged by maintainer as 619f0ac, closing #58. Raw typed Gen3 behavior, discovery error source and a tested DRS read example retained. Current cycle rebuilt/tested combined bindings and downstream extension.",
+    "193": "Merged by maintainer as db1fa71, closing #184; only test_all.py changed. Seven actual-binding mock-backed tests pass; production source identical to previously tested 619f0ac layer."
+  },
+  "external_gates": [
+    "Human review and upstream merge.",
+    "Production operator integration for sessions/OpenBao.",
+    "Accepted live Seqera execution remains unverified; no additional cloud POST authorized or made.",
+    "Previously observed bounded Nextflow physical-container cleanup failure remains recorded."
+  ],
+  "generated_models_edited": false,
+  "fresh_cloud_submissions": 0,
+  "full_workspace_test_rerun": false,
+  "source_validation_layers": {
+    "gen3": {
+      "main": "066dc383aadc8d28adac9394bf0b7b7ecd35fbc5",
+      "source_commit": "4056a5e040b0f5dd36a1efca2ec61707643e589b",
+      "source_tree": "340b0c6c62fb840e5e8c3b3ad665f3f3faf4d1cf",
+      "changed_files": [
+        "README.md",
+        "lib/src/clients/drs/bulk.rs",
+        "lib/tests/drs_bulk.rs",
+        "lib/tests/drs_gen3_public.rs",
+        "tests/README.md",
+        "tests/fixtures/drs/gen3-caninedc-bulk-objects.json"
+      ],
+      "checks": {
+        "fmt": "passed on both PR150 and composed source",
+        "workspace_all_targets_check_with_workflow_contracts": "passed",
+        "protes_companion_exact_pr150": {
+          "passed": 5,
+          "failed": 0
+        },
+        "drs_bulk_exact_pr150": {
+          "passed": 12,
+          "failed": 0
+        },
+        "composed_affected_tests": {
+          "drs_bulk": 12,
+          "drs_resolution": 7,
+          "drs_uri": 4,
+          "result_reuse": 8,
+          "workflow_contracts": 18,
+          "total_passed": 49,
+          "failed": 0,
+          "ignored": 1
+        },
+        "provider_profile_classifications": {
+          "passed": 6,
+          "failed": 0
+        }
+      },
+      "contract_review": {
+        "BulkReport": "New non_exhaustive and dialects field; combined consumers use Default and field access; no external struct literals/destructuring found.",
+        "Python": "At main 066dc38 the raw DRS and dialect methods were Rust-only; #191 had not merged when this layer was checked.",
+        "downstream_use": "Existing TES/WES/AsyncTES extension surface unchanged. Previous downstream and Python runtime evidence reused.",
+        "unmodified_source_evidence_reused": true,
+        "full_workspace_test_rerun": false,
+        "live_gen3_smoke_rerun": false,
+        "fresh_cloud_submissions": 0
+      }
+    },
+    "python_drs": {
+      "main": "619f0ac06f1a558e14ed4c5f9b66d6eea73df58f",
+      "source_commit": "246f0ce7116eb1722f847ded80e3b4fca8379e69",
+      "source_tree": "f911396f4e72aa9788ce4a6029daffc19e1488da",
+      "checks": {
+        "fmt": "passed",
+        "clippy_workspace_all_targets_workflow_contracts": "passed; pre-existing warnings remain",
+        "rust_affected_contracts": {
+          "passed": 50,
+          "failed": 0,
+          "ignored": 1,
+          "suites": {
+            "drs_bulk": 13,
+            "drs_resolution": 7,
+            "drs_uri": 4,
+            "result_reuse": 8,
+            "workflow_contracts": 18
+          }
+        },
+        "drs_client_unit_tests": {
+          "passed": 9,
+          "failed": 0
+        },
+        "rebuilt_python": {
+          "python_version": "3.13.3",
+          "passed": 362,
+          "subtests_passed": 3,
+          "failed": 0
+        },
+        "downstream_pyo3_extension": {
+          "passed": 4,
+          "failed": 0,
+          "extends": [
+            "TES",
+            "WES",
+            "AsyncTES",
+            "DRS"
+          ],
+          "registration_checks": [
+            "WES",
+            "DRS"
+          ],
+          "default_features": false
+        }
+      },
+      "contract_review": {
+        "DRS_service": "Send+Sync error storage retained; 404 discovery hint preserves original HttpStatusError as source.",
+        "bulk_raw": "Shared Gen3 object/raw path retained; new raw access API preserves identity checks.",
+        "Python": "DRS raw single/bulk dictionaries and dialects are explicitly bound; tested DRS read example retained.",
+        "unchanged_provider_evidence": "Earlier CPU/container/Temporal/Toil and physical cleanup observations remain historical; no fresh provider/cloud acceptance.",
+        "pr_heads": "All eight current PRs clean merge-tree with this main; no additional PR push needed."
+      }
+    },
+    "maintained_python_tests": {
+      "main": "db1fa719b015ae807792e24f706108af52fc1dba",
+      "source_commit": "9a65ed3c48ac9fc84287b309967ad58a707d32c6",
+      "source_tree": "24c063aa7be0382032bab50f2655fc0a08d33068",
+      "changed_files": [
+        "python/tests/test_all.py"
+      ],
+      "affected_tests": {
+        "passed": 7,
+        "failed": 0
+      },
+      "production_source_identity": "Rust SDK/CLI and Python binding sources/manifests/lockfile identical to the verified 619f0ac layer. Reuse 362 Python +3 subtests, 59 affected Rust and 4 downstream checks from that layer; no new full-suite run."
+    }
+  },
+  "main_ci": {
+    "id": 43005506681,
+    "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43005506681",
+    "conclusion": "success"
+  }
+}
