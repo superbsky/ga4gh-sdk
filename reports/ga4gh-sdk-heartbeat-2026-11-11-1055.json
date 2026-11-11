@@ -1,0 +1,255 @@
+{
+  "checked_cycle": "2026-11-11T10:55:46.593Z",
+  "upstream_main": "27d5a31dac17d143f5a89f3e3c5606a520a54458",
+  "source_commit": "b3de3782a9fedd4c61cfd1db8bdaf472ee0cc8b0",
+  "source_tree": "a446a43408f2465d71a702d77f758c6944d311df",
+  "main_ci": {
+    "id": 43008918016,
+    "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43008918016",
+    "conclusion": "success"
+  },
+  "pull_requests": [
+    {
+      "number": 149,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/149",
+      "head": "45530ff689b772d60deadd006ab17cd95b720c18",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci_run_ids": [
+        43009673961
+      ],
+      "ci_conclusion": "success"
+    },
+    {
+      "number": 150,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/150",
+      "head": "4d245510d389f109798d9bf25cf063084ff1edd7",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci_run_ids": [
+        43004481742
+      ],
+      "ci_conclusion": "success"
+    },
+    {
+      "number": 151,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/151",
+      "head": "f897cefc886755896a940229edf12c6720b7031b",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci_run_ids": [
+        42856704911
+      ],
+      "ci_conclusion": "success"
+    },
+    {
+      "number": 153,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/153",
+      "head": "7610b171de3d004cb6138f4aa3f52e9496e82c72",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci_run_ids": [
+        43009684715
+      ],
+      "ci_conclusion": "success"
+    },
+    {
+      "number": 155,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/155",
+      "head": "1fdc55a27d0c1c050e12d7cf263aa9a6c03954d0",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci_run_ids": [
+        43009688602
+      ],
+      "ci_conclusion": "success"
+    },
+    {
+      "number": 156,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/156",
+      "head": "5310b10272e4c442c9f54e763271f325c7a276dc",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci_run_ids": [
+        43009693704
+      ],
+      "ci_conclusion": "success"
+    },
+    {
+      "number": 157,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/157",
+      "head": "32c0fd67b798b011c9d7bef5432b39d62e122884",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci_run_ids": [
+        43009700545
+      ],
+      "ci_conclusion": "success"
+    },
+    {
+      "number": 158,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/158",
+      "head": "2ff9656130eb7e802abf363adad48c36f739b480",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci_run_ids": [
+        43009707984
+      ],
+      "ci_conclusion": "success"
+    }
+  ],
+  "fix_commit": "45530ff689b772d60deadd006ab17cd95b720c18",
+  "fix": "lib/src/clients/wes/mod.rs: projected ServiceType initializes new extension field via Default. No generated model edit.",
+  "regression_before_fix": "cargo check --workspace --all-targets --features workflow-contracts --locked --offline failed with E0063: ServiceType.extra missing in handwritten native WES discovery projection. Adding Default extension fields fixes it.",
+  "validation_layers": {
+    "model_fidelity": {
+      "main": "77bd2851282060471308b0d5f3a718979623d4f9",
+      "source_commit": "ee06e46c4fbf165bf2150abcf3bab76e1de13ef1",
+      "source_tree": "eaf6dbe4d6ef9a28c2c8f06716f0688ed8d25826",
+      "checks": {
+        "fmt": "passed",
+        "clippy_workspace_all_targets_workflow_contracts": "passed",
+        "build_workspace_workflow_contracts": "passed",
+        "test_workspace_workflow_contracts": {
+          "passed": 308,
+          "failed": 0,
+          "ignored": 10
+        },
+        "standalone_protes": {
+          "passed": 5,
+          "failed": 0
+        },
+        "rebuilt_python": {
+          "python": "3.13.3",
+          "passed": 364,
+          "subtests": 3,
+          "failed": 0
+        },
+        "downstream_extensions": {
+          "passed": 4,
+          "failed": 0,
+          "clients": [
+            "TES",
+            "WES",
+            "AsyncTES",
+            "DRS"
+          ],
+          "default_features": false
+        },
+        "shared_scenarios": {
+          "server": 9,
+          "sdk": 1,
+          "maintained_rest_wes_provider": 7,
+          "histories_match": true,
+          "evidence_class": "simulated-protocol"
+        }
+      },
+      "regeneration": {
+        "changed_files": [],
+        "files_checked": 107,
+        "generator_version": "7.9.0",
+        "all_six_api_sets": true,
+        "method": "Unmodified wrapper, templates and patches in an isolated copy; pinned 7.9.0 CLI executed in local Docker with explicitly shared temporary output. Byte hashes of all client files unchanged.",
+        "environment_note": "Initial Docker generation wrote under a macOS temporary path outside the shared output mount; final CLI adapter uses an explicit shared mktemp path. No repository generator or infrastructure permission change."
+      }
+    },
+    "trs_cli": {
+      "main": "27d5a31dac17d143f5a89f3e3c5606a520a54458",
+      "source_commit": "b3de3782a9fedd4c61cfd1db8bdaf472ee0cc8b0",
+      "source_tree": "a446a43408f2465d71a702d77f758c6944d311df",
+      "fmt": "passed",
+      "clippy_cli_all_targets": "passed",
+      "cli_all_targets_tests": {
+        "passed": 68,
+        "failed": 0,
+        "ignored": 0
+      },
+      "source_identity": "Only README/CLI/docs changed from model-layer main77bd285; SDK/Python/generated models/template/patches unchanged. Reuse the passing 308 Rust workspace/364 Python+3 subtests/4 downstream/5 proTES and 9/1/7 scenarios for unchanged source.",
+      "extra_pr_push_for_base": false
+    }
+  },
+  "candidate_source_identity": [
+    {
+      "pr": 149,
+      "head": "45530ff689b772d60deadd006ab17cd95b720c18",
+      "relative_to_clean_merge_changed_files": [
+        "lib/src/clients/wes/mod.rs"
+      ],
+      "native_wes_matches_tested_source": true,
+      "models_generator_and_python_match_main": true
+    },
+    {
+      "pr": 153,
+      "head": "7610b171de3d004cb6138f4aa3f52e9496e82c72",
+      "relative_to_clean_merge_changed_files": [
+        "lib/src/clients/wes/mod.rs"
+      ],
+      "native_wes_matches_tested_source": true,
+      "models_generator_and_python_match_main": true
+    },
+    {
+      "pr": 155,
+      "head": "1fdc55a27d0c1c050e12d7cf263aa9a6c03954d0",
+      "relative_to_clean_merge_changed_files": [
+        "lib/src/clients/wes/mod.rs"
+      ],
+      "native_wes_matches_tested_source": true,
+      "models_generator_and_python_match_main": true
+    },
+    {
+      "pr": 156,
+      "head": "5310b10272e4c442c9f54e763271f325c7a276dc",
+      "relative_to_clean_merge_changed_files": [
+        "lib/src/clients/wes/mod.rs"
+      ],
+      "native_wes_matches_tested_source": true,
+      "models_generator_and_python_match_main": true
+    },
+    {
+      "pr": 157,
+      "head": "32c0fd67b798b011c9d7bef5432b39d62e122884",
+      "relative_to_clean_merge_changed_files": [
+        "lib/src/clients/wes/mod.rs"
+      ],
+      "native_wes_matches_tested_source": true,
+      "models_generator_and_python_match_main": true
+    },
+    {
+      "pr": 158,
+      "head": "2ff9656130eb7e802abf363adad48c36f739b480",
+      "relative_to_clean_merge_changed_files": [
+        "lib/src/clients/wes/mod.rs"
+      ],
+      "native_wes_matches_tested_source": true,
+      "models_generator_and_python_match_main": true
+    }
+  ],
+  "models_template_patches_match_reviewed_main": true,
+  "changed_prs": [
+    149,
+    153,
+    155,
+    156,
+    157,
+    158
+  ],
+  "unchanged_prs": [
+    150,
+    151
+  ],
+  "maintainer_updates": {
+    "192": "Approved at 6acadd2, merged as 77bd285, closes #95. Generated models preserve extra fields and unknown enum values; TES/WES states map to Unknown while Python raw JSON retains original server values.",
+    "174": "Approved at e4ceb2f, merged as 27d5a31, closes #115. TRS CLI registration cleanly combines with workflow/WES. Maintainer-reported live WorkflowHub smoke was not rerun in this cycle."
+  },
+  "previous_report": "https://github.com/superbsky/ga4gh-sdk/blob/test/monitor-wes-main-validation/reports/ga4gh-sdk-heartbeat-2026-11-11-1025-tests.json",
+  "historical_evidence": "Prior CPU/container/Temporal/Toil and provider measurements retain their precise evidence classes and unresolved external acceptance limits. New shared scenario evidence is simulated protocol only.",
+  "external_gates": [
+    "Human review and upstream merge.",
+    "Production operator integration for sessions/OpenBao.",
+    "Accepted live Seqera execution remains unverified; no additional cloud POST authorized or made.",
+    "Previously observed bounded Nextflow physical-container cleanup failure remains recorded."
+  ],
+  "fresh_cloud_submissions": 0,
+  "no_force_push": true,
+  "no_github_pr_merge_by_monitor": true
+}
