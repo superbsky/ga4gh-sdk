@@ -6,9 +6,9 @@
 # commands. See `docs/development.md`.
 #
 # Formatting and spelling hooks skip generated models and their patches.
-# Exact pinned input bytes are also exempt from text rewriting, limited to files
-# changed by these hooks. See testbed/pack/spec-pins.json and the IO schema README.
-# Structural checks still scan these files for merge markers and oversized files.
+# Pinned upstream inputs retain their exact bytes; the exceptions below name
+# individual files only. See their upstream provenance and checksum records.
+# Structural checks still scan them for merge markers and oversized files.
 # A change to generated Rust models also triggers the local Rust hooks, which
 # format and lint the whole workspace (see docs/development.md).
 repos:
@@ -25,8 +25,8 @@ repos:
         exclude: \.rs$
       - id: check-toml
       - id: check-yaml
-        # Exact upstream DRS snapshot has a duplicate description key; its SHA-256
-        # is pinned in testbed/pack/spec-pins.json. Keep the published bytes.
+        # This exact upstream DRS snapshot has a duplicate description key.
+        # spec-pins.json pins its SHA-256; preserve the published bytes.
         exclude: ^testbed/pack/drs/components/parameters/BulkObjectIdNoPassport\.yaml$
       - id: end-of-file-fixer
         exclude: >-
@@ -82,8 +82,8 @@ repos:
         exclude: >-
           (?x)^(
             lib/src/clients/[^/]+/models/|utils/patches/
-            |testbed/pack/tes\.openapi\.yaml$
             |testbed/pack/drs/tags/Auth\.md$
+            |testbed/pack/tes\.openapi\.yaml$
           )
   # The same commands as the `lint` job; they need the toolchain from
   # `rust-toolchain.toml`
