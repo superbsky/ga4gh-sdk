@@ -1,0 +1,415 @@
+{
+  "checked_cycle": "2026-11-11T12:57:47.149Z",
+  "completed_validation_at": "2026-11-11T13:14:15.317505+00:00",
+  "upstream_main": "dd2456ba8387946aaf4e0d8115d8f496aabbdbd8",
+  "source_commit": "6bbe41a7405c4a6d82f4301b0c10dccbfef88b24",
+  "source_tree": "14fe9ac5b4f71e0645713319e9e8b5d55ce85250",
+  "main_ci": {
+    "id": 43025318800,
+    "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43025318800",
+    "conclusion": "success"
+  },
+  "pull_requests": [
+    {
+      "number": 149,
+      "head": "0b870d1c496166c29549b48117954d9334eb5ae9",
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/149",
+      "mergeable": "MERGEABLE",
+      "ci_run_ids": [
+        43026593654
+      ],
+      "successful_checks": 10
+    },
+    {
+      "number": 150,
+      "head": "4d245510d389f109798d9bf25cf063084ff1edd7",
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/150",
+      "mergeable": "MERGEABLE",
+      "ci_run_ids": [
+        43004481742
+      ],
+      "successful_checks": 8
+    },
+    {
+      "number": 151,
+      "head": "38e721c5681a76a712b939f3b9940e5927e305de",
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/151",
+      "mergeable": "MERGEABLE",
+      "ci_run_ids": [
+        43018636360
+      ],
+      "successful_checks": 10
+    },
+    {
+      "number": 153,
+      "head": "3fcece1869d1dde90559e67f912603da5f6a9829",
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/153",
+      "mergeable": "MERGEABLE",
+      "ci_run_ids": [
+        43026307639
+      ],
+      "successful_checks": 10
+    },
+    {
+      "number": 155,
+      "head": "482ff37b7582c3b0e632359b1ff3b65d1c37510e",
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/155",
+      "mergeable": "MERGEABLE",
+      "ci_run_ids": [
+        43026317021
+      ],
+      "successful_checks": 10
+    },
+    {
+      "number": 156,
+      "head": "953e104f115f19e901aafa50aaf7f6bd880e3b4a",
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/156",
+      "mergeable": "MERGEABLE",
+      "ci_run_ids": [
+        43026324002
+      ],
+      "successful_checks": 10
+    },
+    {
+      "number": 157,
+      "head": "2e42c8623b8e8f5a42146256221dea0dd615c51b",
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/157",
+      "mergeable": "MERGEABLE",
+      "ci_run_ids": [
+        43026333745
+      ],
+      "successful_checks": 10
+    },
+    {
+      "number": 158,
+      "head": "537e4d1d7822389c5774feb9b4378bd8b13ce81d",
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/158",
+      "mergeable": "MERGEABLE",
+      "ci_run_ids": [
+        43026341695
+      ],
+      "successful_checks": 10
+    }
+  ],
+  "fix_commit": "0b870d1c496166c29549b48117954d9334eb5ae9",
+  "fix": "Remove identical duplicate direct serde=1 from cli/Cargo.toml after merging main safe-output/query/custom-config changes. No generated model edit.",
+  "regression_before_fix": {
+    "source_commit_before_fix": "1bb0663012dfa7ff8320ebf39d439a4320a5895c",
+    "source_commit_after_fix": "719f0d0",
+    "regression": "cargo fmt --all --check failed before rustfmt: cargo metadata duplicate key cli/Cargo.toml line19 serde. Each of six clean merged phase manifests fails TOML parsing;150/151 valid.",
+    "fix": "Remove identical duplicate serde=1; retain one direct serde dependency, workflow-contracts feature and main safe JSON output.",
+    "affected_prs": [
+      149,
+      153,
+      155,
+      156,
+      157,
+      158
+    ]
+  },
+  "fresh_local_checks": {
+    "fmt": "passed",
+    "clippy_workspace_all_targets_workflow_contracts": "passed; pre-existing warnings remain",
+    "build_workspace_workflow_contracts": "passed",
+    "test_workspace_workflow_contracts": {
+      "passed": 350,
+      "failed": 0,
+      "ignored": 10
+    },
+    "preserve_order_query_workflow_reuse": {
+      "passed": 32,
+      "failed": 0,
+      "ignored": 1
+    },
+    "standalone_protes": {
+      "passed": 5,
+      "failed": 0,
+      "ignored": 0
+    },
+    "rebuilt_python": {
+      "passed": 382,
+      "subtests": 3,
+      "failed": 0,
+      "python": "3.13.3"
+    },
+    "downstream_extensions": {
+      "passed": 4,
+      "failed": 0,
+      "ignored": 0,
+      "default_features": false,
+      "clients": [
+        "TES",
+        "WES",
+        "AsyncTES",
+        "DRS"
+      ]
+    },
+    "shared_scenarios": {
+      "server": 9,
+      "sdk": 1,
+      "maintained_rest_wes_provider": 7,
+      "histories_match": true,
+      "evidence_class": "simulated-protocol"
+    },
+    "file_hooks": 14
+  },
+  "validation_layers": {
+    "runtime": {
+      "source_commit": "719f0d0628264cc7785ecf54696b68889eda5427",
+      "source_tree": "40c4ad7132e27e6a2d8d01bba4009bc493244b29",
+      "main": "2e5ee862eb2263b398b56398237ce13208940964",
+      "checks": {
+        "fmt": "passed",
+        "clippy_workspace_all_targets_workflow_contracts": "passed; pre-existing warnings remain",
+        "build_workspace_workflow_contracts": "passed",
+        "test_workspace_workflow_contracts": {
+          "passed": 350,
+          "failed": 0,
+          "ignored": 10
+        },
+        "preserve_order_query_workflow_reuse": {
+          "passed": 32,
+          "failed": 0,
+          "ignored": 1
+        },
+        "standalone_protes": {
+          "passed": 5,
+          "failed": 0,
+          "ignored": 0
+        },
+        "rebuilt_python": {
+          "passed": 382,
+          "subtests": 3,
+          "failed": 0,
+          "python": "3.13.3"
+        },
+        "downstream_extensions": {
+          "passed": 4,
+          "failed": 0,
+          "ignored": 0,
+          "default_features": false,
+          "clients": [
+            "TES",
+            "WES",
+            "AsyncTES",
+            "DRS"
+          ]
+        },
+        "shared_scenarios": {
+          "server": 9,
+          "sdk": 1,
+          "maintained_rest_wes_provider": 7,
+          "histories_match": true,
+          "evidence_class": "simulated-protocol"
+        },
+        "file_hooks": 14
+      }
+    },
+    "spelling_hook_update": {
+      "source_commit": "6bbe41a7405c4a6d82f4301b0c10dccbfef88b24",
+      "source_tree": "14fe9ac5b4f71e0645713319e9e8b5d55ce85250",
+      "main": "dd2456ba8387946aaf4e0d8115d8f496aabbdbd8",
+      "changed_files": [
+        ".pre-commit-config.yaml"
+      ],
+      "file_hooks": 14,
+      "typos": "1.52.0",
+      "runtime_evidence_reused": "Rust/Python/data/manifests/lockfile unchanged in this later layer."
+    }
+  },
+  "candidate_source_identity": [
+    {
+      "pr": 149,
+      "head": "0b870d1c496166c29549b48117954d9334eb5ae9",
+      "relative_to_clean_merge_changed_files": [
+        "cli/Cargo.toml"
+      ],
+      "cli_manifest_matches_tested_source": true,
+      "models_generator_and_python_match_main": true
+    },
+    {
+      "pr": 153,
+      "head": "3fcece1869d1dde90559e67f912603da5f6a9829",
+      "relative_to_clean_merge_changed_files": [
+        "cli/Cargo.toml"
+      ],
+      "cli_manifest_matches_tested_source": true,
+      "models_generator_and_python_match_main": true
+    },
+    {
+      "pr": 155,
+      "head": "482ff37b7582c3b0e632359b1ff3b65d1c37510e",
+      "relative_to_clean_merge_changed_files": [
+        "cli/Cargo.toml"
+      ],
+      "cli_manifest_matches_tested_source": true,
+      "models_generator_and_python_match_main": true
+    },
+    {
+      "pr": 156,
+      "head": "953e104f115f19e901aafa50aaf7f6bd880e3b4a",
+      "relative_to_clean_merge_changed_files": [
+        "cli/Cargo.toml"
+      ],
+      "cli_manifest_matches_tested_source": true,
+      "models_generator_and_python_match_main": true
+    },
+    {
+      "pr": 157,
+      "head": "2e42c8623b8e8f5a42146256221dea0dd615c51b",
+      "relative_to_clean_merge_changed_files": [
+        "cli/Cargo.toml"
+      ],
+      "cli_manifest_matches_tested_source": true,
+      "models_generator_and_python_match_main": true
+    },
+    {
+      "pr": 158,
+      "head": "537e4d1d7822389c5774feb9b4378bd8b13ce81d",
+      "relative_to_clean_merge_changed_files": [
+        "cli/Cargo.toml"
+      ],
+      "cli_manifest_matches_tested_source": true,
+      "models_generator_and_python_match_main": true
+    }
+  ],
+  "latest_main_compatibility": [
+    {
+      "pr": 149,
+      "head": "0b870d1c496166c29549b48117954d9334eb5ae9",
+      "merged_tree": "08c5fba46320a03a93fdb248ccb55d1e062b05a0",
+      "cli_manifest_valid": true
+    },
+    {
+      "pr": 150,
+      "head": "4d245510d389f109798d9bf25cf063084ff1edd7",
+      "merged_tree": "ad83eb643c008b56af65654aa87f344e9ab0e785",
+      "cli_manifest_valid": true
+    },
+    {
+      "pr": 151,
+      "head": "38e721c5681a76a712b939f3b9940e5927e305de",
+      "merged_tree": "9643a80c5340fd207d7393a9cff54c9fb5a35530",
+      "cli_manifest_valid": true
+    },
+    {
+      "pr": 153,
+      "head": "3fcece1869d1dde90559e67f912603da5f6a9829",
+      "merged_tree": "b85c5ccb919b6b218a27afc0cb0f61007a396f68",
+      "cli_manifest_valid": true
+    },
+    {
+      "pr": 155,
+      "head": "482ff37b7582c3b0e632359b1ff3b65d1c37510e",
+      "merged_tree": "47875bfd674a20ad35087237d91c0cb9328b8983",
+      "cli_manifest_valid": true
+    },
+    {
+      "pr": 156,
+      "head": "953e104f115f19e901aafa50aaf7f6bd880e3b4a",
+      "merged_tree": "1eb7cf9d484a9ed89d53580dbccfd580d72d3c24",
+      "cli_manifest_valid": true
+    },
+    {
+      "pr": 157,
+      "head": "2e42c8623b8e8f5a42146256221dea0dd615c51b",
+      "merged_tree": "d15ff9cdec994f830f20ec823f0fd3863ab3b76b",
+      "cli_manifest_valid": true
+    },
+    {
+      "pr": 158,
+      "head": "537e4d1d7822389c5774feb9b4378bd8b13ce81d",
+      "merged_tree": "2f293874d927cd1cd0e947686127d47ec1d3b34c",
+      "cli_manifest_valid": true
+    }
+  ],
+  "model_generation": "Reviewed models/template/patches unchanged; reuse prior six-API/107-client clean regeneration evidence. No generator rerun or hand model edit this cycle.",
+  "changed_prs": [
+    149,
+    153,
+    155,
+    156,
+    157,
+    158
+  ],
+  "unchanged_prs": [
+    150,
+    151
+  ],
+  "maintainer_updates": {
+    "195": "Maintainer-approved safe CLI rendering merged77cdd88; closes180. JSON id/run_id supports opaque ID round trips; controls/bidi escaped without changing values; syntax-only validation retains valid deep/large-number JSON.",
+    "199": "Maintainer-approved shared query policy merged11f20e0; closes182. Explicit sorted keys survive downstream serde_json/preserve_order, repeated item order retained; invalid list/object query values rejected consistently.",
+    "200": "Maintainer-approved custom configuration merged2e5ee86; closes96. New Rust enum/extra field and Python custom-section/token-env APIs verified with dependent phases and downstream extension crate.",
+    "197": "Maintainer merged spelling hook1.52.0 as dd2456b during validation; only CI config changed. All14 file hooks pass on the later source; prior runtime source/inputs unchanged and results reused.",
+    "201": "Separate maintainer WES docs/reserved-field follow-up to198, initially observed draft/conflicting12e25ef and later ready/mergeable427587d with green10CI. No monitor edit to that branch; final observation is recorded separately."
+  },
+  "observed_dependency_prs": [
+    {
+      "number": 187,
+      "state": "OPEN",
+      "head": "212f952a15b7934ea6af43dcc619b72a6d11fb5a",
+      "is_draft": true,
+      "mergeable": "UNKNOWN",
+      "updated_at": "2026-11-11T12:21:54Z"
+    },
+    {
+      "number": 195,
+      "state": "MERGED",
+      "head": "cf316b0ce40f22fe35391071bbc22e783f4a4192",
+      "is_draft": false,
+      "mergeable": "UNKNOWN",
+      "updated_at": "2026-11-11T12:35:59Z"
+    },
+    {
+      "number": 196,
+      "state": "OPEN",
+      "head": "f93e30a47a113f5b8e1276a973f05fcd1cb08386",
+      "is_draft": true,
+      "mergeable": "UNKNOWN",
+      "updated_at": "2026-11-11T12:12:18Z"
+    },
+    {
+      "number": 197,
+      "state": "MERGED",
+      "head": "6ef9e8dbab159483b6c650681798bf68d5e80ae8",
+      "is_draft": false,
+      "mergeable": "UNKNOWN",
+      "updated_at": "2026-11-11T13:00:59Z"
+    },
+    {
+      "number": 199,
+      "state": "MERGED",
+      "head": "922ed7c0ad64598cecfa0a022427d997e6f0a1f8",
+      "is_draft": false,
+      "mergeable": "UNKNOWN",
+      "updated_at": "2026-11-11T12:47:32Z"
+    },
+    {
+      "number": 200,
+      "state": "MERGED",
+      "head": "3660d0de7672d2a25aa2e94a41e76e7de8cdff2e",
+      "is_draft": false,
+      "mergeable": "UNKNOWN",
+      "updated_at": "2026-11-11T12:55:00Z"
+    },
+    {
+      "number": 201,
+      "state": "OPEN",
+      "head": "427587d5e08ff79b142f0fad6dadbde14c6381a0",
+      "is_draft": false,
+      "mergeable": "MERGEABLE",
+      "updated_at": "2026-11-11T13:06:18Z"
+    }
+  ],
+  "previous_report": "https://github.com/superbsky/ga4gh-sdk/blob/test/monitor-wes-main-validation/reports/ga4gh-sdk-heartbeat-2026-11-11-1155.json",
+  "historical_evidence": "Earlier exact physical/provider and generated-model evidence is preserved with its limits; current shared scenario is simulated protocol only.",
+  "external_gates": [
+    "Human review and upstream merge.",
+    "Production operator integration for sessions/OpenBao.",
+    "Accepted live Seqera execution remains unverified; no additional cloud POST authorized or made.",
+    "Previously observed bounded Nextflow physical-container cleanup failure remains recorded."
+  ],
+  "fresh_cloud_submissions": 0,
+  "no_force_push": true,
+  "no_github_pr_merge_by_monitor": true
+}
