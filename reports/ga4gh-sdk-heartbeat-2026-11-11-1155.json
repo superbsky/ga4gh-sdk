@@ -1,0 +1,277 @@
+{
+  "checked_cycle": "2026-11-11T11:55:46.404Z",
+  "completed_validation_at": "2026-11-11T12:20:31.983991+00:00",
+  "upstream_main": "cc7bd0eab8c772f4b90cc29126478934036f84b2",
+  "source_commit": "ee231f59e2c48c34c0465bc18f6ae701554524f1",
+  "source_tree": "51af565d4459c1cefee9456d4d5c6f177b188572",
+  "main_ci": {
+    "id": 43016098345,
+    "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43016098345",
+    "conclusion": "success"
+  },
+  "pull_requests": [
+    {
+      "number": 149,
+      "head": "7f5571b13b9c09681383daee855557b24d5495d3",
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/149",
+      "mergeable": "MERGEABLE",
+      "ci_run_ids": [
+        43018604800
+      ],
+      "successful_checks": 10
+    },
+    {
+      "number": 150,
+      "head": "4d245510d389f109798d9bf25cf063084ff1edd7",
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/150",
+      "mergeable": "MERGEABLE",
+      "ci_run_ids": [
+        43004481742
+      ],
+      "successful_checks": 8
+    },
+    {
+      "number": 151,
+      "head": "38e721c5681a76a712b939f3b9940e5927e305de",
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/151",
+      "mergeable": "MERGEABLE",
+      "ci_run_ids": [
+        43018636360
+      ],
+      "successful_checks": 10
+    },
+    {
+      "number": 153,
+      "head": "e6fce4b17203bd262751b213eb15d74ee599bf8b",
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/153",
+      "mergeable": "MERGEABLE",
+      "ci_run_ids": [
+        43018468631
+      ],
+      "successful_checks": 10
+    },
+    {
+      "number": 155,
+      "head": "9d810c4e1abe315df306afbaa5a0e6cc9e936a6b",
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/155",
+      "mergeable": "MERGEABLE",
+      "ci_run_ids": [
+        43018471472
+      ],
+      "successful_checks": 10
+    },
+    {
+      "number": 156,
+      "head": "5d6c74949b1720e5a4b7f7b4b4ba34660f58129b",
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/156",
+      "mergeable": "MERGEABLE",
+      "ci_run_ids": [
+        43018479318
+      ],
+      "successful_checks": 10
+    },
+    {
+      "number": 157,
+      "head": "b68ac62cfbb671b91179c6b7cb2429d4715ca348",
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/157",
+      "mergeable": "MERGEABLE",
+      "ci_run_ids": [
+        43018484665
+      ],
+      "successful_checks": 10
+    },
+    {
+      "number": 158,
+      "head": "002f4522c3c2ea288318b5585ce0e2564e45f2ff",
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/158",
+      "mergeable": "MERGEABLE",
+      "ci_run_ids": [
+        43018492569
+      ],
+      "successful_checks": 10
+    }
+  ],
+  "fix": "Executable flags for16 phase Python scripts. Exact-file exceptions prevent rewriting checksummed upstream schema snapshots; one exact DRS snapshot retains its published duplicate YAML description key. No source/model/fixture bytes changed relative to the clean main merge.",
+  "fresh_local_checks": {
+    "file_hooks": {
+      "passed": 14,
+      "rust_hooks": "Skipped as in CI; Rust source, manifests, lockfile and generated client blobs unchanged except main comment typo. Prior Rust evidence reused.",
+      "each_affected_pr": 7
+    },
+    "direct_scenario_script": {
+      "server_tests": 9,
+      "failed": 0,
+      "evidence_class": "simulated-protocol"
+    },
+    "pinned_snapshot_sha256": {
+      "passed": 55,
+      "modified": 0
+    },
+    "source_identity": "All changed files relative to each clean merged tree are CI config or mode-only script changes; data/production blobs unchanged."
+  },
+  "candidate_source_identity": [
+    {
+      "pr": 149,
+      "prior_head": "45530ff689b772d60deadd006ab17cd95b720c18",
+      "head": "7f5571b13b9c09681383daee855557b24d5495d3",
+      "local_branch": "fix/monitor-ci-main-149",
+      "changed_paths_relative_to_clean_merge": [
+        ".pre-commit-config.yaml",
+        "examples/qc-demo/view_report.py",
+        "tests/run-phase2-qc.py"
+      ],
+      "source_blobs_unchanged": true,
+      "precommit_exit": 0
+    },
+    {
+      "pr": 151,
+      "prior_head": "f897cefc886755896a940229edf12c6720b7031b",
+      "head": "38e721c5681a76a712b939f3b9940e5927e305de",
+      "local_branch": "fix/monitor-ci-main-151",
+      "changed_paths_relative_to_clean_merge": [
+        "examples/provider-contracts/openbao_feasibility.py",
+        "examples/provider-contracts/session_feasibility.py"
+      ],
+      "source_blobs_unchanged": true,
+      "precommit_exit": 0
+    },
+    {
+      "pr": 153,
+      "prior_head": "7610b171de3d004cb6138f4aa3f52e9496e82c72",
+      "head": "e6fce4b17203bd262751b213eb15d74ee599bf8b",
+      "local_branch": "fix/monitor-ci-main-153",
+      "changed_paths_relative_to_clean_merge": [
+        ".pre-commit-config.yaml",
+        "examples/qc-demo/view_report.py",
+        "testbed/export-oci.py",
+        "testbed/server.py",
+        "tests/run-h3-scenarios.py",
+        "tests/run-phase2-qc.py"
+      ],
+      "source_blobs_unchanged": true,
+      "precommit_exit": 0
+    },
+    {
+      "pr": 155,
+      "prior_head": "1fdc55a27d0c1c050e12d7cf263aa9a6c03954d0",
+      "head": "9d810c4e1abe315df306afbaa5a0e6cc9e936a6b",
+      "local_branch": "fix/monitor-ci-main-155",
+      "changed_paths_relative_to_clean_merge": [
+        ".pre-commit-config.yaml",
+        "examples/portable-execution/demo.py",
+        "examples/portable-execution/provider.py",
+        "examples/qc-demo/view_report.py",
+        "tests/run-phase2-qc.py"
+      ],
+      "source_blobs_unchanged": true,
+      "precommit_exit": 0
+    },
+    {
+      "pr": 156,
+      "prior_head": "5310b10272e4c442c9f54e763271f325c7a276dc",
+      "head": "5d6c74949b1720e5a4b7f7b4b4ba34660f58129b",
+      "local_branch": "fix/monitor-ci-main-156",
+      "changed_paths_relative_to_clean_merge": [
+        ".pre-commit-config.yaml",
+        "examples/qc-demo/view_report.py",
+        "examples/result-reuse/preprocess.py",
+        "examples/result-reuse/provider.py",
+        "examples/result-reuse/run.py",
+        "tests/run-phase2-qc.py"
+      ],
+      "source_blobs_unchanged": true,
+      "precommit_exit": 0
+    },
+    {
+      "pr": 157,
+      "prior_head": "32c0fd67b798b011c9d7bef5432b39d62e122884",
+      "head": "b68ac62cfbb671b91179c6b7cb2429d4715ca348",
+      "local_branch": "fix/monitor-ci-main-157",
+      "changed_paths_relative_to_clean_merge": [
+        ".pre-commit-config.yaml",
+        "examples/adaptive-campaign/controller.py",
+        "examples/portable-execution/demo.py",
+        "examples/portable-execution/provider.py",
+        "examples/qc-demo/view_report.py",
+        "tests/run-h3-campaign.py",
+        "tests/run-phase2-qc.py"
+      ],
+      "source_blobs_unchanged": true,
+      "precommit_exit": 0
+    },
+    {
+      "pr": 158,
+      "prior_head": "2ff9656130eb7e802abf363adad48c36f739b480",
+      "head": "002f4522c3c2ea288318b5585ce0e2564e45f2ff",
+      "local_branch": "fix/monitor-ci-main-158",
+      "changed_paths_relative_to_clean_merge": [
+        ".pre-commit-config.yaml",
+        "examples/qc-demo/view_report.py",
+        "testbed/export-oci.py",
+        "testbed/server.py",
+        "tests/interop/local_stack.py",
+        "tests/interop/run.py",
+        "tests/run-h3-scenarios.py",
+        "tests/run-phase2-qc.py"
+      ],
+      "source_blobs_unchanged": true,
+      "precommit_exit": 0
+    }
+  ],
+  "earlier_valid_evidence_reused": {
+    "report": "https://github.com/superbsky/ga4gh-sdk/blob/test/monitor-wes-main-validation/reports/ga4gh-sdk-heartbeat-2026-11-11-1055.json",
+    "model_composition": "ee06e46c4fbf165bf2150abcf3bab76e1de13ef1",
+    "rust_tests": {
+      "passed": 308,
+      "failed": 0,
+      "ignored": 10
+    },
+    "rebuilt_python": {
+      "passed": 364,
+      "subtests": 3
+    },
+    "downstream_extensions": 4,
+    "protes": 5,
+    "scenario_server_sdk_provider": [
+      9,
+      1,
+      7
+    ],
+    "regenerated_client_files_unchanged": 107,
+    "later_cli_composition": "b3de3782a9fedd4c61cfd1db8bdaf472ee0cc8b0",
+    "later_cli_tests": 68,
+    "reason": "Main#124 and current fixes do not change executable Rust/Python source, manifests, lockfile, model generation or pinned inputs. These are earlier checks, not fresh full-suite runs."
+  },
+  "changed_prs": [
+    149,
+    151,
+    153,
+    155,
+    156,
+    157,
+    158
+  ],
+  "unchanged_prs": [
+    150
+  ],
+  "maintainer_context": {
+    "124": "Merged by maintainer as cc7bd0e. Coverage/Pre-commit/templates/development guide entered main. Codecov/badge/enforced docs lint remain outside delivered scope in open #87.",
+    "32": "New maintainer clarification separates already merged CI outcomes and remaining release/docs work; comment reflects the pre-#124-merge snapshot.",
+    "187": "Unmerged draft wheel/release work. Exact a4b92e1 has14 passing checks but conflicts with the new CI main; no publishing or repair of another author branch by monitor.",
+    "195": "New, ready-for-review safe CLI output work; observed9696f5a green, no requested current-phase repair.",
+    "196": "Unmerged draft CLI releases stacked on #187; observed f93e30a has23 passing checks. No release/tag/environment/account changes by monitor.",
+    "197": "Unmerged Dependabot typos bump, observed6ef9e8d green; current pinned hook remains1.51.1 until maintainers merge an update.",
+    "198": "New unassigned Python WES docs/reserved-field validation follow-up to #177/#192. Static code/docs mismatch confirmed; tracked as separate scope, no new current-phase requirement.",
+    "199": "Unmerged query-policy refactor for #182, observed b067de5 green. Intentional Pager/Python validation corrections require dependent-contract review if merged."
+  },
+  "previous_report": "https://github.com/superbsky/ga4gh-sdk/blob/test/monitor-wes-main-validation/reports/ga4gh-sdk-heartbeat-2026-11-11-1055.json",
+  "external_gates": [
+    "Human review and upstream merge.",
+    "Production operator integration for sessions/OpenBao.",
+    "Accepted live Seqera execution remains unverified; no additional cloud POST authorized or made.",
+    "Previously observed bounded Nextflow physical-container cleanup failure remains recorded."
+  ],
+  "fresh_cloud_submissions": 0,
+  "no_force_push": true,
+  "no_github_pr_merge_by_monitor": true
+}
