@@ -256,12 +256,12 @@
   ],
   "maintainer_context": {
     "124": "Merged by maintainer as cc7bd0e. Coverage/Pre-commit/templates/development guide entered main. Codecov/badge/enforced docs lint remain outside delivered scope in open #87.",
-    "32": "New maintainer clarification separates already merged CI outcomes and remaining release/docs work; comment reflects the pre-#124-merge snapshot.",
-    "187": "Unmerged draft wheel/release work. Exact a4b92e1 has14 passing checks but conflicts with the new CI main; no publishing or repair of another author branch by monitor.",
-    "195": "New, ready-for-review safe CLI output work; observed9696f5a green, no requested current-phase repair.",
+    "32": "Comments6795124676 and6795340944 separate historic CI outcomes and confirm merged124 templates/pre-commit/Makefile/guide/artifacts. #87 still has Codecov/badge/practical docs quality gate; #53 broader onboarding guide. No new implementation instruction on our PRs.",
+    "187": "Maintainer merged current CI main into212f952 after the earlier a4b92e1 observation. Now OPEN/DRAFT/MERGEABLE with own exact-head CI pending; earlier14 passing jobs are historical only and do not validate212f952.",
+    "195": "Ready-for-review head9696f5a green. New maintainer comment6795332430 documents signed follow-ups98f3108/9696f5a: JSON id/run_id for round-trip opaque IDs, and escaping control/bidi inside JSON strings while preserving values/unknowns/layout/number spelling. Unmerged; verify these CLI contracts on merge.",
     "196": "Unmerged draft CLI releases stacked on #187; observed f93e30a has23 passing checks. No release/tag/environment/account changes by monitor.",
     "197": "Unmerged Dependabot typos bump, observed6ef9e8d green; current pinned hook remains1.51.1 until maintainers merge an update.",
-    "198": "New unassigned Python WES docs/reserved-field validation follow-up to #177/#192. Static code/docs mismatch confirmed; tracked as separate scope, no new current-phase requirement.",
+    "198": "New OPEN Python WES docs/reserved-field follow-up to #177/#192, now assigned to uniqueg/in progress. Static mismatch confirmed; separate maintainer work, no new current-phase requirement.",
     "199": "Unmerged query-policy refactor for #182, observed b067de5 green. Intentional Pager/Python validation corrections require dependent-contract review if merged."
   },
   "previous_report": "https://github.com/superbsky/ga4gh-sdk/blob/test/monitor-wes-main-validation/reports/ga4gh-sdk-heartbeat-2026-11-11-1055.json",
@@ -273,5 +273,18 @@
   ],
   "fresh_cloud_submissions": 0,
   "no_force_push": true,
-  "no_github_pr_merge_by_monitor": true
+  "no_github_pr_merge_by_monitor": true,
+  "final_context_checked_at": "2026-11-11T12:25:18.720690+00:00",
+  "latest_wheels_observation": {
+    "head": "212f952a15b7934ea6af43dcc619b72a6d11fb5a",
+    "mergeable": "MERGEABLE",
+    "is_draft": true,
+    "run_ids": [
+      43019700740
+    ],
+    "conclusion": "pending",
+    "earlier_head": "a4b92e1f330e82177942ecf7145cbd0f7bb4df54",
+    "earlier_passing_checks": 14
+  },
+  "earlier_observation_commit": "497823c040ccab035022ce1bf7c9578c0ddd464a"
 }
