@@ -1,0 +1,173 @@
+{
+  "checked_cycle": "2026-11-11T09:55:46.393Z",
+  "upstream_main": "b0f9465d3202200b3d4d493454e02b06fc9c5fb6",
+  "main_ci": {
+    "id": 43001540984,
+    "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43001540984",
+    "conclusion": "success"
+  },
+  "pull_requests": [
+    {
+      "number": 149,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/149",
+      "head": "76cb2dc0b2050ed305a28d71bf9a8c591e98be03",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci_run_ids": [
+        43000750567
+      ],
+      "ci_conclusion": "success"
+    },
+    {
+      "number": 150,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/150",
+      "head": "ef1420edc8c47c5810b3066bedd719e6a549435d",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci_run_ids": [
+        42856275310
+      ],
+      "ci_conclusion": "success"
+    },
+    {
+      "number": 151,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/151",
+      "head": "f897cefc886755896a940229edf12c6720b7031b",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci_run_ids": [
+        42856704911
+      ],
+      "ci_conclusion": "success"
+    },
+    {
+      "number": 153,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/153",
+      "head": "82ae852374cc6a215f03514c439e0bd092d2d7ea",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci_run_ids": [
+        43000755267
+      ],
+      "ci_conclusion": "success"
+    },
+    {
+      "number": 155,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/155",
+      "head": "087f05150eb4cb720be2bfe8a9cb7ea13323ae47",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci_run_ids": [
+        43000756919
+      ],
+      "ci_conclusion": "success"
+    },
+    {
+      "number": 156,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/156",
+      "head": "ca20ad4fb231285c3664aa3298589eaa583cf0d4",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci_run_ids": [
+        43000760942
+      ],
+      "ci_conclusion": "success"
+    },
+    {
+      "number": 157,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/157",
+      "head": "8e4cfd9209e57437defdbde2bfd66693c6be1362",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci_run_ids": [
+        43000764815
+      ],
+      "ci_conclusion": "success"
+    },
+    {
+      "number": 158,
+      "url": "https://github.com/ga4gh/ga4gh-sdk/pull/158",
+      "head": "ab4a79c6df79fcaa8d4b9e2c20f8a84cea71c6c3",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci_run_ids": [
+        43000769772
+      ],
+      "ci_conclusion": "success"
+    }
+  ],
+  "source_validation_layers": {
+    "wes_main": {
+      "main": "3fb651726e94e65d4234022ee1d86e788aac0771",
+      "source_commit": "5db9a72b03f742f956012832def47792059f9229",
+      "source_tree": "a930ff537f4faef996db4a485aaeb7f610222d9d",
+      "checks": {
+        "fmt": "passed",
+        "clippy": "passed (existing warnings)",
+        "build": "passed",
+        "workspace_tests": {
+          "passed": 279,
+          "failed": 0,
+          "ignored": 9
+        },
+        "python": {
+          "passed": 236,
+          "subtests": 3,
+          "python_version": "3.13.3",
+          "rebuilt_bindings": true
+        },
+        "downstream_pyo3": {
+          "passed": 2,
+          "covers": "TES and WES subclasses, WES register API, Send+Sync",
+          "fixture_lock_refresh": "Only earlier maintained YAML parser replacement; all common dependency versions retained."
+        },
+        "shared_scenarios": {
+          "server_tests": 9,
+          "sdk_tests": 1,
+          "maintained_rest_wes_provider_scenarios": 7,
+          "histories_match": true,
+          "evidence_class": "simulated-protocol"
+        }
+      }
+    },
+    "async_main": {
+      "main": "b0f9465d3202200b3d4d493454e02b06fc9c5fb6",
+      "composed_head": "b49c1f6ac492cb31483479bb2508118685a5d3c2",
+      "composed_tree": "2b25995f3cf787e677654ab04512022ab85f95f3",
+      "fmt": "passed",
+      "python_clippy": "passed (existing PyO3 warnings)",
+      "python_rust_tests": 6,
+      "rebuilt_python_tests": 280,
+      "python_subtests": 3,
+      "downstream_tests": 3,
+      "no_pr_repush_needed": true,
+      "rust_sdk_cli_unchanged_from_prior_layer": true,
+      "prior_workspace_evidence_reused": true
+    }
+  },
+  "fix": "76cb2dc0b2050ed305a28d71bf9a8c591e98be03 reconciles workflow/WES CLI registration and native WES discovery with the reviewed Send+Sync/structured-error contract; normal merges preserve maintainer commits.",
+  "changed_prs": [
+    149,
+    153,
+    155,
+    156,
+    157,
+    158
+  ],
+  "unchanged_prs": [
+    150,
+    151
+  ],
+  "generated_models_edited": false,
+  "historical_evidence": "Earlier Toil QC, CPU/Temporal, primitive session/OpenBao and provider measurements remain labelled historical; no new live/provider acceptance is inferred.",
+  "external_gates": [
+    "live Seqera acknowledgement/execution",
+    "bounded physical Nextflow container stop",
+    "production sessions/OpenBao operators"
+  ],
+  "fresh_cloud_submissions": 0,
+  "unmerged_context": {
+    "193": "Python test-fixture replacement; not adopted or implemented by monitor.",
+    "194": "PyO3 0.29 upgrade has failing CI and remains unmerged; current phase dependencies remain unchanged."
+  }
+}
