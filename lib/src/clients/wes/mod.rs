@@ -294,6 +294,7 @@ pub(crate) fn service_from_info(
             group: "org.ga4gh".into(),
             artifact: "wes".into(),
             version: info.supported_wes_versions[0].clone(),
+            ..Default::default()
         }),
         ..Default::default()
     })
