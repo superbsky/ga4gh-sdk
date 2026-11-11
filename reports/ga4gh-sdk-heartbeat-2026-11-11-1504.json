@@ -1,0 +1,1128 @@
+{
+  "format_version": 1,
+  "observed_at": "2026-11-11T15:36:51.450222+00:00",
+  "published_at": "2026-11-11T15:40:02.650678+00:00",
+  "purpose": "Explain historical no-jobs CI emails and record necessary H3 conflicts repaired after maintainer squash149, retaining main201.",
+  "main": "b5f90ec127745691883c2a9ffb42e648cafc7ec7",
+  "head_ci_base": "62695c833b7b4004e4c6182f70101504432b4eba",
+  "source_commit": "e335f8c433b09e2447d0ccb2f4289e0c4aa9bce5",
+  "source_tree": "130df80352c52b31ac541baa21fe83c81c1426ff",
+  "primary_prs": [
+    {
+      "number": 141,
+      "state": "MERGED",
+      "head": "c72c7787f210a2b902961a8667d2c8baaf3f5fea",
+      "mergeable": "UNKNOWN",
+      "ci": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T15:26:56Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42844285924/job/129927458028",
+          "name": "Lint",
+          "startedAt": "2026-11-10T15:26:14Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T15:27:27Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42844285924/job/129927457695",
+          "name": "Test",
+          "startedAt": "2026-11-10T15:26:13Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T15:27:12Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42844285924/job/129927457164",
+          "name": "Build",
+          "startedAt": "2026-11-10T15:26:13Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T15:27:14Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42844285924/job/129927457457",
+          "name": "Python tests (Python 3.11)",
+          "startedAt": "2026-11-10T15:26:13Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T15:27:28Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42844285924/job/129927456480",
+          "name": "Python tests (Python 3.15)",
+          "startedAt": "2026-11-10T15:26:13Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T15:27:29Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42844285924/job/129927456904",
+          "name": "Integration (funnel)",
+          "startedAt": "2026-11-10T15:26:13Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T15:27:24Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42844285924/job/129927457124",
+          "name": "Integration (wes-starter-kit)",
+          "startedAt": "2026-11-10T15:26:13Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T15:27:34Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42844285924/job/129928259486",
+          "name": "CI passed",
+          "startedAt": "2026-11-10T15:27:31Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        }
+      ]
+    },
+    {
+      "number": 142,
+      "state": "MERGED",
+      "head": "103d7737f9ac665bf76b3b73c4f43150f306e376",
+      "mergeable": "UNKNOWN",
+      "ci": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T16:22:31Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42853765605/job/129961124924",
+          "name": "Lint",
+          "startedAt": "2026-11-10T16:21:49Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T16:23:33Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42853765605/job/129961124068",
+          "name": "Test",
+          "startedAt": "2026-11-10T16:21:49Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T16:22:41Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42853765605/job/129961124602",
+          "name": "Build",
+          "startedAt": "2026-11-10T16:21:49Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T16:22:45Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42853765605/job/129961124625",
+          "name": "Python tests (Python 3.11)",
+          "startedAt": "2026-11-10T16:21:49Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T16:23:02Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42853765605/job/129961124378",
+          "name": "Python tests (Python 3.15)",
+          "startedAt": "2026-11-10T16:21:49Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T16:22:57Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42853765605/job/129961124469",
+          "name": "Integration (funnel)",
+          "startedAt": "2026-11-10T16:21:49Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T16:23:04Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42853765605/job/129961124521",
+          "name": "Integration (wes-starter-kit)",
+          "startedAt": "2026-11-10T16:21:49Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T16:23:54Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42853765605/job/129962162567",
+          "name": "CI passed",
+          "startedAt": "2026-11-10T16:23:50Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        }
+      ]
+    },
+    {
+      "number": 149,
+      "state": "MERGED",
+      "head": "1e40b4aa2b2416f49b624aee8d169ac61fcb9a63",
+      "mergeable": "UNKNOWN",
+      "ci": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T14:54:10Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43042801491/job/130598757349",
+          "name": "Lint",
+          "startedAt": "2026-11-11T14:53:12Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T14:55:54Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43042801491/job/130598757385",
+          "name": "Test",
+          "startedAt": "2026-11-11T14:53:12Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T14:54:08Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43042801491/job/130598757958",
+          "name": "Build",
+          "startedAt": "2026-11-11T14:53:11Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T14:54:22Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43042801491/job/130598757233",
+          "name": "Python tests (Python 3.11)",
+          "startedAt": "2026-11-11T14:53:10Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T14:54:45Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43042801491/job/130598757314",
+          "name": "Python tests (Python 3.15)",
+          "startedAt": "2026-11-11T14:53:18Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T14:54:18Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43042801491/job/130598757212",
+          "name": "Integration (funnel)",
+          "startedAt": "2026-11-11T14:53:11Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T14:55:59Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43042801491/job/130598757252",
+          "name": "Integration (wes-starter-kit)",
+          "startedAt": "2026-11-11T14:53:10Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T14:54:58Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43042801491/job/130598757409",
+          "name": "Coverage",
+          "startedAt": "2026-11-11T14:53:17Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T14:53:23Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43042801491/job/130598756942",
+          "name": "Pre-commit",
+          "startedAt": "2026-11-11T14:53:11Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T14:56:18Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43042801491/job/130600493375",
+          "name": "CI passed",
+          "startedAt": "2026-11-11T14:56:16Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        }
+      ]
+    },
+    {
+      "number": 150,
+      "state": "OPEN",
+      "head": "4d245510d389f109798d9bf25cf063084ff1edd7",
+      "mergeable": "MERGEABLE",
+      "ci": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T10:33:20Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43004481742/job/130468432557",
+          "name": "Lint",
+          "startedAt": "2026-11-11T10:32:36Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T10:34:09Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43004481742/job/130468432546",
+          "name": "Test",
+          "startedAt": "2026-11-11T10:32:36Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T10:33:35Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43004481742/job/130468431927",
+          "name": "Build",
+          "startedAt": "2026-11-11T10:32:36Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T10:34:12Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43004481742/job/130468432292",
+          "name": "Python tests (Python 3.11)",
+          "startedAt": "2026-11-11T10:32:37Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T10:33:54Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43004481742/job/130468432421",
+          "name": "Python tests (Python 3.15)",
+          "startedAt": "2026-11-11T10:32:36Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T10:32:47Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43004481742/job/130468432420",
+          "name": "Integration (funnel)",
+          "startedAt": "2026-11-11T10:32:37Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T10:32:43Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43004481742/job/130468432371",
+          "name": "Integration (wes-starter-kit)",
+          "startedAt": "2026-11-11T10:32:37Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T10:34:16Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43004481742/job/130469202130",
+          "name": "CI passed",
+          "startedAt": "2026-11-11T10:34:14Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        }
+      ]
+    },
+    {
+      "number": 151,
+      "state": "OPEN",
+      "head": "38e721c5681a76a712b939f3b9940e5927e305de",
+      "mergeable": "UNKNOWN",
+      "ci": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T12:15:58Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43018636360/job/130515952683",
+          "name": "Lint",
+          "startedAt": "2026-11-11T12:15:22Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T12:18:44Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43018636360/job/130515953282",
+          "name": "Test",
+          "startedAt": "2026-11-11T12:17:25Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T12:17:59Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43018636360/job/130515952594",
+          "name": "Build",
+          "startedAt": "2026-11-11T12:17:00Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T12:18:47Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43018636360/job/130515952789",
+          "name": "Python tests (Python 3.11)",
+          "startedAt": "2026-11-11T12:17:13Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T12:16:17Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43018636360/job/130515952523",
+          "name": "Python tests (Python 3.15)",
+          "startedAt": "2026-11-11T12:14:48Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T12:14:50Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43018636360/job/130515952257",
+          "name": "Integration (funnel)",
+          "startedAt": "2026-11-11T12:14:44Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T12:16:53Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43018636360/job/130515952586",
+          "name": "Integration (wes-starter-kit)",
+          "startedAt": "2026-11-11T12:16:47Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T12:16:21Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43018636360/job/130515952446",
+          "name": "Coverage",
+          "startedAt": "2026-11-11T12:14:59Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T12:15:56Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43018636360/job/130515952763",
+          "name": "Pre-commit",
+          "startedAt": "2026-11-11T12:15:42Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T12:18:52Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43018636360/job/130517969812",
+          "name": "CI passed",
+          "startedAt": "2026-11-11T12:18:49Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        }
+      ]
+    },
+    {
+      "number": 153,
+      "state": "OPEN",
+      "head": "05f848b70cece8f00d4fcb1feae424c5dab6cc17",
+      "mergeable": "MERGEABLE",
+      "ci": {
+        "run_id": 43048082776,
+        "conclusion": "success",
+        "checks": 10
+      }
+    },
+    {
+      "number": 155,
+      "state": "OPEN",
+      "head": "fbcdf57665fcc907a372e36836149e1071dae8e4",
+      "mergeable": "MERGEABLE",
+      "ci": {
+        "run_id": 43048359189,
+        "conclusion": "success",
+        "checks": 10
+      }
+    },
+    {
+      "number": 156,
+      "state": "OPEN",
+      "head": "0a578a147c8d666ebadd324e8cbe4177708a46cc",
+      "mergeable": "MERGEABLE",
+      "ci": {
+        "run_id": 43048381758,
+        "conclusion": "success",
+        "checks": 10
+      }
+    },
+    {
+      "number": 157,
+      "state": "OPEN",
+      "head": "d99213d9ec23dd31eab97cac09a2dc319d916e50",
+      "mergeable": "MERGEABLE",
+      "ci": {
+        "run_id": 43048386521,
+        "conclusion": "success",
+        "checks": 10
+      }
+    },
+    {
+      "number": 158,
+      "state": "OPEN",
+      "head": "e56a6b2cb05733da0abf01d75fff0cc4134d22a7",
+      "mergeable": "MERGEABLE",
+      "ci": {
+        "run_id": 43048403578,
+        "conclusion": "success",
+        "checks": 10
+      }
+    },
+    {
+      "number": 186,
+      "state": "MERGED",
+      "head": "b087ff05b586bc1038cb4121c07c2052fa6319d7",
+      "mergeable": "UNKNOWN",
+      "ci": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T18:06:54Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42871697331/job/130024297952",
+          "name": "Lint",
+          "startedAt": "2026-11-10T18:06:03Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T18:07:57Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42871697331/job/130024297353",
+          "name": "Test",
+          "startedAt": "2026-11-10T18:06:03Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T18:06:47Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42871697331/job/130024297880",
+          "name": "Build",
+          "startedAt": "2026-11-10T18:06:03Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T18:07:14Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42871697331/job/130024297758",
+          "name": "Python tests (Python 3.11)",
+          "startedAt": "2026-11-10T18:06:03Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T18:07:15Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42871697331/job/130024298050",
+          "name": "Python tests (Python 3.15)",
+          "startedAt": "2026-11-10T18:06:03Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T18:07:26Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42871697331/job/130024297787",
+          "name": "Integration (funnel)",
+          "startedAt": "2026-11-10T18:06:03Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T18:07:14Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42871697331/job/130024298097",
+          "name": "Integration (wes-starter-kit)",
+          "startedAt": "2026-11-10T18:06:03Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T18:08:02Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42871697331/job/130025468992",
+          "name": "CI passed",
+          "startedAt": "2026-11-10T18:07:59Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        }
+      ]
+    }
+  ],
+  "historical_email_runs": [
+    {
+      "id": 42746780960,
+      "head_sha": "00ce96e869940ffdfa5f07a66052d69a0af9670e",
+      "head_branch": "feat/phase2-workflow-contracts",
+      "created_at": "2026-11-10T03:02:30Z",
+      "updated_at": "2026-11-11T14:58:18Z",
+      "status": "completed",
+      "conclusion": "failure",
+      "html_url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42746780960",
+      "jobs": 0,
+      "check_runs": 0,
+      "annotation": "This workflow run required approval but was not approved before it expired.",
+      "annotation_verified": "Read directly from the public GitHub Actions summary using browser; all four exact run pages matched.",
+      "classification": "Historical PR149 fork run expired while awaiting approval; no tests executed. Later reviewed heads and current main have successful CI. No rerun, code fix, approval/settings change or extra maintainer ping required for these notifications."
+    },
+    {
+      "id": 42746326228,
+      "head_sha": "87ea44255a97d0c30b9c86d6dd506f48e968d32e",
+      "head_branch": "feat/phase2-workflow-contracts",
+      "created_at": "2026-11-10T02:58:22Z",
+      "updated_at": "2026-11-11T14:58:18Z",
+      "status": "completed",
+      "conclusion": "failure",
+      "html_url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42746326228",
+      "jobs": 0,
+      "check_runs": 0,
+      "annotation": "This workflow run required approval but was not approved before it expired.",
+      "annotation_verified": "Read directly from the public GitHub Actions summary using browser; all four exact run pages matched.",
+      "classification": "Historical PR149 fork run expired while awaiting approval; no tests executed. Later reviewed heads and current main have successful CI. No rerun, code fix, approval/settings change or extra maintainer ping required for these notifications."
+    },
+    {
+      "id": 42751074424,
+      "head_sha": "8d4e04024c2204d6c92068c23ce8f044775126fe",
+      "head_branch": "feat/phase2-workflow-contracts",
+      "created_at": "2026-11-10T03:41:34Z",
+      "updated_at": "2026-11-11T14:58:17Z",
+      "status": "completed",
+      "conclusion": "failure",
+      "html_url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42751074424",
+      "jobs": 0,
+      "check_runs": 0,
+      "annotation": "This workflow run required approval but was not approved before it expired.",
+      "annotation_verified": "Read directly from the public GitHub Actions summary using browser; all four exact run pages matched.",
+      "classification": "Historical PR149 fork run expired while awaiting approval; no tests executed. Later reviewed heads and current main have successful CI. No rerun, code fix, approval/settings change or extra maintainer ping required for these notifications."
+    },
+    {
+      "id": 42749303059,
+      "head_sha": "95884d865aa1c56d79f1fee38e6303e71339cf43",
+      "head_branch": "feat/phase2-workflow-contracts",
+      "created_at": "2026-11-10T03:25:04Z",
+      "updated_at": "2026-11-11T14:58:17Z",
+      "status": "completed",
+      "conclusion": "failure",
+      "html_url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42749303059",
+      "jobs": 0,
+      "check_runs": 0,
+      "annotation": "This workflow run required approval but was not approved before it expired.",
+      "annotation_verified": "Read directly from the public GitHub Actions summary using browser; all four exact run pages matched.",
+      "classification": "Historical PR149 fork run expired while awaiting approval; no tests executed. Later reviewed heads and current main have successful CI. No rerun, code fix, approval/settings change or extra maintainer ping required for these notifications."
+    }
+  ],
+  "notification_result": "All four exact historical PR149 runs failed because required approval expired; zero jobs/check-runs. Later149 and main CI passed. No code repair, rerun or auth/settings change needed for those emails.",
+  "normal_conflict_repairs": [
+    {
+      "pr": 153,
+      "prior": "b54ca15a14ffada51880ddd912284390607d0f5a",
+      "head": "05f848b70cece8f00d4fcb1feae424c5dab6cc17",
+      "main": "62695c833b7b4004e4c6182f70101504432b4eba",
+      "conflicts": [
+        ".pre-commit-config.yaml",
+        "cli/tests/workflow.rs",
+        "docs/workflow-contracts.md",
+        "lib/src/workflow/schemas/README.md",
+        "lib/tests/wes_native_discovery.rs",
+        "tests/README.md"
+      ],
+      "retained_QC_renames": [
+        {
+          "old": "examples/qc-demo/invalid-request.json",
+          "new": "examples/sequence-qc/invalid-request.json",
+          "sha256": "59abef00d1630db7f65832105ee7ce226f98aac981fe64c5ce31c5f159257aed"
+        },
+        {
+          "old": "examples/qc-demo/main.cwl",
+          "new": "examples/sequence-qc/main.cwl",
+          "sha256": "2eef0d0f062aece39e7aff371fb2cb4aba1b746d4e20fdeadfd15006b13f3227"
+        },
+        {
+          "old": "examples/qc-demo/policy.json",
+          "new": "examples/sequence-qc/policy.json",
+          "sha256": "07fcd33e82744b20ee355147069713fe0629860d095cdaf80050002efceba2b8"
+        },
+        {
+          "old": "examples/qc-demo/profile.json",
+          "new": "examples/sequence-qc/profile.json",
+          "sha256": "5bac09c12bd412e55a1e6580d2a2fc4494f0c57276e4917a4ca7a4b32a62b618"
+        },
+        {
+          "old": "examples/qc-demo/request.json",
+          "new": "examples/sequence-qc/request.json",
+          "sha256": "49309f00c06f6ef70962ee0ee3eb7e2ca5d80d9321c4e772075518d96a333f45"
+        },
+        {
+          "old": "examples/qc-demo/view_report.py",
+          "new": "examples/sequence-qc/view_report.py",
+          "sha256": "5f13ee95bdac10da05055ac5f506c0216f809ffc4af6040afacc44ea6c03787a"
+        }
+      ],
+      "normal_push": true,
+      "force": false
+    },
+    {
+      "pr": 155,
+      "prior": "b3375062b2454ce6321682efe066b759f1e019a2",
+      "head": "fbcdf57665fcc907a372e36836149e1071dae8e4",
+      "main": "62695c833b7b4004e4c6182f70101504432b4eba",
+      "conflicts": [
+        "cli/tests/workflow.rs",
+        "docs/workflow-contracts.md",
+        "lib/src/workflow/schemas/README.md",
+        "lib/tests/wes_native_discovery.rs",
+        "tests/README.md"
+      ],
+      "retained_QC_renames": [
+        {
+          "old": "examples/qc-demo/invalid-request.json",
+          "new": "examples/sequence-qc/invalid-request.json",
+          "sha256": "59abef00d1630db7f65832105ee7ce226f98aac981fe64c5ce31c5f159257aed"
+        },
+        {
+          "old": "examples/qc-demo/main.cwl",
+          "new": "examples/sequence-qc/main.cwl",
+          "sha256": "2eef0d0f062aece39e7aff371fb2cb4aba1b746d4e20fdeadfd15006b13f3227"
+        },
+        {
+          "old": "examples/qc-demo/policy.json",
+          "new": "examples/sequence-qc/policy.json",
+          "sha256": "07fcd33e82744b20ee355147069713fe0629860d095cdaf80050002efceba2b8"
+        },
+        {
+          "old": "examples/qc-demo/profile.json",
+          "new": "examples/sequence-qc/profile.json",
+          "sha256": "5bac09c12bd412e55a1e6580d2a2fc4494f0c57276e4917a4ca7a4b32a62b618"
+        },
+        {
+          "old": "examples/qc-demo/request.json",
+          "new": "examples/sequence-qc/request.json",
+          "sha256": "49309f00c06f6ef70962ee0ee3eb7e2ca5d80d9321c4e772075518d96a333f45"
+        },
+        {
+          "old": "examples/qc-demo/view_report.py",
+          "new": "examples/sequence-qc/view_report.py",
+          "sha256": "5f13ee95bdac10da05055ac5f506c0216f809ffc4af6040afacc44ea6c03787a"
+        }
+      ],
+      "normal_push": true,
+      "force": false
+    },
+    {
+      "pr": 156,
+      "prior": "8b4a204953ed7244c90c0e9c02cdc9ab16282ddc",
+      "head": "0a578a147c8d666ebadd324e8cbe4177708a46cc",
+      "main": "62695c833b7b4004e4c6182f70101504432b4eba",
+      "conflicts": [
+        "cli/tests/workflow.rs",
+        "docs/workflow-contracts.md",
+        "lib/src/workflow/mod.rs",
+        "lib/src/workflow/schemas/README.md",
+        "lib/tests/wes_native_discovery.rs",
+        "tests/README.md"
+      ],
+      "retained_QC_renames": [
+        {
+          "old": "examples/qc-demo/invalid-request.json",
+          "new": "examples/sequence-qc/invalid-request.json",
+          "sha256": "59abef00d1630db7f65832105ee7ce226f98aac981fe64c5ce31c5f159257aed"
+        },
+        {
+          "old": "examples/qc-demo/main.cwl",
+          "new": "examples/sequence-qc/main.cwl",
+          "sha256": "2eef0d0f062aece39e7aff371fb2cb4aba1b746d4e20fdeadfd15006b13f3227"
+        },
+        {
+          "old": "examples/qc-demo/policy.json",
+          "new": "examples/sequence-qc/policy.json",
+          "sha256": "07fcd33e82744b20ee355147069713fe0629860d095cdaf80050002efceba2b8"
+        },
+        {
+          "old": "examples/qc-demo/profile.json",
+          "new": "examples/sequence-qc/profile.json",
+          "sha256": "5bac09c12bd412e55a1e6580d2a2fc4494f0c57276e4917a4ca7a4b32a62b618"
+        },
+        {
+          "old": "examples/qc-demo/request.json",
+          "new": "examples/sequence-qc/request.json",
+          "sha256": "49309f00c06f6ef70962ee0ee3eb7e2ca5d80d9321c4e772075518d96a333f45"
+        },
+        {
+          "old": "examples/qc-demo/view_report.py",
+          "new": "examples/sequence-qc/view_report.py",
+          "sha256": "5f13ee95bdac10da05055ac5f506c0216f809ffc4af6040afacc44ea6c03787a"
+        }
+      ],
+      "normal_push": true,
+      "force": false
+    },
+    {
+      "pr": 157,
+      "prior": "c501e3e44a82fa3e2067ff82bc0ad54c4a247ca3",
+      "head": "d99213d9ec23dd31eab97cac09a2dc319d916e50",
+      "main": "62695c833b7b4004e4c6182f70101504432b4eba",
+      "conflicts": [
+        "cli/tests/workflow.rs",
+        "docs/workflow-contracts.md",
+        "lib/src/workflow/schemas/README.md",
+        "lib/tests/wes_native_discovery.rs",
+        "tests/README.md"
+      ],
+      "retained_QC_renames": [
+        {
+          "old": "examples/qc-demo/invalid-request.json",
+          "new": "examples/sequence-qc/invalid-request.json",
+          "sha256": "59abef00d1630db7f65832105ee7ce226f98aac981fe64c5ce31c5f159257aed"
+        },
+        {
+          "old": "examples/qc-demo/main.cwl",
+          "new": "examples/sequence-qc/main.cwl",
+          "sha256": "2eef0d0f062aece39e7aff371fb2cb4aba1b746d4e20fdeadfd15006b13f3227"
+        },
+        {
+          "old": "examples/qc-demo/policy.json",
+          "new": "examples/sequence-qc/policy.json",
+          "sha256": "07fcd33e82744b20ee355147069713fe0629860d095cdaf80050002efceba2b8"
+        },
+        {
+          "old": "examples/qc-demo/profile.json",
+          "new": "examples/sequence-qc/profile.json",
+          "sha256": "5bac09c12bd412e55a1e6580d2a2fc4494f0c57276e4917a4ca7a4b32a62b618"
+        },
+        {
+          "old": "examples/qc-demo/request.json",
+          "new": "examples/sequence-qc/request.json",
+          "sha256": "49309f00c06f6ef70962ee0ee3eb7e2ca5d80d9321c4e772075518d96a333f45"
+        },
+        {
+          "old": "examples/qc-demo/view_report.py",
+          "new": "examples/sequence-qc/view_report.py",
+          "sha256": "5f13ee95bdac10da05055ac5f506c0216f809ffc4af6040afacc44ea6c03787a"
+        }
+      ],
+      "normal_push": true,
+      "force": false
+    },
+    {
+      "pr": 158,
+      "prior": "94d6f3c4cdbe6710d49ca26a34c2237fd6a609bb",
+      "head": "e56a6b2cb05733da0abf01d75fff0cc4134d22a7",
+      "main": "62695c833b7b4004e4c6182f70101504432b4eba",
+      "conflicts": [
+        ".pre-commit-config.yaml",
+        "cli/tests/workflow.rs",
+        "docs/workflow-contracts.md",
+        "lib/src/workflow/schemas/README.md",
+        "lib/tests/wes_native_discovery.rs",
+        "tests/README.md"
+      ],
+      "retained_QC_renames": [
+        {
+          "old": "examples/qc-demo/invalid-request.json",
+          "new": "examples/sequence-qc/invalid-request.json",
+          "sha256": "59abef00d1630db7f65832105ee7ce226f98aac981fe64c5ce31c5f159257aed"
+        },
+        {
+          "old": "examples/qc-demo/main.cwl",
+          "new": "examples/sequence-qc/main.cwl",
+          "sha256": "2eef0d0f062aece39e7aff371fb2cb4aba1b746d4e20fdeadfd15006b13f3227"
+        },
+        {
+          "old": "examples/qc-demo/policy.json",
+          "new": "examples/sequence-qc/policy.json",
+          "sha256": "07fcd33e82744b20ee355147069713fe0629860d095cdaf80050002efceba2b8"
+        },
+        {
+          "old": "examples/qc-demo/profile.json",
+          "new": "examples/sequence-qc/profile.json",
+          "sha256": "5bac09c12bd412e55a1e6580d2a2fc4494f0c57276e4917a4ca7a4b32a62b618"
+        },
+        {
+          "old": "examples/qc-demo/request.json",
+          "new": "examples/sequence-qc/request.json",
+          "sha256": "49309f00c06f6ef70962ee0ee3eb7e2ca5d80d9321c4e772075518d96a333f45"
+        },
+        {
+          "old": "examples/qc-demo/view_report.py",
+          "new": "examples/sequence-qc/view_report.py",
+          "sha256": "5f13ee95bdac10da05055ac5f506c0216f809ffc4af6040afacc44ea6c03787a"
+        }
+      ],
+      "normal_push": true,
+      "force": false
+    }
+  ],
+  "checks": {
+    "fmt": "passed",
+    "clippy_workspace_all_targets_workflow_contracts": "passed; existing warnings only",
+    "affected_library_contracts": {
+      "passed": 29,
+      "failed": 0,
+      "ignored": 2
+    },
+    "real_cli_workflow_tests": {
+      "passed": 4,
+      "failed": 0
+    },
+    "file_hooks": 14,
+    "renamed_qc_runner_syntax": "passed"
+  },
+  "main201_checks": {
+    "fmt": "passed",
+    "clippy_workspace_all_targets_workflow_contracts": "passed; existing warnings only",
+    "changed_cli_modules": [
+      "test result: ok. 17 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.72s",
+      "test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.22s"
+    ],
+    "rebuilt_python_wes": {
+      "passed": 93,
+      "failed": 0
+    },
+    "file_hooks": 14
+  },
+  "latest_main202_validation": {
+    "prior_source": "d27dc6ad7c76fc1c4696e8ed811cc9626ca026c9",
+    "source_commit": "e335f8c433b09e2447d0ccb2f4289e0c4aa9bce5",
+    "source_tree": "130df80352c52b31ac541baa21fe83c81c1426ff",
+    "latest_main": "b5f90ec127745691883c2a9ffb42e648cafc7ec7",
+    "head_ci_base": "62695c833b7b4004e4c6182f70101504432b4eba",
+    "effective_merge_trees": [
+      {
+        "pr": 153,
+        "unchanged_head": "05f848b70cece8f00d4fcb1feae424c5dab6cc17",
+        "main": "b5f90ec127745691883c2a9ffb42e648cafc7ec7",
+        "merged_tree": "2dbd410bdf978304865225834f2759f75d4921b3",
+        "clean": true
+      },
+      {
+        "pr": 155,
+        "unchanged_head": "fbcdf57665fcc907a372e36836149e1071dae8e4",
+        "main": "b5f90ec127745691883c2a9ffb42e648cafc7ec7",
+        "merged_tree": "9cda6eb8a93b68b528b202864ec96b896f106bb8",
+        "clean": true
+      },
+      {
+        "pr": 156,
+        "unchanged_head": "0a578a147c8d666ebadd324e8cbe4177708a46cc",
+        "main": "b5f90ec127745691883c2a9ffb42e648cafc7ec7",
+        "merged_tree": "770b800620e7d489dce307d4b64842ced0006c02",
+        "clean": true
+      },
+      {
+        "pr": 157,
+        "unchanged_head": "d99213d9ec23dd31eab97cac09a2dc319d916e50",
+        "main": "b5f90ec127745691883c2a9ffb42e648cafc7ec7",
+        "merged_tree": "cbeee46cb95511985eb3df7b2233c98b3682d6d0",
+        "clean": true
+      },
+      {
+        "pr": 158,
+        "unchanged_head": "e56a6b2cb05733da0abf01d75fff0cc4134d22a7",
+        "main": "b5f90ec127745691883c2a9ffb42e648cafc7ec7",
+        "merged_tree": "a86831e86b93b725fdb36b840422bbcd28aa10bd",
+        "clean": true
+      }
+    ],
+    "phase_head_pushes_for_base_only_change": false,
+    "checks": {
+      "fmt": "passed",
+      "clippy_workspace_all_targets_workflow_contracts": "passed; existing PyO3/CLI warning patterns remain",
+      "build_workspace_workflow_contracts": "passed",
+      "workspace_tests": {
+        "passed": 370,
+        "failed": 0,
+        "ignored": 10
+      },
+      "rebuilt_python": {
+        "passed": 395,
+        "subtests": 3,
+        "failed": 0
+      },
+      "downstream_default_features_false": {
+        "passed": 4,
+        "failed": 0
+      },
+      "file_hooks": 14
+    },
+    "scope": "Substantial Timeout/Configuration/discovery/submission API change tested on composition of all phases. Five published H3 heads unchanged after62695c8; effective trees with latest mainb5f90ec merge cleanly, not repushed for a base-only change. Generated models/templates/patches/manifests unchanged; prior model-generation proof reused."
+  },
+  "evidence_reuse": "Prior affected workflow/nativeWES/reuse tests33passed/2ignored use unchanged Rust code and exact renamed fixture bytes. Full prior Rust/Python/downstream/provider evidence remains historical, reused for unchanged portions only; no new fullsuite or liveSeqera/Nextflow/OpenBao claimed.",
+  "prior_runtime_report": {
+    "url": "https://github.com/superbsky/ga4gh-sdk/blob/test/monitor-wes-main-validation/reports/ga4gh-sdk-heartbeat-2026-11-11-1257.json",
+    "commit": "11b9f75f7ba7db5dba6e105bcaa8f415a8d4aee8",
+    "blob": "0bef347471c7e4d062b261ca97aa9a469fc6879f"
+  },
+  "prior_runtime_checks": {
+    "fmt": "passed",
+    "clippy_workspace_all_targets_workflow_contracts": "passed; pre-existing warnings remain",
+    "build_workspace_workflow_contracts": "passed",
+    "test_workspace_workflow_contracts": {
+      "passed": 350,
+      "failed": 0,
+      "ignored": 10
+    },
+    "preserve_order_query_workflow_reuse": {
+      "passed": 32,
+      "failed": 0,
+      "ignored": 1
+    },
+    "standalone_protes": {
+      "passed": 5,
+      "failed": 0,
+      "ignored": 0
+    },
+    "rebuilt_python": {
+      "passed": 382,
+      "subtests": 3,
+      "failed": 0,
+      "python": "3.13.3"
+    },
+    "downstream_extensions": {
+      "passed": 4,
+      "failed": 0,
+      "ignored": 0,
+      "default_features": false,
+      "clients": [
+        "TES",
+        "WES",
+        "AsyncTES",
+        "DRS"
+      ]
+    },
+    "shared_scenarios": {
+      "server": 9,
+      "sdk": 1,
+      "maintained_rest_wes_provider": 7,
+      "histories_match": true,
+      "evidence_class": "simulated-protocol"
+    },
+    "file_hooks": 14
+  },
+  "maintainer149_evidence": {
+    "comment_id": "6799056643",
+    "head": "1e40b4aa2b2416f49b624aee8d169ac61fcb9a63",
+    "checks": "make check onfe3446f; subsequent1e40b4a README link only. Local twoToil QC complete, goldenbytes/metrics verified, IPython consumedreports, equivalent_under_policy; transitivePython depsunlocked. Reported author evidence, not a new monitor-run container session."
+  },
+  "dependencies": [
+    {
+      "number": 187,
+      "state": "OPEN",
+      "headRefOid": "212f952a15b7934ea6af43dcc619b72a6d11fb5a",
+      "reviewDecision": "REVIEW_REQUIRED"
+    },
+    {
+      "number": 196,
+      "state": "OPEN",
+      "headRefOid": "f93e30a47a113f5b8e1276a973f05fcd1cb08386",
+      "reviewDecision": "REVIEW_REQUIRED"
+    },
+    {
+      "number": 201,
+      "state": "MERGED",
+      "headRefOid": "ae7cc01b25a5bd8eddab2a0fef33631e9beaa65b",
+      "reviewDecision": "APPROVED"
+    },
+    {
+      "number": 202,
+      "state": "MERGED",
+      "headRefOid": "23e59a509c4beacb5d35cf58553b23047c01d523",
+      "reviewDecision": "REVIEW_REQUIRED"
+    }
+  ],
+  "scope_notes": [
+    "Maintainer149 approved1e40b4a and squash-merged5f8f04e; author-reported fresh twoToil QC is local evidence, not external acceptance.",
+    "Main20162695c8 closes198 and adds pre-send PythonWES reserved-field ValueError plus CLI undefined-state coverage. Monitor rebuilt bindings and independently passed93WES tests and30affectedCLI tests.",
+    "PR20223e59a5 is maintainer-approved and merged asb5f90ec. Monitor independently checked the combined all-phase source with fullRust checks,395Python+3subtests,downstream4 and14hooks; published H3 heads not repushed for this base-only update.",
+    "Historical handoff archives removed in current tree per maintainer cleanup; precise commit-pinned historical links and previous report evidence remain preserved.",
+    "No PR149/150/151 source push; five H3 normal merges were necessary conflict repairs. No monitor PRmerge, forcepush, extra cloud submission, foreigninfra or account/settings action."
+  ],
+  "external_gates": [
+    "Accepted live Seqera status/log/cancel",
+    "Bounded physical Nextflow task-container stop",
+    "Production sessions/OpenBao/operator integration",
+    "Human review of remaining open phase PRs"
+  ]
+}
