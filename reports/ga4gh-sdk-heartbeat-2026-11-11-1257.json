@@ -1,9 +1,9 @@
 {
   "checked_cycle": "2026-11-11T12:57:47.149Z",
-  "completed_validation_at": "2026-11-11T13:14:15.317505+00:00",
+  "completed_validation_at": "2026-11-11T13:32:32.189054+00:00",
   "upstream_main": "dd2456ba8387946aaf4e0d8115d8f496aabbdbd8",
-  "source_commit": "6bbe41a7405c4a6d82f4301b0c10dccbfef88b24",
-  "source_tree": "14fe9ac5b4f71e0645713319e9e8b5d55ce85250",
+  "source_commit": "84ac582b24bdea756d9176e044af29110cb5f933",
+  "source_tree": "68ab3b670b5217a8481fafdea10fb721a483f9be",
   "main_ci": {
     "id": 43025318800,
     "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43025318800",
@@ -12,11 +12,11 @@
   "pull_requests": [
     {
       "number": 149,
-      "head": "0b870d1c496166c29549b48117954d9334eb5ae9",
+      "head": "6380074388412560efcff7ef18dd37615c400114",
       "url": "https://github.com/ga4gh/ga4gh-sdk/pull/149",
       "mergeable": "MERGEABLE",
       "ci_run_ids": [
-        43026593654
+        43027511671
       ],
       "successful_checks": 10
     },
@@ -42,56 +42,155 @@
     },
     {
       "number": 153,
-      "head": "3fcece1869d1dde90559e67f912603da5f6a9829",
+      "head": "b54ca15a14ffada51880ddd912284390607d0f5a",
       "url": "https://github.com/ga4gh/ga4gh-sdk/pull/153",
       "mergeable": "MERGEABLE",
       "ci_run_ids": [
-        43026307639
+        43028896815
       ],
       "successful_checks": 10
     },
     {
       "number": 155,
-      "head": "482ff37b7582c3b0e632359b1ff3b65d1c37510e",
+      "head": "b3375062b2454ce6321682efe066b759f1e019a2",
       "url": "https://github.com/ga4gh/ga4gh-sdk/pull/155",
       "mergeable": "MERGEABLE",
       "ci_run_ids": [
-        43026317021
+        43028901723
       ],
       "successful_checks": 10
     },
     {
       "number": 156,
-      "head": "953e104f115f19e901aafa50aaf7f6bd880e3b4a",
+      "head": "8b4a204953ed7244c90c0e9c02cdc9ab16282ddc",
       "url": "https://github.com/ga4gh/ga4gh-sdk/pull/156",
       "mergeable": "MERGEABLE",
       "ci_run_ids": [
-        43026324002
+        43028910481
       ],
       "successful_checks": 10
     },
     {
       "number": 157,
-      "head": "2e42c8623b8e8f5a42146256221dea0dd615c51b",
+      "head": "c501e3e44a82fa3e2067ff82bc0ad54c4a247ca3",
       "url": "https://github.com/ga4gh/ga4gh-sdk/pull/157",
       "mergeable": "MERGEABLE",
       "ci_run_ids": [
-        43026333745
+        43028914950
       ],
       "successful_checks": 10
     },
     {
       "number": 158,
-      "head": "537e4d1d7822389c5774feb9b4378bd8b13ce81d",
+      "head": "94d6f3c4cdbe6710d49ca26a34c2237fd6a609bb",
       "url": "https://github.com/ga4gh/ga4gh-sdk/pull/158",
       "mergeable": "MERGEABLE",
       "ci_run_ids": [
-        43026341695
+        43028919785
       ],
       "successful_checks": 10
     }
   ],
   "fix_commit": "0b870d1c496166c29549b48117954d9334eb5ae9",
+  "maintainer_fix_commit": "6380074388412560efcff7ef18dd37615c400114",
+  "maintainer_followup": {
+    "head": "6380074388412560efcff7ef18dd37615c400114",
+    "candidates": [
+      {
+        "pr": 153,
+        "prior_head": "3fcece1869d1dde90559e67f912603da5f6a9829",
+        "head": "b54ca15a14ffada51880ddd912284390607d0f5a",
+        "local_branch": "fix/monitor-workflow-dispatch-153",
+        "maintainer_head": "6380074388412560efcff7ef18dd37615c400114"
+      },
+      {
+        "pr": 155,
+        "prior_head": "482ff37b7582c3b0e632359b1ff3b65d1c37510e",
+        "head": "b3375062b2454ce6321682efe066b759f1e019a2",
+        "local_branch": "fix/monitor-workflow-dispatch-155",
+        "maintainer_head": "6380074388412560efcff7ef18dd37615c400114"
+      },
+      {
+        "pr": 156,
+        "prior_head": "953e104f115f19e901aafa50aaf7f6bd880e3b4a",
+        "head": "8b4a204953ed7244c90c0e9c02cdc9ab16282ddc",
+        "local_branch": "fix/monitor-workflow-dispatch-156",
+        "maintainer_head": "6380074388412560efcff7ef18dd37615c400114"
+      },
+      {
+        "pr": 157,
+        "prior_head": "2e42c8623b8e8f5a42146256221dea0dd615c51b",
+        "head": "c501e3e44a82fa3e2067ff82bc0ad54c4a247ca3",
+        "local_branch": "fix/monitor-workflow-dispatch-157",
+        "maintainer_head": "6380074388412560efcff7ef18dd37615c400114"
+      },
+      {
+        "pr": 158,
+        "prior_head": "537e4d1d7822389c5774feb9b4378bd8b13ce81d",
+        "head": "94d6f3c4cdbe6710d49ca26a34c2237fd6a609bb",
+        "local_branch": "fix/monitor-workflow-dispatch-158",
+        "maintainer_head": "6380074388412560efcff7ef18dd37615c400114"
+      }
+    ],
+    "source_commit": "84ac582b24bdea756d9176e044af29110cb5f933",
+    "note": "149 head managed/approved by maintainer; monitor does not push149. Five required H3 normal merges retain injected caller configuration fix."
+  },
+  "initial_manifest_source_identity": [
+    {
+      "pr": 149,
+      "head": "0b870d1c496166c29549b48117954d9334eb5ae9",
+      "relative_to_clean_merge_changed_files": [
+        "cli/Cargo.toml"
+      ],
+      "cli_manifest_matches_tested_source": true,
+      "models_generator_and_python_match_main": true
+    },
+    {
+      "pr": 153,
+      "head": "3fcece1869d1dde90559e67f912603da5f6a9829",
+      "relative_to_clean_merge_changed_files": [
+        "cli/Cargo.toml"
+      ],
+      "cli_manifest_matches_tested_source": true,
+      "models_generator_and_python_match_main": true
+    },
+    {
+      "pr": 155,
+      "head": "482ff37b7582c3b0e632359b1ff3b65d1c37510e",
+      "relative_to_clean_merge_changed_files": [
+        "cli/Cargo.toml"
+      ],
+      "cli_manifest_matches_tested_source": true,
+      "models_generator_and_python_match_main": true
+    },
+    {
+      "pr": 156,
+      "head": "953e104f115f19e901aafa50aaf7f6bd880e3b4a",
+      "relative_to_clean_merge_changed_files": [
+        "cli/Cargo.toml"
+      ],
+      "cli_manifest_matches_tested_source": true,
+      "models_generator_and_python_match_main": true
+    },
+    {
+      "pr": 157,
+      "head": "2e42c8623b8e8f5a42146256221dea0dd615c51b",
+      "relative_to_clean_merge_changed_files": [
+        "cli/Cargo.toml"
+      ],
+      "cli_manifest_matches_tested_source": true,
+      "models_generator_and_python_match_main": true
+    },
+    {
+      "pr": 158,
+      "head": "537e4d1d7822389c5774feb9b4378bd8b13ce81d",
+      "relative_to_clean_merge_changed_files": [
+        "cli/Cargo.toml"
+      ],
+      "cli_manifest_matches_tested_source": true,
+      "models_generator_and_python_match_main": true
+    }
+  ],
   "fix": "Remove identical duplicate direct serde=1 from cli/Cargo.toml after merging main safe-output/query/custom-config changes. No generated model edit.",
   "regression_before_fix": {
     "source_commit_before_fix": "1bb0663012dfa7ff8320ebf39d439a4320a5895c",
@@ -153,6 +252,7 @@
     },
     "file_hooks": 14
   },
+  "additional_compatibility_summary": "Maintainer head6380074 then fixed workflow submit configuration injection and clarified CLI help/docs. Fresh CLI fmt/Clippy and all82 CLI tests (including4 workflow integration tests) plus14 file hooks pass on the later combined source. SDK/Python/manifests/lockfile are unchanged, so their preceding results are reused.",
   "validation_layers": {
     "runtime": {
       "source_commit": "719f0d0628264cc7785ecf54696b68889eda5427",
@@ -215,69 +315,64 @@
       "file_hooks": 14,
       "typos": "1.52.0",
       "runtime_evidence_reused": "Rust/Python/data/manifests/lockfile unchanged in this later layer."
+    },
+    "maintainer_dispatch": {
+      "source_commit": "84ac582b24bdea756d9176e044af29110cb5f933",
+      "source_tree": "68ab3b670b5217a8481fafdea10fb721a483f9be",
+      "maintainer_head": "6380074388412560efcff7ef18dd37615c400114",
+      "changed_contract": "workflow submit through dispatch_with_config honors injected WES endpoint and bearer token; standalone dispatch retains file-based WES config. Help/docs clarify client-side workflow layer.",
+      "checks": {
+        "fmt": "passed",
+        "cli_clippy_all_targets": "passed",
+        "cli_tests": {
+          "passed": 82,
+          "failed": 0,
+          "ignored": 0
+        },
+        "workflow_integration_tests": 4,
+        "file_hooks": 14
+      },
+      "reuse": "SDK/Python/model/manifests/lockfile blobs unchanged by maintainer CLI-only fix; retain preceding runtime350/Python382+3/downstream4/scenario9-1-7 checks.",
+      "negative_old_head_run": "Not rerun: old bug reads user WES config instead of injected mock config. Static old/new dispatch trace verifies ignored config without risking a live workflow submission."
     }
   },
-  "candidate_source_identity": [
-    {
-      "pr": 149,
-      "head": "0b870d1c496166c29549b48117954d9334eb5ae9",
-      "relative_to_clean_merge_changed_files": [
-        "cli/Cargo.toml"
-      ],
-      "cli_manifest_matches_tested_source": true,
-      "models_generator_and_python_match_main": true
-    },
+  "maintainer_source_identity": [
     {
       "pr": 153,
-      "head": "3fcece1869d1dde90559e67f912603da5f6a9829",
-      "relative_to_clean_merge_changed_files": [
-        "cli/Cargo.toml"
-      ],
-      "cli_manifest_matches_tested_source": true,
-      "models_generator_and_python_match_main": true
+      "head": "b54ca15a14ffada51880ddd912284390607d0f5a",
+      "cli_source_test_and_manifest_match_verified_composition": true,
+      "sdk_python_and_dependency_blobs_unchanged_by_followup": true
     },
     {
       "pr": 155,
-      "head": "482ff37b7582c3b0e632359b1ff3b65d1c37510e",
-      "relative_to_clean_merge_changed_files": [
-        "cli/Cargo.toml"
-      ],
-      "cli_manifest_matches_tested_source": true,
-      "models_generator_and_python_match_main": true
+      "head": "b3375062b2454ce6321682efe066b759f1e019a2",
+      "cli_source_test_and_manifest_match_verified_composition": true,
+      "sdk_python_and_dependency_blobs_unchanged_by_followup": true
     },
     {
       "pr": 156,
-      "head": "953e104f115f19e901aafa50aaf7f6bd880e3b4a",
-      "relative_to_clean_merge_changed_files": [
-        "cli/Cargo.toml"
-      ],
-      "cli_manifest_matches_tested_source": true,
-      "models_generator_and_python_match_main": true
+      "head": "8b4a204953ed7244c90c0e9c02cdc9ab16282ddc",
+      "cli_source_test_and_manifest_match_verified_composition": true,
+      "sdk_python_and_dependency_blobs_unchanged_by_followup": true
     },
     {
       "pr": 157,
-      "head": "2e42c8623b8e8f5a42146256221dea0dd615c51b",
-      "relative_to_clean_merge_changed_files": [
-        "cli/Cargo.toml"
-      ],
-      "cli_manifest_matches_tested_source": true,
-      "models_generator_and_python_match_main": true
+      "head": "c501e3e44a82fa3e2067ff82bc0ad54c4a247ca3",
+      "cli_source_test_and_manifest_match_verified_composition": true,
+      "sdk_python_and_dependency_blobs_unchanged_by_followup": true
     },
     {
       "pr": 158,
-      "head": "537e4d1d7822389c5774feb9b4378bd8b13ce81d",
-      "relative_to_clean_merge_changed_files": [
-        "cli/Cargo.toml"
-      ],
-      "cli_manifest_matches_tested_source": true,
-      "models_generator_and_python_match_main": true
+      "head": "94d6f3c4cdbe6710d49ca26a34c2237fd6a609bb",
+      "cli_source_test_and_manifest_match_verified_composition": true,
+      "sdk_python_and_dependency_blobs_unchanged_by_followup": true
     }
   ],
   "latest_main_compatibility": [
     {
       "pr": 149,
-      "head": "0b870d1c496166c29549b48117954d9334eb5ae9",
-      "merged_tree": "08c5fba46320a03a93fdb248ccb55d1e062b05a0",
+      "head": "6380074388412560efcff7ef18dd37615c400114",
+      "merged_tree": "a051dd434ce284f7dddce5045b013c4b007532c1",
       "cli_manifest_valid": true
     },
     {
@@ -294,32 +389,32 @@
     },
     {
       "pr": 153,
-      "head": "3fcece1869d1dde90559e67f912603da5f6a9829",
-      "merged_tree": "b85c5ccb919b6b218a27afc0cb0f61007a396f68",
+      "head": "b54ca15a14ffada51880ddd912284390607d0f5a",
+      "merged_tree": "4ce8400e1602d8bfe2baa8880122eeea1c240b73",
       "cli_manifest_valid": true
     },
     {
       "pr": 155,
-      "head": "482ff37b7582c3b0e632359b1ff3b65d1c37510e",
-      "merged_tree": "47875bfd674a20ad35087237d91c0cb9328b8983",
+      "head": "b3375062b2454ce6321682efe066b759f1e019a2",
+      "merged_tree": "87eff393b79140df743c517c988c4d1f209eed45",
       "cli_manifest_valid": true
     },
     {
       "pr": 156,
-      "head": "953e104f115f19e901aafa50aaf7f6bd880e3b4a",
-      "merged_tree": "1eb7cf9d484a9ed89d53580dbccfd580d72d3c24",
+      "head": "8b4a204953ed7244c90c0e9c02cdc9ab16282ddc",
+      "merged_tree": "fde68289d6cd576d1243659b1d32b5094cb42968",
       "cli_manifest_valid": true
     },
     {
       "pr": 157,
-      "head": "2e42c8623b8e8f5a42146256221dea0dd615c51b",
-      "merged_tree": "d15ff9cdec994f830f20ec823f0fd3863ab3b76b",
+      "head": "c501e3e44a82fa3e2067ff82bc0ad54c4a247ca3",
+      "merged_tree": "67f3a88029d06ce60559768472783cd88718e0d8",
       "cli_manifest_valid": true
     },
     {
       "pr": 158,
-      "head": "537e4d1d7822389c5774feb9b4378bd8b13ce81d",
-      "merged_tree": "2f293874d927cd1cd0e947686127d47ec1d3b34c",
+      "head": "94d6f3c4cdbe6710d49ca26a34c2237fd6a609bb",
+      "merged_tree": "a8ccaad2991028f09e78ed2f35b5a8a0a6047c39",
       "cli_manifest_valid": true
     }
   ],
@@ -402,6 +497,7 @@
     }
   ],
   "previous_report": "https://github.com/superbsky/ga4gh-sdk/blob/test/monitor-wes-main-validation/reports/ga4gh-sdk-heartbeat-2026-11-11-1155.json",
+  "earlier_cycle_report_commit": "f0627a917ea2eb40874fa3cea86de50f8c373f07",
   "historical_evidence": "Earlier exact physical/provider and generated-model evidence is preserved with its limits; current shared scenario is simulated protocol only.",
   "external_gates": [
     "Human review and upstream merge.",
