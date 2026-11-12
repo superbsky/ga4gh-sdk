@@ -1,0 +1,305 @@
+{
+  "schema_version": 1,
+  "cycle_started_at": "2026-11-12T13:17:22.456Z",
+  "recorded_at": "2026-11-12T14:12:39.615019+00:00",
+  "upstream_main": "b11985503389c6f2a1c1347f0569286f73b0f130",
+  "upstream_merged_prs": [
+    {
+      "number": 213,
+      "merge_commit": "2c337ccb8595aaab241f70adfbab00d15652b4d2"
+    },
+    {
+      "number": 220,
+      "merge_commit": "b11985503389c6f2a1c1347f0569286f73b0f130"
+    }
+  ],
+  "validated_source": {
+    "source_commit": "fab4d963d791fed740123747441a0c5338178c4b",
+    "source_tree": "0e8c91c891b9c2c04665038e864eeca987798adb",
+    "test_source_commit": "9b2a5d64745656c28c9736800e0c9cd60678869a",
+    "test_source_tree": "0e8c91c891b9c2c04665038e864eeca987798adb",
+    "all_current_phase_heads_preserved": true,
+    "post_publication_merges": [
+      {
+        "pr": 150,
+        "merged_head": "9caac03e4b7a085157100cc606ecce7cdd1a5926",
+        "commit": "8d5394e9d5d2ca3ebce530e7089aca59c4b56513",
+        "tree": "0e8c91c891b9c2c04665038e864eeca987798adb"
+      },
+      {
+        "pr": 153,
+        "merged_head": "7da3ea40d583985eba8609ab1100787e59226aac",
+        "commit": "4357fe482bc352b7a2234d434a94eabf097659bb",
+        "tree": "0e8c91c891b9c2c04665038e864eeca987798adb"
+      },
+      {
+        "pr": 158,
+        "merged_head": "1fed2800a32dc4b8a05e64821911bdc685ac1169",
+        "commit": "fab4d963d791fed740123747441a0c5338178c4b",
+        "tree": "0e8c91c891b9c2c04665038e864eeca987798adb"
+      }
+    ]
+  },
+  "necessary_primary_fixes": [
+    {
+      "number": 150,
+      "head": "9caac03e4b7a085157100cc606ecce7cdd1a5926",
+      "preserved_previous_head": "948fd904d36da225bf150bc7fb714b2a3c574343",
+      "change": "fix(examples): opt in to configured proTES transport auth",
+      "unit_test_fixture_commit": "cdd70615066f8676f75a596a8e056de695864736"
+    },
+    {
+      "number": 153,
+      "head": "7da3ea40d583985eba8609ab1100787e59226aac",
+      "preserved_previous_head": "4ea97e48d2492ce6a624ca2408675624e8302339",
+      "change": "fix(testbed): apply configured auth through SDK transport",
+      "unit_test_fixture_commit": "cdd70615066f8676f75a596a8e056de695864736"
+    },
+    {
+      "number": 158,
+      "head": "1fed2800a32dc4b8a05e64821911bdc685ac1169",
+      "preserved_previous_head": "9ef9488e9f24b1b759cb13dc15dded3de14b40f4",
+      "change": "fix(testbed): apply configured auth through SDK transport",
+      "unit_test_fixture_commit": "cdd70615066f8676f75a596a8e056de695864736"
+    }
+  ],
+  "unchanged_primary_heads": [
+    {
+      "number": 155,
+      "head": "fbcdf57665fcc907a372e36836149e1071dae8e4"
+    },
+    {
+      "number": 157,
+      "head": "d3d7a26505b0fa43620e8d0e967b261f8383f1f9"
+    }
+  ],
+  "regressions": {
+    "trs_private_fields": "H3 uses TRS::with_transport; first fixes 4ea97e4/9ef9488 passed their exact-head CI and are ancestors of the new auth heads.",
+    "auth_migration": "New configured-credential policy rejected the old H3 and proTES caller-owned clients. H3 now uses Transport::new; proTES explicitly opts in with with_client_and_configured_auth while retaining configured timeouts and its bearer-only boundary.",
+    "portable_auth_unit_test": "PATH can contain spaces and cannot stand in for a valid bearer token. A child test process now owns a dedicated fixture token; parent environment is unchanged."
+  },
+  "verification": {
+    "summary": {
+      "workspace_passed": 423,
+      "workspace_ignored": 10,
+      "python": "399 passed, 3 subtests passed",
+      "protes_companion_passed": 9,
+      "h3_http_passed": 11,
+      "h3_sdk_passed": 1,
+      "maintained_wes_scenarios_passed": 7,
+      "trs_filer_library_passed": 1,
+      "trs_filer_cli_passed": 1
+    },
+    "checks": [
+      {
+        "name": "auth-fixed-fmt",
+        "exit_code": 0,
+        "elapsed_seconds": 0.19,
+        "command": [
+          "cargo",
+          "fmt",
+          "--all",
+          "--check"
+        ]
+      },
+      {
+        "name": "auth-fixed-clippy",
+        "exit_code": 0,
+        "elapsed_seconds": 11.12,
+        "command": [
+          "cargo",
+          "clippy",
+          "--workspace",
+          "--all-targets",
+          "--features",
+          "workflow-contracts",
+          "--locked"
+        ]
+      },
+      {
+        "name": "auth-fixed-build",
+        "exit_code": 0,
+        "elapsed_seconds": 7.19,
+        "command": [
+          "cargo",
+          "build",
+          "--workspace",
+          "--features",
+          "workflow-contracts",
+          "--locked"
+        ]
+      },
+      {
+        "name": "auth-fixed-test",
+        "exit_code": 0,
+        "elapsed_seconds": 114.4,
+        "command": [
+          "cargo",
+          "test",
+          "--workspace",
+          "--features",
+          "workflow-contracts",
+          "--locked"
+        ]
+      },
+      {
+        "name": "auth-fixed-h3-scenarios",
+        "exit_code": 0,
+        "elapsed_seconds": 8.85,
+        "command": [
+          "python3",
+          "tests/run-h3-scenarios.py"
+        ]
+      },
+      {
+        "name": "auth-fixed-python-build",
+        "exit_code": 0,
+        "elapsed_seconds": 11.32,
+        "command": [
+          "maturin",
+          "develop",
+          "--locked"
+        ]
+      },
+      {
+        "name": "auth-fixed-python-test",
+        "exit_code": 0,
+        "elapsed_seconds": 37.4,
+        "command": [
+          "python",
+          "-m",
+          "pytest",
+          "-q"
+        ]
+      },
+      {
+        "name": "auth-fixed-protes",
+        "exit_code": 0,
+        "elapsed_seconds": 10.18,
+        "command": [
+          "cargo",
+          "test",
+          "--manifest-path",
+          "examples/protes-companion/Cargo.toml",
+          "--locked"
+        ]
+      },
+      {
+        "name": "216-auth-fixed-fmt",
+        "exit_code": 0,
+        "elapsed_seconds": 0.21,
+        "command": [
+          "cargo",
+          "fmt",
+          "--all",
+          "--check"
+        ]
+      },
+      {
+        "name": "216-auth-fixed-check",
+        "exit_code": 0,
+        "elapsed_seconds": 10.7,
+        "command": [
+          "cargo",
+          "check",
+          "--workspace",
+          "--all-targets",
+          "--features",
+          "trs_filer_integration_tests",
+          "--locked"
+        ]
+      },
+      {
+        "name": "216-auth-fixed-real-provider",
+        "exit_code": 0,
+        "elapsed_seconds": 17.28,
+        "command": [
+          "bash",
+          "tests/run-trs-filer-integration.sh"
+        ]
+      }
+    ],
+    "rust_features": "workflow-contracts",
+    "ignored_tests": "10 opt-in tests in the workspace run; H3 and TRS-Filer were separately executed. No new paid/cloud submissions.",
+    "generated_models": "No hand edits; phase TRS generated models and generation patch match current main.",
+    "oci_evidence_reuse": "testbed/server.py, Dockerfile and pack bytes are unchanged by these fixes. Published v0.1.1 image and prior release evidence remain scoped to those same inputs."
+  },
+  "trs_filer_handoff": {
+    "pr": 216,
+    "upstream_head": "5dbb49ad5027abfbbdca57eb6f02c533c7370560",
+    "candidate": "1e9c1d775839da04612fe8bb58430c42e1aa897f",
+    "candidate_tree": "e1dda49d1b56191b00708062d7269256709adfcf",
+    "fork_branch": "fix/trs-filer-main-compat-20261112",
+    "comment_id": 6825923432,
+    "comment_url": "https://github.com/ga4gh/ga4gh-sdk/pull/216#issuecomment-6825923432",
+    "original_commits_retained": true,
+    "changes": "Normal main integration; version.description() consumer accessor; shared portable test fixture. No runtime/model reversal.",
+    "exact_candidate_checks": [
+      "cargo fmt --all --check",
+      "cargo check --workspace --all-targets --features trs_filer_integration_tests --locked",
+      "actual local TRS-Filer library 1 passed and CLI 1 passed; owned resources cleaned up"
+    ],
+    "shared_runtime_validation": "The same current SDK/CLI runtime plus fixture passed all four workspace Rust checks in the phase composition above. Earlier ee06b709 full-workspace 405-pass/8-ignored results predate auth and are historical.",
+    "remaining": "Maintainer must integrate the fork candidate into upstream PR branch and get CI on that new PR head."
+  },
+  "related_status_changes": {
+    "closed_by_maintainer": [
+      211,
+      218
+    ],
+    "remaining_checklists": "Issue bodies still contain unchecked acceptance items; #218 retains older adapter wording. This monitor did not close/reopen them or mark their checklist complete.",
+    "open_umbrellas": [
+      32,
+      87,
+      105,
+      203,
+      217
+    ],
+    "new_dependency_prs": [
+      219,
+      220,
+      221,
+      222,
+      223
+    ],
+    "notes": "#220 delivers static configured credentials; #203 still tracks token-provider reconciliation and untrusted-error-body handling. #219 is ready for review with passing current-head CI; Codecov upload/app availability reported by author, not independently exercised here. #221 is ready; #222/#223 are draft proposals, with no release/deployment authorization inferred."
+  },
+  "remaining_external_gates": [
+    "Required human review and upstream integration; no PR merge authorized.",
+    "PR 157 known aggregate CI failure requires maintainer rerun; no source failure established, no admin retry or dummy commit.",
+    "Named destination/release owner for scenario API.",
+    "Accepted live Seqera execution/status/log/cancel; prior approved paid attempt is exhausted.",
+    "Bounded physical Nextflow task-container stop.",
+    "Production ecosystem sessions/OpenBao/operator integration."
+  ],
+  "current_head_ci_as_of_recording": [
+    {
+      "id": 43234314997,
+      "head_sha": "9caac03e4b7a085157100cc606ecce7cdd1a5926",
+      "status": "queued",
+      "conclusion": null,
+      "updated_at": "2026-11-12T14:09:40Z"
+    },
+    {
+      "id": 43234315621,
+      "head_sha": "7da3ea40d583985eba8609ab1100787e59226aac",
+      "status": "queued",
+      "conclusion": null,
+      "updated_at": "2026-11-12T14:09:40Z"
+    },
+    {
+      "id": 43234314339,
+      "head_sha": "1fed2800a32dc4b8a05e64821911bdc685ac1169",
+      "status": "in_progress",
+      "conclusion": null,
+      "updated_at": "2026-11-12T14:09:52Z"
+    }
+  ],
+  "current_main_ci": {
+    "id": 43230229616,
+    "head_sha": "b11985503389c6f2a1c1347f0569286f73b0f130",
+    "status": "completed",
+    "conclusion": "success",
+    "updated_at": "2026-11-12T13:54:08Z"
+  }
+}
