@@ -1,0 +1,456 @@
+{
+  "cycle_started_at": "2026-11-12T16:12:52.800Z",
+  "captured_at": "2026-11-12T16:13:17.358096+00:00",
+  "verified_at": "2026-11-12T16:17:42.655571+00:00",
+  "main": "383baf01bf80aad1aac364472786e7357389b6a7",
+  "source_commit": "5d8f4c13451fe5a5bbb3aac64c0856e6ce6d127e",
+  "source_tree": "ca9f7bc76d970df158bfd5ea2627e86685f44f16",
+  "all_current_phase_heads_preserved": true,
+  "per_pr_compositions": [
+    {
+      "pr": 150,
+      "head": "9caac03e4b7a085157100cc606ecce7cdd1a5926",
+      "main": "383baf01bf80aad1aac364472786e7357389b6a7",
+      "merge_exit_code": 0,
+      "merged_tree": "58c470b55c33b60f51db9cffa21030d593aeb8f0"
+    },
+    {
+      "pr": 153,
+      "head": "7da3ea40d583985eba8609ab1100787e59226aac",
+      "main": "383baf01bf80aad1aac364472786e7357389b6a7",
+      "merge_exit_code": 0,
+      "merged_tree": "2b67dd068a23df90743879f311fff06b07eb2672"
+    },
+    {
+      "pr": 155,
+      "head": "fbcdf57665fcc907a372e36836149e1071dae8e4",
+      "main": "383baf01bf80aad1aac364472786e7357389b6a7",
+      "merge_exit_code": 0,
+      "merged_tree": "eb0d19a7ed6470bdfe843f9f4fbb17f4eb8dc5fa"
+    },
+    {
+      "pr": 157,
+      "head": "d3d7a26505b0fa43620e8d0e967b261f8383f1f9",
+      "main": "383baf01bf80aad1aac364472786e7357389b6a7",
+      "merge_exit_code": 0,
+      "merged_tree": "9e80fe4cf68e4a736553d110ca16edd69e32601b"
+    },
+    {
+      "pr": 158,
+      "head": "1fed2800a32dc4b8a05e64821911bdc685ac1169",
+      "main": "383baf01bf80aad1aac364472786e7357389b6a7",
+      "merge_exit_code": 0,
+      "merged_tree": "e0f4ccd9687aba4e43312e7a6a4af1aafbafa38c"
+    }
+  ],
+  "source_scope": {
+    "prior_source_commit": "32370dea01b66795058eb7b27e8c7ab1d6847121",
+    "current_source_commit": "5d8f4c13451fe5a5bbb3aac64c0856e6ce6d127e",
+    "changed_files": [
+      "docs/authentication.md",
+      "lib/src/utils/configuration.rs",
+      "lib/src/utils/transport.rs",
+      "lib/tests/configured_auth.rs"
+    ],
+    "unchanged_scope": [
+      "Rust/Python public operation signatures; Python implementation/stubs",
+      "generated models/specs/templates/patches",
+      "manifests/lockfiles/toolchain",
+      "workflow/results/reuse/waiter/campaign/checkpoint/provider implementations",
+      "scenario server/pack/Dockerfile and H3 harness inputs"
+    ],
+    "reuse": "Previous full452 Rust/412 Python+3subtests, H3/provider/Temporal/OCI measurements are retained at their earlier source scopes. Fresh #227 checks cover only configuration/transport and representative consumers. No new whole-workspace or physical/cloud acceptance claim."
+  },
+  "checks": [
+    {
+      "name": "fmt",
+      "command": [
+        "cargo",
+        "fmt",
+        "--all",
+        "--check"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.35
+    },
+    {
+      "name": "all-target-check",
+      "command": [
+        "cargo",
+        "check",
+        "--workspace",
+        "--all-targets",
+        "--features",
+        "workflow-contracts",
+        "--locked"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.37
+    },
+    {
+      "name": "configuration-tests",
+      "command": [
+        "cargo",
+        "test",
+        "-p",
+        "ga4gh-lib",
+        "--lib",
+        "utils::configuration",
+        "--features",
+        "workflow-contracts",
+        "--locked"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 4.27
+    },
+    {
+      "name": "transport-tests",
+      "command": [
+        "cargo",
+        "test",
+        "-p",
+        "ga4gh-lib",
+        "--lib",
+        "utils::transport",
+        "--features",
+        "workflow-contracts",
+        "--locked"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.03
+    },
+    {
+      "name": "configured-auth-tests",
+      "command": [
+        "cargo",
+        "test",
+        "-p",
+        "ga4gh-lib",
+        "--test",
+        "configured_auth",
+        "--features",
+        "workflow-contracts",
+        "--locked"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 4.91
+    },
+    {
+      "name": "protes-companion",
+      "command": [
+        "cargo",
+        "test",
+        "--manifest-path",
+        "examples/protes-companion/Cargo.toml",
+        "--locked"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.43
+    },
+    {
+      "name": "python-build",
+      "command": [
+        "maturin",
+        "develop",
+        "--locked"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 6.16
+    },
+    {
+      "name": "python-configured-auth",
+      "command": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_configured_auth.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.22
+    },
+    {
+      "name": "python-basic-probe",
+      "command": [
+        "python",
+        "<isolated mock-backed Basic-control consumer probe>"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.46
+    }
+  ],
+  "verification": {
+    "configuration-tests": {
+      "passed": 20,
+      "failed": 0,
+      "ignored": 0
+    },
+    "transport-tests": {
+      "passed": 25,
+      "failed": 0,
+      "ignored": 0
+    },
+    "configured-auth-tests": {
+      "passed": 11,
+      "failed": 0,
+      "ignored": 0
+    },
+    "protes-companion": {
+      "passed": 9,
+      "failed": 0,
+      "ignored": 0
+    },
+    "python_configured_auth": {
+      "passed": 5,
+      "rebuilt_extension": true
+    },
+    "python_basic_controls": {
+      "passed": 4,
+      "requests_sent": 0,
+      "secret_values_in_errors": false
+    }
+  },
+  "pull_requests": [
+    {
+      "number": 141,
+      "head": "c72c7787f210a2b902961a8667d2c8baaf3f5fea",
+      "state": "MERGED",
+      "mergeable": "UNKNOWN",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "run_id": 42844285924,
+        "head_sha": "c72c7787f210a2b902961a8667d2c8baaf3f5fea",
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42844285924",
+        "successful_checks": 8,
+        "total_checks": 8
+      }
+    },
+    {
+      "number": 142,
+      "head": "103d7737f9ac665bf76b3b73c4f43150f306e376",
+      "state": "MERGED",
+      "mergeable": "UNKNOWN",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "run_id": 42853765605,
+        "head_sha": "103d7737f9ac665bf76b3b73c4f43150f306e376",
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42853765605",
+        "successful_checks": 8,
+        "total_checks": 8
+      }
+    },
+    {
+      "number": 149,
+      "head": "1e40b4aa2b2416f49b624aee8d169ac61fcb9a63",
+      "state": "MERGED",
+      "mergeable": "UNKNOWN",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "run_id": 43042801491,
+        "head_sha": "1e40b4aa2b2416f49b624aee8d169ac61fcb9a63",
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43042801491",
+        "successful_checks": 10,
+        "total_checks": 10
+      }
+    },
+    {
+      "number": 150,
+      "head": "9caac03e4b7a085157100cc606ecce7cdd1a5926",
+      "state": "OPEN",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "run_id": 43234314997,
+        "head_sha": "9caac03e4b7a085157100cc606ecce7cdd1a5926",
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43234314997",
+        "status": "completed",
+        "conclusion": "success",
+        "run_attempt": 1,
+        "updated_at": "2026-11-12T14:19:47Z",
+        "successful_checks": 16,
+        "total_checks": 16
+      }
+    },
+    {
+      "number": 151,
+      "head": "07ec8d2419233fe0450e8fccc75d38e73aa1afc8",
+      "state": "MERGED",
+      "mergeable": "UNKNOWN",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "run_id": 43055046412,
+        "head_sha": "07ec8d2419233fe0450e8fccc75d38e73aa1afc8",
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43055046412",
+        "successful_checks": 10,
+        "total_checks": 10
+      }
+    },
+    {
+      "number": 153,
+      "head": "7da3ea40d583985eba8609ab1100787e59226aac",
+      "state": "OPEN",
+      "mergeable": "MERGEABLE",
+      "review_decision": "CHANGES_REQUESTED",
+      "ci": {
+        "run_id": 43234315621,
+        "head_sha": "7da3ea40d583985eba8609ab1100787e59226aac",
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43234315621",
+        "status": "completed",
+        "conclusion": "success",
+        "run_attempt": 1,
+        "updated_at": "2026-11-12T14:25:59Z",
+        "successful_checks": 16,
+        "total_checks": 16
+      }
+    },
+    {
+      "number": 155,
+      "head": "fbcdf57665fcc907a372e36836149e1071dae8e4",
+      "state": "OPEN",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "run_id": 43048359189,
+        "head_sha": "fbcdf57665fcc907a372e36836149e1071dae8e4",
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43048359189",
+        "status": "completed",
+        "conclusion": "success",
+        "run_attempt": 1,
+        "updated_at": "2026-11-11T15:28:50Z",
+        "successful_checks": 10,
+        "total_checks": 10
+      }
+    },
+    {
+      "number": 156,
+      "head": "7517fee0cd9da594c8ed99543c2449b4b9e546a3",
+      "state": "MERGED",
+      "mergeable": "UNKNOWN",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "run_id": 43058760304,
+        "head_sha": "7517fee0cd9da594c8ed99543c2449b4b9e546a3",
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43058760304",
+        "successful_checks": 10,
+        "total_checks": 10
+      }
+    },
+    {
+      "number": 157,
+      "head": "d3d7a26505b0fa43620e8d0e967b261f8383f1f9",
+      "state": "OPEN",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "run_id": 43098069123,
+        "head_sha": "d3d7a26505b0fa43620e8d0e967b261f8383f1f9",
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43098069123",
+        "diagnosis": {
+          "pr": 157,
+          "run_id": 43098069123,
+          "head": "d3d7a26505b0fa43620e8d0e967b261f8383f1f9",
+          "build": "success",
+          "coverage": "success",
+          "final_gate": "failure",
+          "upstream_dependency_results": "lint/test/python/wheels/integration/pre-commit = abandoned; these checks remain QUEUED in jobs API. No failed source-test step established.",
+          "rerun_attempt": "GitHub rejected ordinary rerun: Must have admin rights to Repository. Maintainer rerun needed; no workflow weakening or dummy commit.",
+          "requires": "Upstream maintainer rerun; current account lacks GitHub repository rights. No permission or infrastructure bypass.",
+          "checked_at": "2026-11-12T12:53:55.365891+00:00"
+        },
+        "status": "completed",
+        "conclusion": "failure",
+        "run_attempt": 1,
+        "updated_at": "2026-11-11T21:02:35Z",
+        "successful_checks": 2,
+        "total_checks": 16
+      }
+    },
+    {
+      "number": 158,
+      "head": "1fed2800a32dc4b8a05e64821911bdc685ac1169",
+      "state": "OPEN",
+      "mergeable": "MERGEABLE",
+      "review_decision": "REVIEW_REQUIRED",
+      "ci": {
+        "run_id": 43234314339,
+        "head_sha": "1fed2800a32dc4b8a05e64821911bdc685ac1169",
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43234314339",
+        "status": "completed",
+        "conclusion": "success",
+        "run_attempt": 1,
+        "updated_at": "2026-11-12T14:16:09Z",
+        "successful_checks": 16,
+        "total_checks": 16
+      }
+    },
+    {
+      "number": 186,
+      "head": "b087ff05b586bc1038cb4121c07c2052fa6319d7",
+      "state": "MERGED",
+      "mergeable": "UNKNOWN",
+      "review_decision": "APPROVED",
+      "ci": {
+        "run_id": 42871697331,
+        "head_sha": "b087ff05b586bc1038cb4121c07c2052fa6319d7",
+        "url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/42871697331",
+        "successful_checks": 8,
+        "total_checks": 8
+      }
+    }
+  ],
+  "main_ci": {
+    "id": 43251856033,
+    "head_sha": "383baf01bf80aad1aac364472786e7357389b6a7",
+    "status": "completed",
+    "conclusion": "success",
+    "run_attempt": 1,
+    "updated_at": "2026-11-12T15:53:30Z",
+    "html_url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43251856033"
+  },
+  "main_ci_successful_jobs": 16,
+  "new_repository_activity": {
+    "merged_dependency": 227,
+    "closed_issue": 31,
+    "comment": {
+      "id": 6828266557,
+      "pr": 227,
+      "classification": "Maintainer preserves original narrative and historical evidence separately from current head validation."
+    },
+    "reviews": [
+      {
+        "id": "PRR_kwDOL41Rhs8AAAABXlNuWQ",
+        "pr": 227,
+        "state": "APPROVED",
+        "head": "110236eefe107f3d406030dfe467634dbfc3d195"
+      },
+      {
+        "id": "PRR_kwDOL41Rhs8AAAABXljwPg",
+        "pr": 219,
+        "state": "COMMENTED",
+        "head": "26274128cb369f9403de8131d01cbb9dfb99d0fe",
+        "classification": "Maintainer asks author to reconcile CI after229 and obtain actual CI on resulting head. Also fix old one-time setup wording; no code defect found, not a new phase change request."
+      }
+    ]
+  },
+  "prior_public_report": "https://github.com/superbsky/ga4gh-sdk/blob/fddbacc279b2ed3e5cd14acdda6974170618217f/reports/ga4gh-sdk-heartbeat-2026-11-12-1512.json",
+  "retained_evidence": {
+    "full_workspace_and_python": "Earlier452 Rust/10ignored, rebuiltPython412+3subtests, nineproTES remain scoped to e8286ad and later CI-only32370dea. They are not fresh full-suite results for227.",
+    "h3_and_providers": "Scenario server/pack/Dockerfile/harness and valid auth inputs unchanged. Earlier H3/CPU/Temporal/provider/OCI measurements keep original revisions and limits; no fresh physical/cloud claim.",
+    "generated_models": "Model/spec/template/patch inputs unchanged; earlier generator reproducibility evidence reused."
+  },
+  "pending_actions": {
+    "153": "Original publication requirement fulfilled; addressed re-review request6827314334 remains pending, no new response or formal review; destination repository/named release-owner still undecided.",
+    "157": "Unchanged current-head aggregate CI failure/abandoned jobs; upstream maintainer rerun needed, ordinary rerun is permission-blocked.",
+    "150": "Product/CLI-boundary review remains with maintainer.",
+    "other_reviews": "155/157/158 and TESdocs256 review remain.",
+    "external_gates": [
+      "Accepted liveSeqera execution",
+      "bounded physicalNextflow task-container stop",
+      "production sessions/OpenBao/operator integration"
+    ]
+  },
+  "actions_not_performed": [
+    "No source PR push, base-only branch update, force push or monitor PR merge.",
+    "No duplicate review ping, new cloud submission, publishing tag or foreign infrastructure/permissions/secret change."
+  ]
+}
