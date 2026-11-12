@@ -81,7 +81,7 @@ async fn trs_filer_lists_tools_and_serves_their_files() {
     assert_eq!(versions.len(), 1);
     let version = trs.get_version(&id, &versions[0].id).await.unwrap();
     assert_eq!(
-        version.description.as_deref(),
+        version.description(),
         fixture["versions"][0]["description"].as_str()
     );
     assert_eq!(version.descriptor_type, Some(vec![DescriptorType::Cwl]));
