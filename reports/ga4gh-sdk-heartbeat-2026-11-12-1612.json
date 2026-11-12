@@ -2,45 +2,45 @@
   "cycle_started_at": "2026-11-12T16:12:52.800Z",
   "captured_at": "2026-11-12T16:13:17.358096+00:00",
   "verified_at": "2026-11-12T16:17:42.655571+00:00",
-  "main": "383baf01bf80aad1aac364472786e7357389b6a7",
-  "source_commit": "5d8f4c13451fe5a5bbb3aac64c0856e6ce6d127e",
-  "source_tree": "ca9f7bc76d970df158bfd5ea2627e86685f44f16",
+  "main": "fc94305b358c66f82d53c5352845a10bb17ee56d",
+  "source_commit": "bd3be48f90fe06c03a1017771a753da700f5f23d",
+  "source_tree": "f789623abed4770018c86fcce5d102660ecf6470",
   "all_current_phase_heads_preserved": true,
   "per_pr_compositions": [
     {
       "pr": 150,
       "head": "9caac03e4b7a085157100cc606ecce7cdd1a5926",
-      "main": "383baf01bf80aad1aac364472786e7357389b6a7",
+      "main": "fc94305b358c66f82d53c5352845a10bb17ee56d",
       "merge_exit_code": 0,
-      "merged_tree": "58c470b55c33b60f51db9cffa21030d593aeb8f0"
+      "merged_tree": "37997a9c95adafa3889acee865dc92edc7ff45ed"
     },
     {
       "pr": 153,
       "head": "7da3ea40d583985eba8609ab1100787e59226aac",
-      "main": "383baf01bf80aad1aac364472786e7357389b6a7",
+      "main": "fc94305b358c66f82d53c5352845a10bb17ee56d",
       "merge_exit_code": 0,
-      "merged_tree": "2b67dd068a23df90743879f311fff06b07eb2672"
+      "merged_tree": "2ff554cf1abbafb43fcdb34ff4bdcc6a6d1dc0a8"
     },
     {
       "pr": 155,
       "head": "fbcdf57665fcc907a372e36836149e1071dae8e4",
-      "main": "383baf01bf80aad1aac364472786e7357389b6a7",
+      "main": "fc94305b358c66f82d53c5352845a10bb17ee56d",
       "merge_exit_code": 0,
-      "merged_tree": "eb0d19a7ed6470bdfe843f9f4fbb17f4eb8dc5fa"
+      "merged_tree": "639ac8d8c47b3b40973db40c0fc96666588715f1"
     },
     {
       "pr": 157,
       "head": "d3d7a26505b0fa43620e8d0e967b261f8383f1f9",
-      "main": "383baf01bf80aad1aac364472786e7357389b6a7",
+      "main": "fc94305b358c66f82d53c5352845a10bb17ee56d",
       "merge_exit_code": 0,
-      "merged_tree": "9e80fe4cf68e4a736553d110ca16edd69e32601b"
+      "merged_tree": "0d7e3be5fdfdd5ffbc1c405c3319af7593b5a3bb"
     },
     {
       "pr": 158,
       "head": "1fed2800a32dc4b8a05e64821911bdc685ac1169",
-      "main": "383baf01bf80aad1aac364472786e7357389b6a7",
+      "main": "fc94305b358c66f82d53c5352845a10bb17ee56d",
       "merge_exit_code": 0,
-      "merged_tree": "e0f4ccd9687aba4e43312e7a6a4af1aafbafa38c"
+      "merged_tree": "7117004df6c63cef72de1d74339f26286a0df676"
     }
   ],
   "source_scope": {
@@ -399,15 +399,14 @@
     }
   ],
   "main_ci": {
-    "id": 43251856033,
-    "head_sha": "383baf01bf80aad1aac364472786e7357389b6a7",
-    "status": "completed",
-    "conclusion": "success",
+    "id": 43257245910,
+    "head_sha": "fc94305b358c66f82d53c5352845a10bb17ee56d",
+    "status": "queued",
+    "conclusion": null,
     "run_attempt": 1,
-    "updated_at": "2026-11-12T15:53:30Z",
-    "html_url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43251856033"
+    "updated_at": "2026-11-12T16:18:37Z",
+    "html_url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43257245910"
   },
-  "main_ci_successful_jobs": 16,
   "new_repository_activity": {
     "merged_dependency": 227,
     "closed_issue": 31,
@@ -428,9 +427,25 @@
         "pr": 219,
         "state": "COMMENTED",
         "head": "26274128cb369f9403de8131d01cbb9dfb99d0fe",
-        "classification": "Maintainer asks author to reconcile CI after229 and obtain actual CI on resulting head. Also fix old one-time setup wording; no code defect found, not a new phase change request."
+        "classification": "Earlier request to reconcile after229 was fulfilled by author head6ba8123, actual current-head CI43256425887 passed; maintainer edited earlier review to retain only minor description-wording note, then approved. Old262 headCI was not used as combined proof."
+      },
+      {
+        "id": "PRR_kwDOL41Rhs8AAAABXlrMlw",
+        "pr": 219,
+        "state": "APPROVED",
+        "updated_at": "2026-11-12T16:18:10Z",
+        "head": "6ba8123cfcfd11c8317b1c0ea67d1ee886e26ad0"
       }
-    ]
+    ],
+    "merged_dependencies": [
+      227,
+      219
+    ],
+    "closed_issues": [
+      31,
+      87
+    ],
+    "coverage_followup": "219 merged asfc94305,87 closed bymaintainer. PublicAPI documentation/missing-docs ratchet remains16; closure does not certify everyhistorical87checkbox."
   },
   "prior_public_report": "https://github.com/superbsky/ga4gh-sdk/blob/fddbacc279b2ed3e5cd14acdda6974170618217f/reports/ga4gh-sdk-heartbeat-2026-11-12-1512.json",
   "retained_evidence": {
@@ -452,5 +467,83 @@
   "actions_not_performed": [
     "No source PR push, base-only branch update, force push or monitor PR merge.",
     "No duplicate review ping, new cloud submission, publishing tag or foreign infrastructure/permissions/secret change."
-  ]
+  ],
+  "preceding_source_commit": "5d8f4c13451fe5a5bbb3aac64c0856e6ce6d127e",
+  "preceding_source_tree": "ca9f7bc76d970df158bfd5ea2627e86685f44f16",
+  "preceding_main": "383baf01bf80aad1aac364472786e7357389b6a7",
+  "later_coverage_ci_merge": {
+    "main": "fc94305b358c66f82d53c5352845a10bb17ee56d",
+    "source_commit": "bd3be48f90fe06c03a1017771a753da700f5f23d",
+    "source_tree": "f789623abed4770018c86fcce5d102660ecf6470",
+    "previous_source": "5d8f4c13451fe5a5bbb3aac64c0856e6ce6d127e",
+    "per_pr_compositions": [
+      {
+        "pr": 150,
+        "head": "9caac03e4b7a085157100cc606ecce7cdd1a5926",
+        "main": "fc94305b358c66f82d53c5352845a10bb17ee56d",
+        "merge_exit_code": 0,
+        "merged_tree": "37997a9c95adafa3889acee865dc92edc7ff45ed"
+      },
+      {
+        "pr": 153,
+        "head": "7da3ea40d583985eba8609ab1100787e59226aac",
+        "main": "fc94305b358c66f82d53c5352845a10bb17ee56d",
+        "merge_exit_code": 0,
+        "merged_tree": "2ff554cf1abbafb43fcdb34ff4bdcc6a6d1dc0a8"
+      },
+      {
+        "pr": 155,
+        "head": "fbcdf57665fcc907a372e36836149e1071dae8e4",
+        "main": "fc94305b358c66f82d53c5352845a10bb17ee56d",
+        "merge_exit_code": 0,
+        "merged_tree": "639ac8d8c47b3b40973db40c0fc96666588715f1"
+      },
+      {
+        "pr": 157,
+        "head": "d3d7a26505b0fa43620e8d0e967b261f8383f1f9",
+        "main": "fc94305b358c66f82d53c5352845a10bb17ee56d",
+        "merge_exit_code": 0,
+        "merged_tree": "0d7e3be5fdfdd5ffbc1c405c3319af7593b5a3bb"
+      },
+      {
+        "pr": 158,
+        "head": "1fed2800a32dc4b8a05e64821911bdc685ac1169",
+        "main": "fc94305b358c66f82d53c5352845a10bb17ee56d",
+        "merge_exit_code": 0,
+        "merged_tree": "7117004df6c63cef72de1d74339f26286a0df676"
+      }
+    ],
+    "all_current_heads_preserved": true,
+    "source_pr_push": false,
+    "verified_source_commit": "5d8f4c13451fe5a5bbb3aac64c0856e6ce6d127e",
+    "verified_source_tree": "ca9f7bc76d970df158bfd5ea2627e86685f44f16",
+    "unchanged_paths": [
+      "lib",
+      "cli",
+      "python",
+      "examples",
+      "testbed",
+      "Cargo.toml",
+      "Cargo.lock",
+      "tests",
+      "utils",
+      "rust-toolchain.toml"
+    ],
+    "new_delta": [
+      ".github/workflows/ci.yml",
+      "README.md",
+      "codecov.yml",
+      "docs/development.md"
+    ],
+    "reuse": "#227 targeted configuration/transport/Python/proTES checks remain valid for identical runtime/test/toolchain inputs. No repeated tests or new physical/cloud acceptance."
+  },
+  "preceding_main_ci": {
+    "id": 43251856033,
+    "head_sha": "383baf01bf80aad1aac364472786e7357389b6a7",
+    "status": "completed",
+    "conclusion": "success",
+    "run_attempt": 1,
+    "updated_at": "2026-11-12T15:53:30Z",
+    "html_url": "https://github.com/ga4gh/ga4gh-sdk/actions/runs/43251856033"
+  }
 }
