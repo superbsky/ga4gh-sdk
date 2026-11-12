@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "cycle_started_at": "2026-11-12T13:17:22.456Z",
+  "recorded_at": "2026-11-12T14:21:49.845730+00:00",
+  "upstream_main": "64477684098e70f12201d91eb4c621b548454f7d",
+  "new_merged_pr": 224,
+  "validated_source_commit": "50f7ec9123098aa09409670d3cae7830eb03948e",
+  "validated_source_tree": "c0df181521b5af7e93ec71817c069cdbac2124be",
+  "prior_auth_report": "https://github.com/superbsky/ga4gh-sdk/blob/3704d02cc9838e8fa7c2f18afca13d3f729aba48/reports/ga4gh-sdk-heartbeat-2026-11-12-1317.json",
+  "prior_auth_source": "fab4d963d791fed740123747441a0c5338178c4b",
+  "change": "HttpError Display/Debug omit untrusted body; status and explicit bounded raw body remain. Shared static-auth policy and all phase source heads are unchanged.",
+  "fresh_affected_checks": [
+    {
+      "name": "redaction-fmt",
+      "command": [
+        "cargo",
+        "fmt",
+        "--all",
+        "--check"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.31
+    },
+    {
+      "name": "redaction-workspace-check",
+      "command": [
+        "cargo",
+        "check",
+        "--workspace",
+        "--all-targets",
+        "--features",
+        "workflow-contracts",
+        "--locked"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.26
+    },
+    {
+      "name": "redaction-sdk",
+      "command": [
+        "cargo",
+        "test",
+        "-p",
+        "ga4gh-lib",
+        "--lib",
+        "--test",
+        "configured_auth",
+        "--test",
+        "workflow_contracts",
+        "--test",
+        "verified_bundle",
+        "--features",
+        "workflow-contracts",
+        "--locked"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 16.04
+    },
+    {
+      "name": "redaction-cli",
+      "command": [
+        "cargo",
+        "test",
+        "-p",
+        "ga4gh-cli",
+        "--test",
+        "drs",
+        "--test",
+        "output",
+        "--test",
+        "registry",
+        "--test",
+        "trs",
+        "--test",
+        "wes",
+        "--locked"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.52
+    },
+    {
+      "name": "redaction-protes",
+      "command": [
+        "cargo",
+        "test",
+        "--manifest-path",
+        "examples/protes-companion/Cargo.toml",
+        "--locked"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.01
+    },
+    {
+      "name": "redaction-python-build",
+      "command": [
+        "maturin",
+        "develop",
+        "--locked"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.71
+    },
+    {
+      "name": "redaction-python-network",
+      "command": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_configured_auth.py",
+        "tests/test_tes.py",
+        "tests/test_tes_async.py",
+        "tests/test_drs.py",
+        "tests/test_wes.py",
+        "tests/test_io_runtime.py",
+        "tests/test_execution_acknowledgements.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 29.95
+    }
+  ],
+  "fresh_counts": {
+    "redaction-sdk": {
+      "passed": 164,
+      "ignored": 1
+    },
+    "redaction-cli": {
+      "passed": 57,
+      "ignored": 0
+    },
+    "redaction-protes": {
+      "passed": 9,
+      "ignored": 0
+    },
+    "python_network": {
+      "passed": 237,
+      "rebuilt_extension": true
+    }
+  },
+  "reused_evidence": {
+    "from": "https://github.com/superbsky/ga4gh-sdk/blob/3704d02cc9838e8fa7c2f18afca13d3f729aba48/reports/ga4gh-sdk-heartbeat-2026-11-12-1317.json",
+    "full_rust_workspace_passed": 423,
+    "full_rust_workspace_ignored": 10,
+    "python_full_passed": 399,
+    "python_subtests_passed": 3,
+    "h3_http_passed": 11,
+    "h3_sdk_passed": 1,
+    "maintained_wes_scenarios_passed": 7,
+    "trs_filer_candidate": "1e9c1d775839da04612fe8bb58430c42e1aa897f",
+    "trs_filer_candidate_sdk_base": "b11985503389c6f2a1c1347f0569286f73b0f130",
+    "trs_filer_real_library_and_cli_passed": 2,
+    "reason": "The later delta changes HTTP diagnostic formatting and its tests/docs. Rechecked shared SDK errors, workflow/DRS consumers, all affected CLI families, current proTES and rebuilt Python network surfaces. Simulated protocol/provider/Temporal runtime inputs and generated models did not change; their earlier scoped evidence is retained, not relabeled as another run."
+  },
+  "source_pr_heads_unchanged": [
+    {
+      "number": 150,
+      "head": "9caac03e4b7a085157100cc606ecce7cdd1a5926"
+    },
+    {
+      "number": 153,
+      "head": "7da3ea40d583985eba8609ab1100787e59226aac"
+    },
+    {
+      "number": 158,
+      "head": "1fed2800a32dc4b8a05e64821911bdc685ac1169"
+    }
+  ],
+  "related_status_corrections": {
+    "222": "Ready for review (no longer draft); exact-head CI 16 passing in the closing snapshot.",
+    "203": "Safe default HTTP diagnostics delivered by #224; tracker remains open for dynamic-token integration #215.",
+    "211_and_218": "Closed by maintainer; unchecked acceptance/body wording retained as an administrative inconsistency, not monitor-certified completion.",
+    "217": "Broader version-aware rollout remains open."
+  },
+  "external_gates": "Human review/#157 maintainer CI rerun/#216 upstream candidate integration/#153 ownership/deployed ELIXIR WES/live accepted Seqera/bounded physical Nextflow stop/production sessions and OpenBao remain open. No new paid/cloud run or PR merge."
+}
